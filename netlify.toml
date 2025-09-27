@@ -1,7 +1,7 @@
 [build]
   base = "layout-generator"
   command = "npm run build"
-  publish = "layout-generator/build"
+  publish = "build"
 
 [build.environment]
   NODE_VERSION = "18"
