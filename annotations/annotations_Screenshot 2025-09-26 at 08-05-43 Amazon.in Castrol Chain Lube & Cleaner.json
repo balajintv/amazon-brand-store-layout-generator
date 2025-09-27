@@ -1,0 +1,351 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 08-05-43 Amazon.in Castrol Chain Lube & Cleaner.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 9186
+  },
+  "total_sections": 21,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 118,
+        "y": 94,
+        "width": 1358,
+        "height": 294
+      },
+      "area": 399252,
+      "center": {
+        "x": 797,
+        "y": 241
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 120,
+        "y": 388,
+        "width": 1360,
+        "height": 58
+      },
+      "area": 78880,
+      "center": {
+        "x": 800,
+        "y": 417
+      }
+    },
+    {
+      "id": "section_heading_003",
+      "type": "section_heading",
+      "name": "section heading Section 3",
+      "coordinates": {
+        "x": 132,
+        "y": 1124,
+        "width": 1342,
+        "height": 332
+      },
+      "area": 445544,
+      "center": {
+        "x": 803,
+        "y": 1290
+      }
+    },
+    {
+      "id": "static_image_004",
+      "type": "static_image",
+      "name": "static image Section 4",
+      "coordinates": {
+        "x": 136,
+        "y": 1462,
+        "width": 664,
+        "height": 320
+      },
+      "area": 212480,
+      "center": {
+        "x": 468,
+        "y": 1622
+      }
+    },
+    {
+      "id": "static_image_005",
+      "type": "static_image",
+      "name": "static image Section 5",
+      "coordinates": {
+        "x": 804,
+        "y": 1456,
+        "width": 664,
+        "height": 334
+      },
+      "area": 221776,
+      "center": {
+        "x": 1136,
+        "y": 1623
+      }
+    },
+    {
+      "id": "static_image_006",
+      "type": "static_image",
+      "name": "static image Section 6",
+      "coordinates": {
+        "x": 136,
+        "y": 1789,
+        "width": 668,
+        "height": 330
+      },
+      "area": 220440,
+      "center": {
+        "x": 470,
+        "y": 1954
+      }
+    },
+    {
+      "id": "static_image_007",
+      "type": "static_image",
+      "name": "static image Section 7",
+      "coordinates": {
+        "x": 806,
+        "y": 1781,
+        "width": 664,
+        "height": 340
+      },
+      "area": 225760,
+      "center": {
+        "x": 1138,
+        "y": 1951
+      }
+    },
+    {
+      "id": "hero_008",
+      "type": "hero",
+      "name": "hero Section 8",
+      "coordinates": {
+        "x": 126,
+        "y": 451,
+        "width": 1348,
+        "height": 672
+      },
+      "area": 905856,
+      "center": {
+        "x": 800,
+        "y": 787
+      }
+    },
+    {
+      "id": "section_heading_009",
+      "type": "section_heading",
+      "name": "section heading Section 9",
+      "coordinates": {
+        "x": 136,
+        "y": 2123,
+        "width": 1338,
+        "height": 342
+      },
+      "area": 457596,
+      "center": {
+        "x": 805,
+        "y": 2294
+      }
+    },
+    {
+      "id": "shop_the_look_010",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 10",
+      "coordinates": {
+        "x": 140,
+        "y": 3793,
+        "width": 660,
+        "height": 656
+      },
+      "area": 432960,
+      "center": {
+        "x": 470,
+        "y": 4121
+      }
+    },
+    {
+      "id": "static_image_011",
+      "type": "static_image",
+      "name": "static image Section 11",
+      "coordinates": {
+        "x": 806,
+        "y": 3795,
+        "width": 658,
+        "height": 654
+      },
+      "area": 430332,
+      "center": {
+        "x": 1135,
+        "y": 4122
+      }
+    },
+    {
+      "id": "text_block_012",
+      "type": "text_block",
+      "name": "text block Section 12",
+      "coordinates": {
+        "x": 138,
+        "y": 4454,
+        "width": 1326,
+        "height": 356
+      },
+      "area": 472056,
+      "center": {
+        "x": 801,
+        "y": 4632
+      }
+    },
+    {
+      "id": "section_heading_013",
+      "type": "section_heading",
+      "name": "section heading Section 13",
+      "coordinates": {
+        "x": 140,
+        "y": 4810,
+        "width": 1324,
+        "height": 398
+      },
+      "area": 526952,
+      "center": {
+        "x": 802,
+        "y": 5009
+      }
+    },
+    {
+      "id": "static_image_014",
+      "type": "static_image",
+      "name": "static image Section 14",
+      "coordinates": {
+        "x": 136,
+        "y": 5210,
+        "width": 666,
+        "height": 334
+      },
+      "area": 222444,
+      "center": {
+        "x": 469,
+        "y": 5377
+      }
+    },
+    {
+      "id": "text_block_015",
+      "type": "text_block",
+      "name": "text block Section 15",
+      "coordinates": {
+        "x": 804,
+        "y": 5208,
+        "width": 670,
+        "height": 334
+      },
+      "area": 223780,
+      "center": {
+        "x": 1139,
+        "y": 5375
+      }
+    },
+    {
+      "id": "video_016",
+      "type": "video",
+      "name": "video Section 16",
+      "coordinates": {
+        "x": 138,
+        "y": 5552,
+        "width": 660,
+        "height": 316
+      },
+      "area": 208560,
+      "center": {
+        "x": 468,
+        "y": 5710
+      }
+    },
+    {
+      "id": "text_block_017",
+      "type": "text_block",
+      "name": "text block Section 17",
+      "coordinates": {
+        "x": 806,
+        "y": 5544,
+        "width": 660,
+        "height": 330
+      },
+      "area": 217800,
+      "center": {
+        "x": 1136,
+        "y": 5709
+      }
+    },
+    {
+      "id": "section_heading_018",
+      "type": "section_heading",
+      "name": "section heading Section 18",
+      "coordinates": {
+        "x": 142,
+        "y": 5880,
+        "width": 1318,
+        "height": 348
+      },
+      "area": 458664,
+      "center": {
+        "x": 801,
+        "y": 6054
+      }
+    },
+    {
+      "id": "before_after_019",
+      "type": "before_after",
+      "name": "before after Section 19",
+      "coordinates": {
+        "x": 142,
+        "y": 6233,
+        "width": 1318,
+        "height": 1319
+      },
+      "area": 1738442,
+      "center": {
+        "x": 801,
+        "y": 6893
+      }
+    },
+    {
+      "id": "section_heading_020",
+      "type": "section_heading",
+      "name": "section heading Section 20",
+      "coordinates": {
+        "x": 142,
+        "y": 7560,
+        "width": 1322,
+        "height": 368
+      },
+      "area": 486496,
+      "center": {
+        "x": 803,
+        "y": 7744
+      }
+    },
+    {
+      "id": "testimonial_021",
+      "type": "testimonial",
+      "name": "testimonial Section 21",
+      "coordinates": {
+        "x": 140,
+        "y": 7932,
+        "width": 1326,
+        "height": 330
+      },
+      "area": 437580,
+      "center": {
+        "x": 803,
+        "y": 8097
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-26T07:14:22.013Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 08-05-43 Amazon.in Castrol Chain Lube & Cleaner.png"
+  }
+}

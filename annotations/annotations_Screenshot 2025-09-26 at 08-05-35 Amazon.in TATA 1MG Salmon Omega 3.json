@@ -1,0 +1,303 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 08-05-35 Amazon.in TATA 1MG Salmon Omega 3.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 7703
+  },
+  "total_sections": 18,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 132,
+        "y": 92,
+        "width": 1344,
+        "height": 268
+      },
+      "area": 360192,
+      "center": {
+        "x": 804,
+        "y": 226
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 126,
+        "y": 360,
+        "width": 1354,
+        "height": 96
+      },
+      "area": 129984,
+      "center": {
+        "x": 803,
+        "y": 408
+      }
+    },
+    {
+      "id": "video_003",
+      "type": "video",
+      "name": "video Section 3",
+      "coordinates": {
+        "x": 126,
+        "y": 460,
+        "width": 1356,
+        "height": 666
+      },
+      "area": 903096,
+      "center": {
+        "x": 804,
+        "y": 793
+      }
+    },
+    {
+      "id": "product_selector_004",
+      "type": "product_selector",
+      "name": "product selector Section 4",
+      "coordinates": {
+        "x": 128,
+        "y": 1129,
+        "width": 1356,
+        "height": 366
+      },
+      "area": 496296,
+      "center": {
+        "x": 806,
+        "y": 1312
+      }
+    },
+    {
+      "id": "static_image_005",
+      "type": "static_image",
+      "name": "static image Section 5",
+      "coordinates": {
+        "x": 128,
+        "y": 1493,
+        "width": 1358,
+        "height": 372
+      },
+      "area": 505176,
+      "center": {
+        "x": 807,
+        "y": 1679
+      }
+    },
+    {
+      "id": "section_heading_006",
+      "type": "section_heading",
+      "name": "section heading Section 6",
+      "coordinates": {
+        "x": 140,
+        "y": 1868,
+        "width": 1324,
+        "height": 124
+      },
+      "area": 164176,
+      "center": {
+        "x": 802,
+        "y": 1930
+      }
+    },
+    {
+      "id": "section_heading_007",
+      "type": "section_heading",
+      "name": "section heading Section 7",
+      "coordinates": {
+        "x": 140,
+        "y": 1998,
+        "width": 1324,
+        "height": 124
+      },
+      "area": 164176,
+      "center": {
+        "x": 802,
+        "y": 2060
+      }
+    },
+    {
+      "id": "shop_the_look_008",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 8",
+      "coordinates": {
+        "x": 142,
+        "y": 2127,
+        "width": 1322,
+        "height": 660
+      },
+      "area": 872520,
+      "center": {
+        "x": 803,
+        "y": 2457
+      }
+    },
+    {
+      "id": "section_heading_009",
+      "type": "section_heading",
+      "name": "section heading Section 9",
+      "coordinates": {
+        "x": 142,
+        "y": 2793,
+        "width": 1322,
+        "height": 124
+      },
+      "area": 163928,
+      "center": {
+        "x": 803,
+        "y": 2855
+      }
+    },
+    {
+      "id": "shop_the_look_010",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 10",
+      "coordinates": {
+        "x": 138,
+        "y": 2922,
+        "width": 1326,
+        "height": 660
+      },
+      "area": 875160,
+      "center": {
+        "x": 801,
+        "y": 3252
+      }
+    },
+    {
+      "id": "section_heading_011",
+      "type": "section_heading",
+      "name": "section heading Section 11",
+      "coordinates": {
+        "x": 140,
+        "y": 3585,
+        "width": 1324,
+        "height": 126
+      },
+      "area": 166824,
+      "center": {
+        "x": 802,
+        "y": 3648
+      }
+    },
+    {
+      "id": "shop_the_look_012",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 12",
+      "coordinates": {
+        "x": 140,
+        "y": 3713,
+        "width": 1324,
+        "height": 666
+      },
+      "area": 881784,
+      "center": {
+        "x": 802,
+        "y": 4046
+      }
+    },
+    {
+      "id": "section_heading_013",
+      "type": "section_heading",
+      "name": "section heading Section 13",
+      "coordinates": {
+        "x": 138,
+        "y": 4381,
+        "width": 1326,
+        "height": 124
+      },
+      "area": 164424,
+      "center": {
+        "x": 801,
+        "y": 4443
+      }
+    },
+    {
+      "id": "shop_the_look_014",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 14",
+      "coordinates": {
+        "x": 140,
+        "y": 4508,
+        "width": 1324,
+        "height": 664
+      },
+      "area": 879136,
+      "center": {
+        "x": 802,
+        "y": 4840
+      }
+    },
+    {
+      "id": "static_image_015",
+      "type": "static_image",
+      "name": "static image Section 15",
+      "coordinates": {
+        "x": 142,
+        "y": 5175,
+        "width": 1326,
+        "height": 864
+      },
+      "area": 1145664,
+      "center": {
+        "x": 805,
+        "y": 5607
+      }
+    },
+    {
+      "id": "testimonial_016",
+      "type": "testimonial",
+      "name": "testimonial Section 16",
+      "coordinates": {
+        "x": 144,
+        "y": 6042,
+        "width": 1332,
+        "height": 282
+      },
+      "area": 375624,
+      "center": {
+        "x": 810,
+        "y": 6183
+      }
+    },
+    {
+      "id": "section_heading_017",
+      "type": "section_heading",
+      "name": "section heading Section 17",
+      "coordinates": {
+        "x": 140,
+        "y": 6325,
+        "width": 1334,
+        "height": 122
+      },
+      "area": 162748,
+      "center": {
+        "x": 807,
+        "y": 6386
+      }
+    },
+    {
+      "id": "product_grid_018",
+      "type": "product_grid",
+      "name": "product grid Section 18",
+      "coordinates": {
+        "x": 138,
+        "y": 6449,
+        "width": 1338,
+        "height": 336
+      },
+      "area": 449568,
+      "center": {
+        "x": 807,
+        "y": 6617
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-26T05:59:49.833Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 08-05-35 Amazon.in TATA 1MG Salmon Omega 3.png"
+  }
+}

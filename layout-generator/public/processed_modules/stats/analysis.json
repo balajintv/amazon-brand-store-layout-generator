@@ -1,0 +1,33 @@
+{
+  "processing_summary": {
+    "files_processed": 15,
+    "sections_extracted": 473,
+    "processing_time_seconds": 53.898707,
+    "errors_count": 0
+  },
+  "section_type_breakdown": {
+    "mast": 15,
+    "navigation": 15,
+    "section_heading": 104,
+    "static_image": 65,
+    "hero": 5,
+    "shop_the_look": 35,
+    "text_block": 17,
+    "video": 14,
+    "before_after": 3,
+    "testimonial": 47,
+    "category_carousel": 18,
+    "reels": 15,
+    "linkout_image": 96,
+    "asin_waterfall": 12,
+    "product_selector": 6,
+    "bestsellers": 5,
+    "product_grid": 1
+  },
+  "recommendations": [
+    "Most used section types: section_heading(104), linkout_image(96), static_image(65). Consider creating multiple variants of these.",
+    "Rare section types found: product_grid. Consider if these are special cases or could be generalized.",
+    "Large catalog detected. Consider implementing search and filtering in React UI."
+  ],
+  "errors": []
+}

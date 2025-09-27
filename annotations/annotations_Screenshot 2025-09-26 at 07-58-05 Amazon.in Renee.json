@@ -1,0 +1,431 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-58-05 Amazon.in Renee.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 7874
+  },
+  "total_sections": 26,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 130,
+        "y": 87,
+        "width": 1346,
+        "height": 272
+      },
+      "area": 366112,
+      "center": {
+        "x": 803,
+        "y": 223
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 132,
+        "y": 363,
+        "width": 1354,
+        "height": 86
+      },
+      "area": 116444,
+      "center": {
+        "x": 809,
+        "y": 406
+      }
+    },
+    {
+      "id": "linkout_image_003",
+      "type": "linkout_image",
+      "name": "linkout image Section 3",
+      "coordinates": {
+        "x": 132,
+        "y": 453,
+        "width": 666,
+        "height": 334
+      },
+      "area": 222444,
+      "center": {
+        "x": 465,
+        "y": 620
+      }
+    },
+    {
+      "id": "linkout_image_004",
+      "type": "linkout_image",
+      "name": "linkout image Section 4",
+      "coordinates": {
+        "x": 800,
+        "y": 453,
+        "width": 334,
+        "height": 332
+      },
+      "area": 110888,
+      "center": {
+        "x": 967,
+        "y": 619
+      }
+    },
+    {
+      "id": "linkout_image_005",
+      "type": "linkout_image",
+      "name": "linkout image Section 5",
+      "coordinates": {
+        "x": 1136,
+        "y": 449,
+        "width": 326,
+        "height": 336
+      },
+      "area": 109536,
+      "center": {
+        "x": 1299,
+        "y": 617
+      }
+    },
+    {
+      "id": "video_006",
+      "type": "video",
+      "name": "video Section 6",
+      "coordinates": {
+        "x": 136,
+        "y": 787,
+        "width": 1330,
+        "height": 660
+      },
+      "area": 877800,
+      "center": {
+        "x": 801,
+        "y": 1117
+      }
+    },
+    {
+      "id": "section_heading_007",
+      "type": "section_heading",
+      "name": "section heading Section 7",
+      "coordinates": {
+        "x": 140,
+        "y": 1449,
+        "width": 1326,
+        "height": 98
+      },
+      "area": 129948,
+      "center": {
+        "x": 803,
+        "y": 1498
+      }
+    },
+    {
+      "id": "reels_008",
+      "type": "reels",
+      "name": "reels Section 8",
+      "coordinates": {
+        "x": 142,
+        "y": 1547,
+        "width": 1334,
+        "height": 577
+      },
+      "area": 769718,
+      "center": {
+        "x": 809,
+        "y": 1835
+      }
+    },
+    {
+      "id": "section_heading_009",
+      "type": "section_heading",
+      "name": "section heading Section 9",
+      "coordinates": {
+        "x": 140,
+        "y": 2130,
+        "width": 1340,
+        "height": 138
+      },
+      "area": 184920,
+      "center": {
+        "x": 810,
+        "y": 2199
+      }
+    },
+    {
+      "id": "shop_the_look_010",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 10",
+      "coordinates": {
+        "x": 208,
+        "y": 2325,
+        "width": 394,
+        "height": 340
+      },
+      "area": 133960,
+      "center": {
+        "x": 405,
+        "y": 2495
+      }
+    },
+    {
+      "id": "shop_the_look_011",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 11",
+      "coordinates": {
+        "x": 208,
+        "y": 2663,
+        "width": 394,
+        "height": 290
+      },
+      "area": 114260,
+      "center": {
+        "x": 405,
+        "y": 2808
+      }
+    },
+    {
+      "id": "shop_the_look_012",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 12",
+      "coordinates": {
+        "x": 608,
+        "y": 2325,
+        "width": 392,
+        "height": 626
+      },
+      "area": 245392,
+      "center": {
+        "x": 804,
+        "y": 2638
+      }
+    },
+    {
+      "id": "shop_the_look_013",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 13",
+      "coordinates": {
+        "x": 1006,
+        "y": 2321,
+        "width": 442,
+        "height": 628
+      },
+      "area": 277576,
+      "center": {
+        "x": 1227,
+        "y": 2635
+      }
+    },
+    {
+      "id": "product_selector_014",
+      "type": "product_selector",
+      "name": "product selector Section 14",
+      "coordinates": {
+        "x": 142,
+        "y": 2988,
+        "width": 1320,
+        "height": 634
+      },
+      "area": 836880,
+      "center": {
+        "x": 802,
+        "y": 3305
+      }
+    },
+    {
+      "id": "section_heading_015",
+      "type": "section_heading",
+      "name": "section heading Section 15",
+      "coordinates": {
+        "x": 142,
+        "y": 3621,
+        "width": 1318,
+        "height": 142
+      },
+      "area": 187156,
+      "center": {
+        "x": 801,
+        "y": 3692
+      }
+    },
+    {
+      "id": "category_carousel_016",
+      "type": "category_carousel",
+      "name": "category carousel Section 16",
+      "coordinates": {
+        "x": 134,
+        "y": 3767,
+        "width": 1332,
+        "height": 228
+      },
+      "area": 303696,
+      "center": {
+        "x": 800,
+        "y": 3881
+      }
+    },
+    {
+      "id": "section_heading_017",
+      "type": "section_heading",
+      "name": "section heading Section 17",
+      "coordinates": {
+        "x": 136,
+        "y": 3997,
+        "width": 1332,
+        "height": 118
+      },
+      "area": 157176,
+      "center": {
+        "x": 802,
+        "y": 4056
+      }
+    },
+    {
+      "id": "linkout_image_018",
+      "type": "linkout_image",
+      "name": "linkout image Section 18",
+      "coordinates": {
+        "x": 140,
+        "y": 4116,
+        "width": 324,
+        "height": 324
+      },
+      "area": 104976,
+      "center": {
+        "x": 302,
+        "y": 4278
+      }
+    },
+    {
+      "id": "linkout_image_019",
+      "type": "linkout_image",
+      "name": "linkout image Section 19",
+      "coordinates": {
+        "x": 468,
+        "y": 4116,
+        "width": 328,
+        "height": 334
+      },
+      "area": 109552,
+      "center": {
+        "x": 632,
+        "y": 4283
+      }
+    },
+    {
+      "id": "linkout_image_020",
+      "type": "linkout_image",
+      "name": "linkout image Section 20",
+      "coordinates": {
+        "x": 800,
+        "y": 4118,
+        "width": 330,
+        "height": 336
+      },
+      "area": 110880,
+      "center": {
+        "x": 965,
+        "y": 4286
+      }
+    },
+    {
+      "id": "linkout_image_021",
+      "type": "linkout_image",
+      "name": "linkout image Section 21",
+      "coordinates": {
+        "x": 1134,
+        "y": 4116,
+        "width": 336,
+        "height": 340
+      },
+      "area": 114240,
+      "center": {
+        "x": 1302,
+        "y": 4286
+      }
+    },
+    {
+      "id": "section_heading_022",
+      "type": "section_heading",
+      "name": "section heading Section 22",
+      "coordinates": {
+        "x": 144,
+        "y": 4448,
+        "width": 1332,
+        "height": 170
+      },
+      "area": 226440,
+      "center": {
+        "x": 810,
+        "y": 4533
+      }
+    },
+    {
+      "id": "bestsellers_023",
+      "type": "bestsellers",
+      "name": "bestsellers Section 23",
+      "coordinates": {
+        "x": 146,
+        "y": 4622,
+        "width": 1328,
+        "height": 624
+      },
+      "area": 828672,
+      "center": {
+        "x": 810,
+        "y": 4934
+      }
+    },
+    {
+      "id": "shop_the_look_024",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 24",
+      "coordinates": {
+        "x": 138,
+        "y": 5249,
+        "width": 1328,
+        "height": 662
+      },
+      "area": 879136,
+      "center": {
+        "x": 802,
+        "y": 5580
+      }
+    },
+    {
+      "id": "section_heading_025",
+      "type": "section_heading",
+      "name": "section heading Section 25",
+      "coordinates": {
+        "x": 144,
+        "y": 5915,
+        "width": 1322,
+        "height": 128
+      },
+      "area": 169216,
+      "center": {
+        "x": 805,
+        "y": 5979
+      }
+    },
+    {
+      "id": "asin_waterfall_026",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 26",
+      "coordinates": {
+        "x": 142,
+        "y": 6051,
+        "width": 1288,
+        "height": 1091
+      },
+      "area": 1405208,
+      "center": {
+        "x": 786,
+        "y": 6596
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-26T07:41:33.219Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-58-05 Amazon.in Renee.png"
+  }
+}

@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+layout-generator/node_modules/
+
+# Production builds
+layout-generator/build/
+layout-generator/dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Claude artifacts
+.claude/
+
+# Large files (keep sample data but not full datasets)
+# Uncomment if you want to exclude large image folders
+# processed_modules/images/
+# store_screenshots/
+
+# Temporary files
+*.tmp
+*.temp

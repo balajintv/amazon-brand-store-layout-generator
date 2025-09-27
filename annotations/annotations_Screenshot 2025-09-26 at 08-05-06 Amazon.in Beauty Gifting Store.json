@@ -1,0 +1,383 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 08-05-06 Amazon.in Beauty Gifting Store.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 6028
+  },
+  "total_sections": 23,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 128,
+        "y": 86,
+        "width": 1348,
+        "height": 282
+      },
+      "area": 380136,
+      "center": {
+        "x": 802,
+        "y": 227
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 132,
+        "y": 3350,
+        "width": 1348,
+        "height": 86
+      },
+      "area": 115928,
+      "center": {
+        "x": 806,
+        "y": 3393
+      }
+    },
+    {
+      "id": "linkout_image_003",
+      "type": "linkout_image",
+      "name": "linkout image Section 3",
+      "coordinates": {
+        "x": 140,
+        "y": 455,
+        "width": 660,
+        "height": 658
+      },
+      "area": 434280,
+      "center": {
+        "x": 470,
+        "y": 784
+      }
+    },
+    {
+      "id": "linkout_image_004",
+      "type": "linkout_image",
+      "name": "linkout image Section 4",
+      "coordinates": {
+        "x": 804,
+        "y": 451,
+        "width": 670,
+        "height": 670
+      },
+      "area": 448900,
+      "center": {
+        "x": 1139,
+        "y": 786
+      }
+    },
+    {
+      "id": "linkout_image_005",
+      "type": "linkout_image",
+      "name": "linkout image Section 5",
+      "coordinates": {
+        "x": 138,
+        "y": 1119,
+        "width": 324,
+        "height": 320
+      },
+      "area": 103680,
+      "center": {
+        "x": 300,
+        "y": 1279
+      }
+    },
+    {
+      "id": "linkout_image_006",
+      "type": "linkout_image",
+      "name": "linkout image Section 6",
+      "coordinates": {
+        "x": 468,
+        "y": 1111,
+        "width": 332,
+        "height": 336
+      },
+      "area": 111552,
+      "center": {
+        "x": 634,
+        "y": 1279
+      }
+    },
+    {
+      "id": "linkout_image_007",
+      "type": "linkout_image",
+      "name": "linkout image Section 7",
+      "coordinates": {
+        "x": 806,
+        "y": 1125,
+        "width": 670,
+        "height": 312
+      },
+      "area": 209040,
+      "center": {
+        "x": 1141,
+        "y": 1281
+      }
+    },
+    {
+      "id": "linkout_image_008",
+      "type": "linkout_image",
+      "name": "linkout image Section 8",
+      "coordinates": {
+        "x": 140,
+        "y": 1451,
+        "width": 308,
+        "height": 320
+      },
+      "area": 98560,
+      "center": {
+        "x": 294,
+        "y": 1611
+      }
+    },
+    {
+      "id": "linkout_image_009",
+      "type": "linkout_image",
+      "name": "linkout image Section 9",
+      "coordinates": {
+        "x": 458,
+        "y": 1449,
+        "width": 334,
+        "height": 322
+      },
+      "area": 107548,
+      "center": {
+        "x": 625,
+        "y": 1610
+      }
+    },
+    {
+      "id": "linkout_image_010",
+      "type": "linkout_image",
+      "name": "linkout image Section 10",
+      "coordinates": {
+        "x": 818,
+        "y": 1455,
+        "width": 308,
+        "height": 320
+      },
+      "area": 98560,
+      "center": {
+        "x": 972,
+        "y": 1615
+      }
+    },
+    {
+      "id": "linkout_image_011",
+      "type": "linkout_image",
+      "name": "linkout image Section 11",
+      "coordinates": {
+        "x": 1158,
+        "y": 1459,
+        "width": 312,
+        "height": 322
+      },
+      "area": 100464,
+      "center": {
+        "x": 1314,
+        "y": 1620
+      }
+    },
+    {
+      "id": "section_heading_012",
+      "type": "section_heading",
+      "name": "section heading Section 12",
+      "coordinates": {
+        "x": 148,
+        "y": 1784,
+        "width": 1326,
+        "height": 224
+      },
+      "area": 297024,
+      "center": {
+        "x": 811,
+        "y": 1896
+      }
+    },
+    {
+      "id": "reels_013",
+      "type": "reels",
+      "name": "reels Section 13",
+      "coordinates": {
+        "x": 142,
+        "y": 2027,
+        "width": 1338,
+        "height": 654
+      },
+      "area": 875052,
+      "center": {
+        "x": 811,
+        "y": 2354
+      }
+    },
+    {
+      "id": "section_heading_014",
+      "type": "section_heading",
+      "name": "section heading Section 14",
+      "coordinates": {
+        "x": 140,
+        "y": 2688,
+        "width": 1344,
+        "height": 204
+      },
+      "area": 274176,
+      "center": {
+        "x": 812,
+        "y": 2790
+      }
+    },
+    {
+      "id": "asin_waterfall_015",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 15",
+      "coordinates": {
+        "x": 142,
+        "y": 2984,
+        "width": 1340,
+        "height": 366
+      },
+      "area": 490440,
+      "center": {
+        "x": 812,
+        "y": 3167
+      }
+    },
+    {
+      "id": "asin_waterfall_016",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 16",
+      "coordinates": {
+        "x": 138,
+        "y": 3522,
+        "width": 1314,
+        "height": 1099
+      },
+      "area": 1444086,
+      "center": {
+        "x": 795,
+        "y": 4072
+      }
+    },
+    {
+      "id": "section_heading_017",
+      "type": "section_heading",
+      "name": "section heading Section 17",
+      "coordinates": {
+        "x": 134,
+        "y": 4675,
+        "width": 672,
+        "height": 256
+      },
+      "area": 172032,
+      "center": {
+        "x": 470,
+        "y": 4803
+      }
+    },
+    {
+      "id": "static_image_018",
+      "type": "static_image",
+      "name": "static image Section 18",
+      "coordinates": {
+        "x": 810,
+        "y": 4669,
+        "width": 320,
+        "height": 284
+      },
+      "area": 90880,
+      "center": {
+        "x": 970,
+        "y": 4811
+      }
+    },
+    {
+      "id": "static_image_019",
+      "type": "static_image",
+      "name": "static image Section 19",
+      "coordinates": {
+        "x": 1134,
+        "y": 4653,
+        "width": 330,
+        "height": 300
+      },
+      "area": 99000,
+      "center": {
+        "x": 1299,
+        "y": 4803
+      }
+    },
+    {
+      "id": "static_image_020",
+      "type": "static_image",
+      "name": "static image Section 20",
+      "coordinates": {
+        "x": 132,
+        "y": 4953,
+        "width": 338,
+        "height": 328
+      },
+      "area": 110864,
+      "center": {
+        "x": 301,
+        "y": 5117
+      }
+    },
+    {
+      "id": "static_image_021",
+      "type": "static_image",
+      "name": "static image Section 21",
+      "coordinates": {
+        "x": 474,
+        "y": 4955,
+        "width": 326,
+        "height": 316
+      },
+      "area": 103016,
+      "center": {
+        "x": 637,
+        "y": 5113
+      }
+    },
+    {
+      "id": "static_image_022",
+      "type": "static_image",
+      "name": "static image Section 22",
+      "coordinates": {
+        "x": 804,
+        "y": 4957,
+        "width": 332,
+        "height": 330
+      },
+      "area": 109560,
+      "center": {
+        "x": 970,
+        "y": 5122
+      }
+    },
+    {
+      "id": "static_image_023",
+      "type": "static_image",
+      "name": "static image Section 23",
+      "coordinates": {
+        "x": 1136,
+        "y": 4961,
+        "width": 340,
+        "height": 316
+      },
+      "area": 107440,
+      "center": {
+        "x": 1306,
+        "y": 5119
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-26T10:37:53.595Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 08-05-06 Amazon.in Beauty Gifting Store.png"
+  }
+}

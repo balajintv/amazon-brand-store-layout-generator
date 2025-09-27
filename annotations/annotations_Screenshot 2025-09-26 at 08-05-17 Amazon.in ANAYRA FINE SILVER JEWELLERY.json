@@ -1,0 +1,495 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 08-05-17 Amazon.in ANAYRA FINE SILVER JEWELLERY.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 11292
+  },
+  "total_sections": 30,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 130,
+        "y": 94,
+        "width": 1346,
+        "height": 262
+      },
+      "area": 352652,
+      "center": {
+        "x": 803,
+        "y": 225
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 130,
+        "y": 358,
+        "width": 1348,
+        "height": 80
+      },
+      "area": 107840,
+      "center": {
+        "x": 804,
+        "y": 398
+      }
+    },
+    {
+      "id": "video_003",
+      "type": "video",
+      "name": "video Section 3",
+      "coordinates": {
+        "x": 130,
+        "y": 450,
+        "width": 1346,
+        "height": 670
+      },
+      "area": 901820,
+      "center": {
+        "x": 803,
+        "y": 785
+      }
+    },
+    {
+      "id": "section_heading_004",
+      "type": "section_heading",
+      "name": "section heading Section 4",
+      "coordinates": {
+        "x": 134,
+        "y": 1132,
+        "width": 1352,
+        "height": 262
+      },
+      "area": 354224,
+      "center": {
+        "x": 810,
+        "y": 1263
+      }
+    },
+    {
+      "id": "category_carousel_005",
+      "type": "category_carousel",
+      "name": "category carousel Section 5",
+      "coordinates": {
+        "x": 136,
+        "y": 1394,
+        "width": 1352,
+        "height": 224
+      },
+      "area": 302848,
+      "center": {
+        "x": 812,
+        "y": 1506
+      }
+    },
+    {
+      "id": "section_heading_006",
+      "type": "section_heading",
+      "name": "section heading Section 6",
+      "coordinates": {
+        "x": 140,
+        "y": 1646,
+        "width": 1346,
+        "height": 226
+      },
+      "area": 304196,
+      "center": {
+        "x": 813,
+        "y": 1759
+      }
+    },
+    {
+      "id": "reels_007",
+      "type": "reels",
+      "name": "reels Section 7",
+      "coordinates": {
+        "x": 140,
+        "y": 1880,
+        "width": 1322,
+        "height": 574
+      },
+      "area": 758828,
+      "center": {
+        "x": 801,
+        "y": 2167
+      }
+    },
+    {
+      "id": "section_heading_008",
+      "type": "section_heading",
+      "name": "section heading Section 8",
+      "coordinates": {
+        "x": 150,
+        "y": 2501,
+        "width": 1322,
+        "height": 238
+      },
+      "area": 314636,
+      "center": {
+        "x": 811,
+        "y": 2620
+      }
+    },
+    {
+      "id": "static_image_009",
+      "type": "static_image",
+      "name": "static image Section 9",
+      "coordinates": {
+        "x": 140,
+        "y": 2745,
+        "width": 1330,
+        "height": 272
+      },
+      "area": 361760,
+      "center": {
+        "x": 805,
+        "y": 2881
+      }
+    },
+    {
+      "id": "linkout_image_010",
+      "type": "linkout_image",
+      "name": "linkout image Section 10",
+      "coordinates": {
+        "x": 140,
+        "y": 3025,
+        "width": 1324,
+        "height": 666
+      },
+      "area": 881784,
+      "center": {
+        "x": 802,
+        "y": 3358
+      }
+    },
+    {
+      "id": "section_heading_011",
+      "type": "section_heading",
+      "name": "section heading Section 11",
+      "coordinates": {
+        "x": 146,
+        "y": 3743,
+        "width": 1314,
+        "height": 218
+      },
+      "area": 286452,
+      "center": {
+        "x": 803,
+        "y": 3852
+      }
+    },
+    {
+      "id": "shop_the_look_012",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 12",
+      "coordinates": {
+        "x": 140,
+        "y": 3970,
+        "width": 660,
+        "height": 660
+      },
+      "area": 435600,
+      "center": {
+        "x": 470,
+        "y": 4300
+      }
+    },
+    {
+      "id": "shop_the_look_013",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 13",
+      "coordinates": {
+        "x": 806,
+        "y": 3966,
+        "width": 654,
+        "height": 666
+      },
+      "area": 435564,
+      "center": {
+        "x": 1133,
+        "y": 4299
+      }
+    },
+    {
+      "id": "text_block_014",
+      "type": "text_block",
+      "name": "text block Section 14",
+      "coordinates": {
+        "x": 138,
+        "y": 5309,
+        "width": 656,
+        "height": 654
+      },
+      "area": 429024,
+      "center": {
+        "x": 466,
+        "y": 5636
+      }
+    },
+    {
+      "id": "shop_the_look_015",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 15",
+      "coordinates": {
+        "x": 804,
+        "y": 5311,
+        "width": 332,
+        "height": 324
+      },
+      "area": 107568,
+      "center": {
+        "x": 970,
+        "y": 5473
+      }
+    },
+    {
+      "id": "shop_the_look_016",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 16",
+      "coordinates": {
+        "x": 1130,
+        "y": 5315,
+        "width": 332,
+        "height": 320
+      },
+      "area": 106240,
+      "center": {
+        "x": 1296,
+        "y": 5475
+      }
+    },
+    {
+      "id": "shop_the_look_017",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 17",
+      "coordinates": {
+        "x": 802,
+        "y": 5638,
+        "width": 326,
+        "height": 330
+      },
+      "area": 107580,
+      "center": {
+        "x": 965,
+        "y": 5803
+      }
+    },
+    {
+      "id": "shop_the_look_018",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 18",
+      "coordinates": {
+        "x": 1132,
+        "y": 5644,
+        "width": 336,
+        "height": 322
+      },
+      "area": 108192,
+      "center": {
+        "x": 1300,
+        "y": 5805
+      }
+    },
+    {
+      "id": "video_019",
+      "type": "video",
+      "name": "video Section 19",
+      "coordinates": {
+        "x": 138,
+        "y": 5974,
+        "width": 1328,
+        "height": 744
+      },
+      "area": 988032,
+      "center": {
+        "x": 802,
+        "y": 6346
+      }
+    },
+    {
+      "id": "text_block_020",
+      "type": "text_block",
+      "name": "text block Section 20",
+      "coordinates": {
+        "x": 140,
+        "y": 6725,
+        "width": 662,
+        "height": 664
+      },
+      "area": 439568,
+      "center": {
+        "x": 471,
+        "y": 7057
+      }
+    },
+    {
+      "id": "asin_waterfall_021",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 21",
+      "coordinates": {
+        "x": 812,
+        "y": 6729,
+        "width": 672,
+        "height": 668
+      },
+      "area": 448896,
+      "center": {
+        "x": 1148,
+        "y": 7063
+      }
+    },
+    {
+      "id": "section_heading_022",
+      "type": "section_heading",
+      "name": "section heading Section 22",
+      "coordinates": {
+        "x": 146,
+        "y": 7435,
+        "width": 1330,
+        "height": 234
+      },
+      "area": 311220,
+      "center": {
+        "x": 811,
+        "y": 7552
+      }
+    },
+    {
+      "id": "video_023",
+      "type": "video",
+      "name": "video Section 23",
+      "coordinates": {
+        "x": 138,
+        "y": 7671,
+        "width": 1344,
+        "height": 746
+      },
+      "area": 1002624,
+      "center": {
+        "x": 810,
+        "y": 8044
+      }
+    },
+    {
+      "id": "asin_waterfall_024",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 24",
+      "coordinates": {
+        "x": 140,
+        "y": 8425,
+        "width": 1342,
+        "height": 498
+      },
+      "area": 668316,
+      "center": {
+        "x": 811,
+        "y": 8674
+      }
+    },
+    {
+      "id": "static_image_025",
+      "type": "static_image",
+      "name": "static image Section 25",
+      "coordinates": {
+        "x": 140,
+        "y": 8930,
+        "width": 1324,
+        "height": 686
+      },
+      "area": 908264,
+      "center": {
+        "x": 802,
+        "y": 9273
+      }
+    },
+    {
+      "id": "section_heading_026",
+      "type": "section_heading",
+      "name": "section heading Section 26",
+      "coordinates": {
+        "x": 146,
+        "y": 9639,
+        "width": 1326,
+        "height": 248
+      },
+      "area": 328848,
+      "center": {
+        "x": 809,
+        "y": 9763
+      }
+    },
+    {
+      "id": "shop_the_look_027",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 27",
+      "coordinates": {
+        "x": 140,
+        "y": 9890,
+        "width": 658,
+        "height": 656
+      },
+      "area": 431648,
+      "center": {
+        "x": 469,
+        "y": 10218
+      }
+    },
+    {
+      "id": "shop_the_look_028",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 28",
+      "coordinates": {
+        "x": 804,
+        "y": 9890,
+        "width": 664,
+        "height": 324
+      },
+      "area": 215136,
+      "center": {
+        "x": 1136,
+        "y": 10052
+      }
+    },
+    {
+      "id": "shop_the_look_029",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 29",
+      "coordinates": {
+        "x": 802,
+        "y": 10216,
+        "width": 334,
+        "height": 336
+      },
+      "area": 112224,
+      "center": {
+        "x": 969,
+        "y": 10384
+      }
+    },
+    {
+      "id": "shop_the_look_030",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 30",
+      "coordinates": {
+        "x": 1138,
+        "y": 10214,
+        "width": 330,
+        "height": 342
+      },
+      "area": 112860,
+      "center": {
+        "x": 1303,
+        "y": 10385
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-26T12:01:30.896Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 08-05-17 Amazon.in ANAYRA FINE SILVER JEWELLERY.png"
+  }
+}

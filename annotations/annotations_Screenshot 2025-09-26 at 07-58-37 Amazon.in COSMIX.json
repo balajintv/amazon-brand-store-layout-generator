@@ -1,0 +1,479 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-58-37 Amazon.in COSMIX.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 8170
+  },
+  "total_sections": 29,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 126,
+        "y": 89,
+        "width": 1350,
+        "height": 272
+      },
+      "area": 367200,
+      "center": {
+        "x": 801,
+        "y": 225
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 124,
+        "y": 361,
+        "width": 1356,
+        "height": 88
+      },
+      "area": 119328,
+      "center": {
+        "x": 802,
+        "y": 405
+      }
+    },
+    {
+      "id": "shop_the_look_003",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 3",
+      "coordinates": {
+        "x": 128,
+        "y": 454,
+        "width": 1336,
+        "height": 664
+      },
+      "area": 887104,
+      "center": {
+        "x": 796,
+        "y": 786
+      }
+    },
+    {
+      "id": "static_image_004",
+      "type": "static_image",
+      "name": "static image Section 4",
+      "coordinates": {
+        "x": 130,
+        "y": 1118,
+        "width": 1336,
+        "height": 104
+      },
+      "area": 138944,
+      "center": {
+        "x": 798,
+        "y": 1170
+      }
+    },
+    {
+      "id": "linkout_image_005",
+      "type": "linkout_image",
+      "name": "linkout image Section 5",
+      "coordinates": {
+        "x": 130,
+        "y": 1226,
+        "width": 426,
+        "height": 394
+      },
+      "area": 167844,
+      "center": {
+        "x": 343,
+        "y": 1423
+      }
+    },
+    {
+      "id": "linkout_image_006",
+      "type": "linkout_image",
+      "name": "linkout image Section 6",
+      "coordinates": {
+        "x": 574,
+        "y": 1226,
+        "width": 428,
+        "height": 394
+      },
+      "area": 168632,
+      "center": {
+        "x": 788,
+        "y": 1423
+      }
+    },
+    {
+      "id": "linkout_image_007",
+      "type": "linkout_image",
+      "name": "linkout image Section 7",
+      "coordinates": {
+        "x": 1042,
+        "y": 1226,
+        "width": 416,
+        "height": 392
+      },
+      "area": 163072,
+      "center": {
+        "x": 1250,
+        "y": 1422
+      }
+    },
+    {
+      "id": "section_heading_008",
+      "type": "section_heading",
+      "name": "section heading Section 8",
+      "coordinates": {
+        "x": 132,
+        "y": 1624,
+        "width": 1330,
+        "height": 96
+      },
+      "area": 127680,
+      "center": {
+        "x": 797,
+        "y": 1672
+      }
+    },
+    {
+      "id": "text_block_009",
+      "type": "text_block",
+      "name": "text block Section 9",
+      "coordinates": {
+        "x": 138,
+        "y": 1722,
+        "width": 318,
+        "height": 186
+      },
+      "area": 59148,
+      "center": {
+        "x": 297,
+        "y": 1815
+      }
+    },
+    {
+      "id": "text_block_010",
+      "type": "text_block",
+      "name": "text block Section 10",
+      "coordinates": {
+        "x": 464,
+        "y": 1722,
+        "width": 314,
+        "height": 186
+      },
+      "area": 58404,
+      "center": {
+        "x": 621,
+        "y": 1815
+      }
+    },
+    {
+      "id": "text_block_011",
+      "type": "text_block",
+      "name": "text block Section 11",
+      "coordinates": {
+        "x": 790,
+        "y": 1724,
+        "width": 300,
+        "height": 186
+      },
+      "area": 55800,
+      "center": {
+        "x": 940,
+        "y": 1817
+      }
+    },
+    {
+      "id": "text_block_012",
+      "type": "text_block",
+      "name": "text block Section 12",
+      "coordinates": {
+        "x": 1102,
+        "y": 1728,
+        "width": 354,
+        "height": 182
+      },
+      "area": 64428,
+      "center": {
+        "x": 1279,
+        "y": 1819
+      }
+    },
+    {
+      "id": "video_013",
+      "type": "video",
+      "name": "video Section 13",
+      "coordinates": {
+        "x": 138,
+        "y": 1918,
+        "width": 1336,
+        "height": 756
+      },
+      "area": 1010016,
+      "center": {
+        "x": 806,
+        "y": 2296
+      }
+    },
+    {
+      "id": "section_heading_014",
+      "type": "section_heading",
+      "name": "section heading Section 14",
+      "coordinates": {
+        "x": 138,
+        "y": 2678,
+        "width": 1336,
+        "height": 66
+      },
+      "area": 88176,
+      "center": {
+        "x": 806,
+        "y": 2711
+      }
+    },
+    {
+      "id": "static_image_015",
+      "type": "static_image",
+      "name": "static image Section 15",
+      "coordinates": {
+        "x": 140,
+        "y": 2746,
+        "width": 1342,
+        "height": 80
+      },
+      "area": 107360,
+      "center": {
+        "x": 811,
+        "y": 2786
+      }
+    },
+    {
+      "id": "section_heading_016",
+      "type": "section_heading",
+      "name": "section heading Section 16",
+      "coordinates": {
+        "x": 148,
+        "y": 2828,
+        "width": 1332,
+        "height": 108
+      },
+      "area": 143856,
+      "center": {
+        "x": 814,
+        "y": 2882
+      }
+    },
+    {
+      "id": "reels_017",
+      "type": "reels",
+      "name": "reels Section 17",
+      "coordinates": {
+        "x": 140,
+        "y": 2936,
+        "width": 1336,
+        "height": 590
+      },
+      "area": 788240,
+      "center": {
+        "x": 808,
+        "y": 3231
+      }
+    },
+    {
+      "id": "section_heading_018",
+      "type": "section_heading",
+      "name": "section heading Section 18",
+      "coordinates": {
+        "x": 142,
+        "y": 3534,
+        "width": 1332,
+        "height": 98
+      },
+      "area": 130536,
+      "center": {
+        "x": 808,
+        "y": 3583
+      }
+    },
+    {
+      "id": "static_image_019",
+      "type": "static_image",
+      "name": "static image Section 19",
+      "coordinates": {
+        "x": 142,
+        "y": 3645,
+        "width": 1340,
+        "height": 808
+      },
+      "area": 1082720,
+      "center": {
+        "x": 812,
+        "y": 4049
+      }
+    },
+    {
+      "id": "asin_waterfall_020",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 20",
+      "coordinates": {
+        "x": 136,
+        "y": 4452,
+        "width": 1342,
+        "height": 534
+      },
+      "area": 716628,
+      "center": {
+        "x": 807,
+        "y": 4719
+      }
+    },
+    {
+      "id": "section_heading_021",
+      "type": "section_heading",
+      "name": "section heading Section 21",
+      "coordinates": {
+        "x": 136,
+        "y": 4988,
+        "width": 1342,
+        "height": 98
+      },
+      "area": 131516,
+      "center": {
+        "x": 807,
+        "y": 5037
+      }
+    },
+    {
+      "id": "reels_022",
+      "type": "reels",
+      "name": "reels Section 22",
+      "coordinates": {
+        "x": 136,
+        "y": 5086,
+        "width": 1336,
+        "height": 544
+      },
+      "area": 726784,
+      "center": {
+        "x": 804,
+        "y": 5358
+      }
+    },
+    {
+      "id": "static_image_023",
+      "type": "static_image",
+      "name": "static image Section 23",
+      "coordinates": {
+        "x": 136,
+        "y": 5642,
+        "width": 1330,
+        "height": 640
+      },
+      "area": 851200,
+      "center": {
+        "x": 801,
+        "y": 5962
+      }
+    },
+    {
+      "id": "section_heading_024",
+      "type": "section_heading",
+      "name": "section heading Section 24",
+      "coordinates": {
+        "x": 142,
+        "y": 6292,
+        "width": 1324,
+        "height": 132
+      },
+      "area": 174768,
+      "center": {
+        "x": 804,
+        "y": 6358
+      }
+    },
+    {
+      "id": "testimonial_025",
+      "type": "testimonial",
+      "name": "testimonial Section 25",
+      "coordinates": {
+        "x": 138,
+        "y": 6432,
+        "width": 422,
+        "height": 280
+      },
+      "area": 118160,
+      "center": {
+        "x": 349,
+        "y": 6572
+      }
+    },
+    {
+      "id": "testimonial_026",
+      "type": "testimonial",
+      "name": "testimonial Section 26",
+      "coordinates": {
+        "x": 558,
+        "y": 6432,
+        "width": 430,
+        "height": 284
+      },
+      "area": 122120,
+      "center": {
+        "x": 773,
+        "y": 6574
+      }
+    },
+    {
+      "id": "testimonial_027",
+      "type": "testimonial",
+      "name": "testimonial Section 27",
+      "coordinates": {
+        "x": 992,
+        "y": 6434,
+        "width": 426,
+        "height": 286
+      },
+      "area": 121836,
+      "center": {
+        "x": 1205,
+        "y": 6577
+      }
+    },
+    {
+      "id": "section_heading_028",
+      "type": "section_heading",
+      "name": "section heading Section 28",
+      "coordinates": {
+        "x": 140,
+        "y": 6716,
+        "width": 1326,
+        "height": 120
+      },
+      "area": 159120,
+      "center": {
+        "x": 803,
+        "y": 6776
+      }
+    },
+    {
+      "id": "reels_029",
+      "type": "reels",
+      "name": "reels Section 29",
+      "coordinates": {
+        "x": 138,
+        "y": 6839,
+        "width": 1330,
+        "height": 552
+      },
+      "area": 734160,
+      "center": {
+        "x": 803,
+        "y": 7115
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-26T07:59:47.568Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-58-37 Amazon.in COSMIX.png"
+  }
+}

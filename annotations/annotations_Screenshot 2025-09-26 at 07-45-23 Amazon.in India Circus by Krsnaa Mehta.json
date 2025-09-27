@@ -1,0 +1,591 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-45-23 Amazon.in India Circus by Krsnaa Mehta.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 11381
+  },
+  "total_sections": 36,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 126,
+        "y": 89,
+        "width": 1354,
+        "height": 274
+      },
+      "area": 370996,
+      "center": {
+        "x": 803,
+        "y": 226
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 126,
+        "y": 361,
+        "width": 1358,
+        "height": 86
+      },
+      "area": 116788,
+      "center": {
+        "x": 805,
+        "y": 404
+      }
+    },
+    {
+      "id": "video_003",
+      "type": "video",
+      "name": "video Section 3",
+      "coordinates": {
+        "x": 128,
+        "y": 450,
+        "width": 1356,
+        "height": 680
+      },
+      "area": 922080,
+      "center": {
+        "x": 806,
+        "y": 790
+      }
+    },
+    {
+      "id": "section_heading_004",
+      "type": "section_heading",
+      "name": "section heading Section 4",
+      "coordinates": {
+        "x": 130,
+        "y": 1143,
+        "width": 1364,
+        "height": 98
+      },
+      "area": 133672,
+      "center": {
+        "x": 812,
+        "y": 1192
+      }
+    },
+    {
+      "id": "linkout_image_005",
+      "type": "linkout_image",
+      "name": "linkout image Section 5",
+      "coordinates": {
+        "x": 262,
+        "y": 1268,
+        "width": 410,
+        "height": 356
+      },
+      "area": 145960,
+      "center": {
+        "x": 467,
+        "y": 1446
+      }
+    },
+    {
+      "id": "linkout_image_006",
+      "type": "linkout_image",
+      "name": "linkout image Section 6",
+      "coordinates": {
+        "x": 954,
+        "y": 1274,
+        "width": 384,
+        "height": 338
+      },
+      "area": 129792,
+      "center": {
+        "x": 1146,
+        "y": 1443
+      }
+    },
+    {
+      "id": "section_heading_007",
+      "type": "section_heading",
+      "name": "section heading Section 7",
+      "coordinates": {
+        "x": 152,
+        "y": 1616,
+        "width": 1336,
+        "height": 94
+      },
+      "area": 125584,
+      "center": {
+        "x": 820,
+        "y": 1663
+      }
+    },
+    {
+      "id": "product_selector_008",
+      "type": "product_selector",
+      "name": "product selector Section 8",
+      "coordinates": {
+        "x": 142,
+        "y": 1718,
+        "width": 1340,
+        "height": 416
+      },
+      "area": 557440,
+      "center": {
+        "x": 812,
+        "y": 1926
+      }
+    },
+    {
+      "id": "linkout_image_009",
+      "type": "linkout_image",
+      "name": "linkout image Section 9",
+      "coordinates": {
+        "x": 140,
+        "y": 2149,
+        "width": 1342,
+        "height": 702
+      },
+      "area": 942084,
+      "center": {
+        "x": 811,
+        "y": 2500
+      }
+    },
+    {
+      "id": "section_heading_010",
+      "type": "section_heading",
+      "name": "section heading Section 10",
+      "coordinates": {
+        "x": 144,
+        "y": 2869,
+        "width": 1332,
+        "height": 136
+      },
+      "area": 181152,
+      "center": {
+        "x": 810,
+        "y": 2937
+      }
+    },
+    {
+      "id": "text_block_011",
+      "type": "text_block",
+      "name": "text block Section 11",
+      "coordinates": {
+        "x": 146,
+        "y": 3015,
+        "width": 450,
+        "height": 270
+      },
+      "area": 121500,
+      "center": {
+        "x": 371,
+        "y": 3150
+      }
+    },
+    {
+      "id": "text_block_012",
+      "type": "text_block",
+      "name": "text block Section 12",
+      "coordinates": {
+        "x": 602,
+        "y": 3017,
+        "width": 402,
+        "height": 274
+      },
+      "area": 110148,
+      "center": {
+        "x": 803,
+        "y": 3154
+      }
+    },
+    {
+      "id": "text_block_013",
+      "type": "text_block",
+      "name": "text block Section 13",
+      "coordinates": {
+        "x": 1014,
+        "y": 3017,
+        "width": 462,
+        "height": 286
+      },
+      "area": 132132,
+      "center": {
+        "x": 1245,
+        "y": 3160
+      }
+    },
+    {
+      "id": "section_heading_014",
+      "type": "section_heading",
+      "name": "section heading Section 14",
+      "coordinates": {
+        "x": 146,
+        "y": 3306,
+        "width": 1338,
+        "height": 104
+      },
+      "area": 139152,
+      "center": {
+        "x": 815,
+        "y": 3358
+      }
+    },
+    {
+      "id": "category_carousel_015",
+      "type": "category_carousel",
+      "name": "category carousel Section 15",
+      "coordinates": {
+        "x": 144,
+        "y": 3412,
+        "width": 1344,
+        "height": 246
+      },
+      "area": 330624,
+      "center": {
+        "x": 816,
+        "y": 3535
+      }
+    },
+    {
+      "id": "linkout_image_016",
+      "type": "linkout_image",
+      "name": "linkout image Section 16",
+      "coordinates": {
+        "x": 144,
+        "y": 3665,
+        "width": 1342,
+        "height": 714
+      },
+      "area": 958188,
+      "center": {
+        "x": 815,
+        "y": 4022
+      }
+    },
+    {
+      "id": "section_heading_017",
+      "type": "section_heading",
+      "name": "section heading Section 17",
+      "coordinates": {
+        "x": 146,
+        "y": 4383,
+        "width": 1344,
+        "height": 96
+      },
+      "area": 129024,
+      "center": {
+        "x": 818,
+        "y": 4431
+      }
+    },
+    {
+      "id": "reels_018",
+      "type": "reels",
+      "name": "reels Section 18",
+      "coordinates": {
+        "x": 144,
+        "y": 4490,
+        "width": 1342,
+        "height": 566
+      },
+      "area": 759572,
+      "center": {
+        "x": 815,
+        "y": 4773
+      }
+    },
+    {
+      "id": "linkout_image_019",
+      "type": "linkout_image",
+      "name": "linkout image Section 19",
+      "coordinates": {
+        "x": 136,
+        "y": 5074,
+        "width": 334,
+        "height": 330
+      },
+      "area": 110220,
+      "center": {
+        "x": 303,
+        "y": 5239
+      }
+    },
+    {
+      "id": "linkout_image_020",
+      "type": "linkout_image",
+      "name": "linkout image Section 20",
+      "coordinates": {
+        "x": 474,
+        "y": 5074,
+        "width": 328,
+        "height": 332
+      },
+      "area": 108896,
+      "center": {
+        "x": 638,
+        "y": 5240
+      }
+    },
+    {
+      "id": "linkout_image_021",
+      "type": "linkout_image",
+      "name": "linkout image Section 21",
+      "coordinates": {
+        "x": 804,
+        "y": 5074,
+        "width": 672,
+        "height": 666
+      },
+      "area": 447552,
+      "center": {
+        "x": 1140,
+        "y": 5407
+      }
+    },
+    {
+      "id": "linkout_image_022",
+      "type": "linkout_image",
+      "name": "linkout image Section 22",
+      "coordinates": {
+        "x": 136,
+        "y": 5410,
+        "width": 332,
+        "height": 328
+      },
+      "area": 108896,
+      "center": {
+        "x": 302,
+        "y": 5574
+      }
+    },
+    {
+      "id": "linkout_image_023",
+      "type": "linkout_image",
+      "name": "linkout image Section 23",
+      "coordinates": {
+        "x": 468,
+        "y": 5408,
+        "width": 332,
+        "height": 326
+      },
+      "area": 108232,
+      "center": {
+        "x": 634,
+        "y": 5571
+      }
+    },
+    {
+      "id": "video_024",
+      "type": "video",
+      "name": "video Section 24",
+      "coordinates": {
+        "x": 132,
+        "y": 5741,
+        "width": 1344,
+        "height": 674
+      },
+      "area": 905856,
+      "center": {
+        "x": 804,
+        "y": 6078
+      }
+    },
+    {
+      "id": "section_heading_025",
+      "type": "section_heading",
+      "name": "section heading Section 25",
+      "coordinates": {
+        "x": 144,
+        "y": 6417,
+        "width": 1328,
+        "height": 82
+      },
+      "area": 108896,
+      "center": {
+        "x": 808,
+        "y": 6458
+      }
+    },
+    {
+      "id": "testimonial_026",
+      "type": "testimonial",
+      "name": "testimonial Section 26",
+      "coordinates": {
+        "x": 142,
+        "y": 6514,
+        "width": 494,
+        "height": 264
+      },
+      "area": 130416,
+      "center": {
+        "x": 389,
+        "y": 6646
+      }
+    },
+    {
+      "id": "testimonial_027",
+      "type": "testimonial",
+      "name": "testimonial Section 27",
+      "coordinates": {
+        "x": 642,
+        "y": 6518,
+        "width": 504,
+        "height": 262
+      },
+      "area": 132048,
+      "center": {
+        "x": 894,
+        "y": 6649
+      }
+    },
+    {
+      "id": "testimonial_028",
+      "type": "testimonial",
+      "name": "testimonial Section 28",
+      "coordinates": {
+        "x": 1152,
+        "y": 6512,
+        "width": 332,
+        "height": 264
+      },
+      "area": 87648,
+      "center": {
+        "x": 1318,
+        "y": 6644
+      }
+    },
+    {
+      "id": "linkout_image_029",
+      "type": "linkout_image",
+      "name": "linkout image Section 29",
+      "coordinates": {
+        "x": 138,
+        "y": 6787,
+        "width": 660,
+        "height": 656
+      },
+      "area": 432960,
+      "center": {
+        "x": 468,
+        "y": 7115
+      }
+    },
+    {
+      "id": "linkout_image_030",
+      "type": "linkout_image",
+      "name": "linkout image Section 30",
+      "coordinates": {
+        "x": 806,
+        "y": 6787,
+        "width": 328,
+        "height": 330
+      },
+      "area": 108240,
+      "center": {
+        "x": 970,
+        "y": 6952
+      }
+    },
+    {
+      "id": "linkout_image_031",
+      "type": "linkout_image",
+      "name": "linkout image Section 31",
+      "coordinates": {
+        "x": 1136,
+        "y": 6787,
+        "width": 340,
+        "height": 334
+      },
+      "area": 113560,
+      "center": {
+        "x": 1306,
+        "y": 6954
+      }
+    },
+    {
+      "id": "linkout_image_032",
+      "type": "linkout_image",
+      "name": "linkout image Section 32",
+      "coordinates": {
+        "x": 802,
+        "y": 7121,
+        "width": 332,
+        "height": 324
+      },
+      "area": 107568,
+      "center": {
+        "x": 968,
+        "y": 7283
+      }
+    },
+    {
+      "id": "linkout_image_033",
+      "type": "linkout_image",
+      "name": "linkout image Section 33",
+      "coordinates": {
+        "x": 1136,
+        "y": 7125,
+        "width": 332,
+        "height": 324
+      },
+      "area": 107568,
+      "center": {
+        "x": 1302,
+        "y": 7287
+      }
+    },
+    {
+      "id": "video_034",
+      "type": "video",
+      "name": "video Section 34",
+      "coordinates": {
+        "x": 140,
+        "y": 7448,
+        "width": 1340,
+        "height": 678
+      },
+      "area": 908520,
+      "center": {
+        "x": 810,
+        "y": 7787
+      }
+    },
+    {
+      "id": "section_heading_035",
+      "type": "section_heading",
+      "name": "section heading Section 35",
+      "coordinates": {
+        "x": 146,
+        "y": 8134,
+        "width": 1346,
+        "height": 88
+      },
+      "area": 118448,
+      "center": {
+        "x": 819,
+        "y": 8178
+      }
+    },
+    {
+      "id": "asin_waterfall_036",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 36",
+      "coordinates": {
+        "x": 142,
+        "y": 8232,
+        "width": 1312,
+        "height": 1002
+      },
+      "area": 1314624,
+      "center": {
+        "x": 798,
+        "y": 8733
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-26T12:11:34.712Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-45-23 Amazon.in India Circus by Krsnaa Mehta.png"
+  }
+}

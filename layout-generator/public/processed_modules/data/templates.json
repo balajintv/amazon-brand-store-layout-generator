@@ -1,0 +1,68 @@
+{
+  "basic_layouts": [
+    {
+      "name": "Hero + Products",
+      "description": "Simple layout with hero section followed by product grid",
+      "sections": [
+        "hero",
+        "products"
+      ],
+      "use_cases": [
+        "Product launches",
+        "Brand showcases"
+      ]
+    },
+    {
+      "name": "Full Brand Experience",
+      "description": "Comprehensive layout with all major section types",
+      "sections": [
+        "mast",
+        "navigation",
+        "hero",
+        "products",
+        "testimonial",
+        "video"
+      ],
+      "use_cases": [
+        "Complete brand stores",
+        "Campaign pages"
+      ]
+    }
+  ],
+  "component_hierarchy": {
+    "header_sections": [
+      "mast",
+      "navigation"
+    ],
+    "hero_sections": [
+      "hero",
+      "video"
+    ],
+    "content_sections": [
+      "products",
+      "gallery",
+      "text_block",
+      "testimonial"
+    ],
+    "interactive_sections": [
+      "product_selector",
+      "reels",
+      "category_carousel"
+    ],
+    "footer_sections": [
+      "footer",
+      "linkout_image"
+    ]
+  },
+  "responsive_guidelines": {
+    "mobile_adaptations": {
+      "stack_sections": true,
+      "reduce_padding": true,
+      "single_column": true
+    },
+    "tablet_adaptations": {
+      "two_column_max": true,
+      "medium_padding": true
+    }
+  }
+}

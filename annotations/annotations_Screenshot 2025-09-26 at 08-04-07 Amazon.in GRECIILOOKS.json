@@ -1,0 +1,415 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 08-04-07 Amazon.in GRECIILOOKS.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 32765
+  },
+  "total_sections": 25,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 118,
+        "y": 92,
+        "width": 1352,
+        "height": 304
+      },
+      "area": 411008,
+      "center": {
+        "x": 794,
+        "y": 244
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 118,
+        "y": 390,
+        "width": 1366,
+        "height": 60
+      },
+      "area": 81960,
+      "center": {
+        "x": 801,
+        "y": 420
+      }
+    },
+    {
+      "id": "section_heading_003",
+      "type": "section_heading",
+      "name": "section heading Section 3",
+      "coordinates": {
+        "x": 118,
+        "y": 452,
+        "width": 1366,
+        "height": 128
+      },
+      "area": 174848,
+      "center": {
+        "x": 801,
+        "y": 516
+      }
+    },
+    {
+      "id": "category_carousel_004",
+      "type": "category_carousel",
+      "name": "category carousel Section 4",
+      "coordinates": {
+        "x": 118,
+        "y": 580,
+        "width": 1364,
+        "height": 244
+      },
+      "area": 332816,
+      "center": {
+        "x": 800,
+        "y": 702
+      }
+    },
+    {
+      "id": "section_heading_005",
+      "type": "section_heading",
+      "name": "section heading Section 5",
+      "coordinates": {
+        "x": 120,
+        "y": 826,
+        "width": 1366,
+        "height": 114
+      },
+      "area": 155724,
+      "center": {
+        "x": 803,
+        "y": 883
+      }
+    },
+    {
+      "id": "reels_006",
+      "type": "reels",
+      "name": "reels Section 6",
+      "coordinates": {
+        "x": 118,
+        "y": 942,
+        "width": 1370,
+        "height": 568
+      },
+      "area": 778160,
+      "center": {
+        "x": 803,
+        "y": 1226
+      }
+    },
+    {
+      "id": "section_heading_007",
+      "type": "section_heading",
+      "name": "section heading Section 7",
+      "coordinates": {
+        "x": 120,
+        "y": 1511,
+        "width": 1380,
+        "height": 132
+      },
+      "area": 182160,
+      "center": {
+        "x": 810,
+        "y": 1577
+      }
+    },
+    {
+      "id": "category_carousel_008",
+      "type": "category_carousel",
+      "name": "category carousel Section 8",
+      "coordinates": {
+        "x": 118,
+        "y": 1639,
+        "width": 1392,
+        "height": 236
+      },
+      "area": 328512,
+      "center": {
+        "x": 814,
+        "y": 1757
+      }
+    },
+    {
+      "id": "section_heading_009",
+      "type": "section_heading",
+      "name": "section heading Section 9",
+      "coordinates": {
+        "x": 114,
+        "y": 1875,
+        "width": 1402,
+        "height": 116
+      },
+      "area": 162632,
+      "center": {
+        "x": 815,
+        "y": 1933
+      }
+    },
+    {
+      "id": "reels_010",
+      "type": "reels",
+      "name": "reels Section 10",
+      "coordinates": {
+        "x": 118,
+        "y": 1987,
+        "width": 1396,
+        "height": 570
+      },
+      "area": 795720,
+      "center": {
+        "x": 816,
+        "y": 2272
+      }
+    },
+    {
+      "id": "section_heading_011",
+      "type": "section_heading",
+      "name": "section heading Section 11",
+      "coordinates": {
+        "x": 118,
+        "y": 2557,
+        "width": 1396,
+        "height": 124
+      },
+      "area": 173104,
+      "center": {
+        "x": 816,
+        "y": 2619
+      }
+    },
+    {
+      "id": "product_selector_012",
+      "type": "product_selector",
+      "name": "product selector Section 12",
+      "coordinates": {
+        "x": 116,
+        "y": 2681,
+        "width": 1386,
+        "height": 634
+      },
+      "area": 878724,
+      "center": {
+        "x": 809,
+        "y": 2998
+      }
+    },
+    {
+      "id": "section_heading_013",
+      "type": "section_heading",
+      "name": "section heading Section 13",
+      "coordinates": {
+        "x": 114,
+        "y": 3320,
+        "width": 1398,
+        "height": 126
+      },
+      "area": 176148,
+      "center": {
+        "x": 813,
+        "y": 3383
+      }
+    },
+    {
+      "id": "static_image_014",
+      "type": "static_image",
+      "name": "static image Section 14",
+      "coordinates": {
+        "x": 114,
+        "y": 3450,
+        "width": 1386,
+        "height": 664
+      },
+      "area": 920304,
+      "center": {
+        "x": 807,
+        "y": 3782
+      }
+    },
+    {
+      "id": "section_heading_015",
+      "type": "section_heading",
+      "name": "section heading Section 15",
+      "coordinates": {
+        "x": 114,
+        "y": 4119,
+        "width": 1392,
+        "height": 100
+      },
+      "area": 139200,
+      "center": {
+        "x": 810,
+        "y": 4169
+      }
+    },
+    {
+      "id": "static_image_016",
+      "type": "static_image",
+      "name": "static image Section 16",
+      "coordinates": {
+        "x": 114,
+        "y": 4223,
+        "width": 1390,
+        "height": 476
+      },
+      "area": 661640,
+      "center": {
+        "x": 809,
+        "y": 4461
+      }
+    },
+    {
+      "id": "section_heading_017",
+      "type": "section_heading",
+      "name": "section heading Section 17",
+      "coordinates": {
+        "x": 114,
+        "y": 4700,
+        "width": 1398,
+        "height": 102
+      },
+      "area": 142596,
+      "center": {
+        "x": 813,
+        "y": 4751
+      }
+    },
+    {
+      "id": "asin_waterfall_018",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 18",
+      "coordinates": {
+        "x": 116,
+        "y": 4803,
+        "width": 1406,
+        "height": 308
+      },
+      "area": 433048,
+      "center": {
+        "x": 819,
+        "y": 4957
+      }
+    },
+    {
+      "id": "section_heading_019",
+      "type": "section_heading",
+      "name": "section heading Section 19",
+      "coordinates": {
+        "x": 118,
+        "y": 5111,
+        "width": 1416,
+        "height": 100
+      },
+      "area": 141600,
+      "center": {
+        "x": 826,
+        "y": 5161
+      }
+    },
+    {
+      "id": "testimonial_020",
+      "type": "testimonial",
+      "name": "testimonial Section 20",
+      "coordinates": {
+        "x": 154,
+        "y": 5229,
+        "width": 294,
+        "height": 280
+      },
+      "area": 82320,
+      "center": {
+        "x": 301,
+        "y": 5369
+      }
+    },
+    {
+      "id": "testimonial_021",
+      "type": "testimonial",
+      "name": "testimonial Section 21",
+      "coordinates": {
+        "x": 492,
+        "y": 5227,
+        "width": 284,
+        "height": 280
+      },
+      "area": 79520,
+      "center": {
+        "x": 634,
+        "y": 5367
+      }
+    },
+    {
+      "id": "testimonial_022",
+      "type": "testimonial",
+      "name": "testimonial Section 22",
+      "coordinates": {
+        "x": 824,
+        "y": 5229,
+        "width": 290,
+        "height": 278
+      },
+      "area": 80620,
+      "center": {
+        "x": 969,
+        "y": 5368
+      }
+    },
+    {
+      "id": "testimonial_023",
+      "type": "testimonial",
+      "name": "testimonial Section 23",
+      "coordinates": {
+        "x": 1152,
+        "y": 5231,
+        "width": 296,
+        "height": 278
+      },
+      "area": 82288,
+      "center": {
+        "x": 1300,
+        "y": 5370
+      }
+    },
+    {
+      "id": "section_heading_024",
+      "type": "section_heading",
+      "name": "section heading Section 24",
+      "coordinates": {
+        "x": 154,
+        "y": 5514,
+        "width": 1296,
+        "height": 102
+      },
+      "area": 132192,
+      "center": {
+        "x": 802,
+        "y": 5565
+      }
+    },
+    {
+      "id": "asin_waterfall_025",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 25",
+      "coordinates": {
+        "x": 146,
+        "y": 5629,
+        "width": 1316,
+        "height": 3437
+      },
+      "area": 4523092,
+      "center": {
+        "x": 804,
+        "y": 7347
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-26T10:35:05.965Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 08-04-07 Amazon.in GRECIILOOKS.png"
+  }
+}
