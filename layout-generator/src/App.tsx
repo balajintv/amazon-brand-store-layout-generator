@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ModuleSection, ViewMode } from './types';
 import { moduleService } from './services/moduleService';
-import { Zap, Save, Download, Shuffle } from 'lucide-react';
+import { Zap, Save, Download, Shuffle, Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface GeneratedLayout {
   id: string;
@@ -18,7 +18,25 @@ function App() {
   const [viewMode, setViewMode] = useState<ViewMode>('mobile');
   const [isGenerating, setIsGenerating] = useState(false);
   const [generationCount, setGenerationCount] = useState(0);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
   const layoutRef = useRef<HTMLDivElement>(null);
+
+  // Check if mobile on mount and window resize
+  useEffect(() => {
+    const checkMobile = () => {
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      // On mobile, start with sidebar closed
+      if (mobile && sidebarOpen) {
+        setSidebarOpen(false);
+      }
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     loadModules();
@@ -53,6 +71,11 @@ function App() {
     setCurrentLayout(newLayout);
     setGenerationCount(prev => prev + 1);
     setIsGenerating(false);
+
+    // Auto-collapse sidebar on mobile after generation
+    if (isMobile) {
+      setSidebarOpen(false);
+    }
   };
 
   const createIntelligentLayout = (): ModuleSection[] => {
@@ -516,60 +539,127 @@ function App() {
       {/* Top Header */}
       <header className="amazon-header">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 md:gap-4">
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setSidebarOpen(!sidebarOpen)}
+              className="md:hidden p-2 hover:bg-white hover:bg-opacity-10 rounded"
+            >
+              {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+
             <div className="flex items-center gap-2">
-              <Zap className="amazon-orange-text" size={24} />
-              <h1 className="text-xl font-bold">Amazon Brand Store Layout Generator</h1>
+              <Zap className="amazon-orange-text" size={isMobile ? 20 : 24} />
+              <h1 className={`font-bold ${isMobile ? 'text-lg' : 'text-xl'}`}>
+                {isMobile ? 'Layout Generator' : 'Amazon Brand Store Layout Generator'}
+              </h1>
             </div>
-            <div className="text-sm opacity-75">
-              Automatically generate professional brand store layouts
-            </div>
+
+            {!isMobile && (
+              <div className="text-sm opacity-75">
+                Automatically generate professional brand store layouts
+              </div>
+            )}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1 md:gap-3">
             <button
               onClick={generateLayout}
               disabled={isGenerating || modules.length === 0}
-              className="btn btn-primary"
+              className={`btn btn-primary ${isMobile ? 'px-3 py-2 text-sm' : ''}`}
             >
               {isGenerating ? (
                 <>
                   <div className="loading-spinner"></div>
-                  Generating...
+                  {!isMobile && 'Generating...'}
                 </>
               ) : (
                 <>
-                  <Shuffle size={16} />
-                  Generate Layout
+                  <Shuffle size={isMobile ? 14 : 16} />
+                  {isMobile ? 'Generate' : 'Generate Layout'}
                 </>
               )}
             </button>
 
-            <button
-              onClick={saveLayout}
-              disabled={!currentLayout}
-              className="btn btn-success"
-            >
-              <Save size={16} />
-              Save Layout
-            </button>
+            {!isMobile && (
+              <>
+                <button
+                  onClick={saveLayout}
+                  disabled={!currentLayout}
+                  className="btn btn-success"
+                >
+                  <Save size={16} />
+                  Save Layout
+                </button>
 
-            <button
-              onClick={saveLayoutAsImage}
-              disabled={!currentLayout}
-              className="btn btn-secondary"
-            >
-              <Download size={16} />
-              Save as Image
-            </button>
+                <button
+                  onClick={saveLayoutAsImage}
+                  disabled={!currentLayout}
+                  className="btn btn-secondary"
+                >
+                  <Download size={16} />
+                  Save as Image
+                </button>
+              </>
+            )}
+
+            {/* Mobile Actions Menu */}
+            {isMobile && currentLayout && (
+              <button
+                onClick={() => setSidebarOpen(true)}
+                className="btn btn-secondary px-2 py-2 text-sm"
+              >
+                <Save size={14} />
+              </button>
+            )}
           </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <div className="flex-1 flex min-h-0">
+      <div className="flex-1 flex min-h-0 relative">
+        {/* Sidebar Toggle Arrow (when collapsed) */}
+        {!sidebarOpen && (
+          <button
+            onClick={() => setSidebarOpen(true)}
+            className="fixed left-0 top-1/2 transform -translate-y-1/2 z-30 bg-amazon-orange text-white p-2 rounded-r-lg shadow-lg hover:bg-opacity-80 transition-all"
+            style={{ marginTop: '32px' }}
+          >
+            <ChevronRight size={16} />
+          </button>
+        )}
+
+        {/* Sidebar Overlay (Mobile) */}
+        {isMobile && sidebarOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-20"
+            onClick={() => setSidebarOpen(false)}
+          />
+        )}
+
         {/* Sidebar */}
-        <div className="sidebar">
+        <div
+          className={`
+            ${isMobile ? 'fixed left-0 top-0 h-full z-30' : 'relative'}
+            ${sidebarOpen ? 'translate-x-0' : (isMobile ? '-translate-x-full' : '-translate-x-80')}
+            sidebar transition-transform duration-300 ease-in-out
+            ${isMobile ? 'pt-16' : ''}
+          `}
+          style={{ marginTop: isMobile ? '64px' : '0' }}
+        >
+          {/* Sidebar Close Button (Mobile) */}
+          {isMobile && (
+            <div className="p-2 border-b flex justify-between items-center">
+              <h3 className="text-sm font-semibold amazon-blue-text">Controls</h3>
+              <button
+                onClick={() => setSidebarOpen(false)}
+                className="p-1 hover:bg-gray-100 rounded"
+              >
+                <X size={16} />
+              </button>
+            </div>
+          )}
+
           {/* View Mode Controls */}
           <div className="p-4 border-b">
             <h3 className="text-sm font-semibold amazon-blue-text mb-3">View Mode</h3>
@@ -589,6 +679,31 @@ function App() {
               ))}
             </div>
           </div>
+
+          {/* Mobile Actions */}
+          {isMobile && (
+            <div className="p-4 border-b">
+              <h3 className="text-sm font-semibold amazon-blue-text mb-3">Actions</h3>
+              <div className="space-y-2">
+                <button
+                  onClick={saveLayout}
+                  disabled={!currentLayout}
+                  className="btn btn-success w-full text-sm"
+                >
+                  <Save size={14} />
+                  Save Layout
+                </button>
+                <button
+                  onClick={saveLayoutAsImage}
+                  disabled={!currentLayout}
+                  className="btn btn-secondary w-full text-sm"
+                >
+                  <Download size={14} />
+                  Save as Image
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Layout Stats */}
           {currentLayout && (

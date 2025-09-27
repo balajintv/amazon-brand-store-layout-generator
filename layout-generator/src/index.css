@@ -291,10 +291,11 @@ code {
   font-size: 1rem; /* Restore font size for content */
 }
 
-/* Responsive */
+/* Mobile Responsive Sidebar */
 @media (max-width: 768px) {
   .sidebar {
-    width: 280px;
+    width: 320px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
   }
 
   .grid-cols-4 {
@@ -303,5 +304,39 @@ code {
 
   .grid-cols-3 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Mobile header adjustments */
+  .amazon-header {
+    padding: 0.75rem 1rem;
+    position: relative;
+    z-index: 40;
+  }
+
+  /* Ensure content doesn't overflow on mobile */
+  .main-content {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Mobile button adjustments */
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Sidebar transitions */
+.sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay for mobile sidebar */
+@media (max-width: 768px) {
+  .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
   }
 }
