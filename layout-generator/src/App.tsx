@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ModuleSection, ViewMode } from './types';
 import { moduleService } from './services/moduleService';
 import { Zap, Save, Download, Shuffle, Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import html2canvas from 'html2canvas';
 
 interface GeneratedLayout {
   id: string;
@@ -247,9 +248,31 @@ function App() {
     if (!layoutRef.current || !currentLayout) return;
 
     try {
-      // For now, we'll use a simple approach to save as image
-      // In a real implementation, you could use html2canvas or similar
-      alert('Save as Image feature will be implemented with proper canvas library');
+      // Create canvas from the layout element
+      const canvas = await html2canvas(layoutRef.current, {
+        background: '#ffffff',
+        scale: 1,
+        useCORS: true,
+        allowTaint: true,
+        height: layoutRef.current.scrollHeight,
+        width: layoutRef.current.scrollWidth
+      });
+
+      // Convert canvas to blob
+      canvas.toBlob((blob) => {
+        if (blob) {
+          // Create download link
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = `${currentLayout.name.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_layout.png`;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+        }
+      }, 'image/png');
+
     } catch (error) {
       console.error('Failed to save layout as image:', error);
       alert('Failed to save layout as image. Please try again.');
@@ -623,7 +646,6 @@ function App() {
           <button
             onClick={() => setSidebarOpen(true)}
             className="fixed left-0 top-1/2 transform -translate-y-1/2 z-30 bg-amazon-orange text-white p-2 rounded-r-lg shadow-lg hover:bg-opacity-80 transition-all"
-            style={{ marginTop: '32px' }}
           >
             <ChevronRight size={16} />
           </button>
@@ -638,15 +660,14 @@ function App() {
         )}
 
         {/* Sidebar */}
-        <div
-          className={`
-            ${isMobile ? 'fixed left-0 top-0 h-full z-30' : 'relative'}
-            ${sidebarOpen ? 'translate-x-0' : (isMobile ? '-translate-x-full' : '-translate-x-80')}
-            sidebar transition-transform duration-300 ease-in-out
-            ${isMobile ? 'pt-16' : ''}
-          `}
-          style={{ marginTop: isMobile ? '64px' : '0' }}
-        >
+        {(!isMobile || sidebarOpen) && (
+          <div
+            className={`
+              ${isMobile ? 'fixed left-0 top-16 h-full z-30 bg-white' : 'relative'}
+              ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+              sidebar transition-transform duration-300 ease-in-out
+            `}
+          >
           {/* Sidebar Close Button (Mobile) */}
           {isMobile && (
             <div className="p-2 border-b flex justify-between items-center">
@@ -758,10 +779,10 @@ function App() {
               </div>
             )}
           </div>
-        </div>
+        )}
 
         {/* Layout Display */}
-        <div className="main-content">
+        <div className={`main-content ${isMobile && sidebarOpen ? 'hidden' : ''}`}>
           <div className="canvas-container">
             {!currentLayout ? (
               <div className="canvas flex items-center justify-center">
