@@ -29,7 +29,7 @@ function App() {
       const mobile = window.innerWidth < 768;
       setIsMobile(mobile);
       // On mobile, start with sidebar closed
-      if (mobile && sidebarOpen) {
+      if (mobile) {
         setSidebarOpen(false);
       }
     };
@@ -782,7 +782,7 @@ function App() {
         )}
 
         {/* Layout Display */}
-        <div className={`main-content ${isMobile && sidebarOpen ? 'hidden' : ''}`}>
+        <div className="main-content">
           <div className="canvas-container">
             {!currentLayout ? (
               <div className="canvas flex items-center justify-center">

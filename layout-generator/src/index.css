@@ -294,11 +294,19 @@ code {
 /* Mobile Responsive Sidebar */
 @media (max-width: 768px) {
   .sidebar {
-    width: 320px;
+    width: 75vw;
+    max-width: 280px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
     height: calc(100vh - 64px);
   }
+}
 
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 80vw;
+    max-width: 260px;
+  }
   .grid-cols-4 {
     grid-template-columns: repeat(2, 1fr);
   }
