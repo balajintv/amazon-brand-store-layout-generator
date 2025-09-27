@@ -251,7 +251,6 @@ function App() {
       // Create canvas from the layout element
       const canvas = await html2canvas(layoutRef.current, {
         background: '#ffffff',
-        scale: 1,
         useCORS: true,
         allowTaint: true,
         height: layoutRef.current.scrollHeight,
@@ -779,6 +778,7 @@ function App() {
               </div>
             )}
           </div>
+        </div>
         )}
 
         {/* Layout Display */}
@@ -854,8 +854,6 @@ function App() {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }
