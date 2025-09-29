@@ -1,0 +1,607 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-31-34 Amazon.in MAXPRO.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 10972
+  },
+  "total_sections": 37,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 126,
+        "y": 86,
+        "width": 1350,
+        "height": 278
+      },
+      "area": 375300,
+      "center": {
+        "x": 801,
+        "y": 225
+      }
+    },
+    {
+      "id": "video_002",
+      "type": "video",
+      "name": "video Section 2",
+      "coordinates": {
+        "x": 136,
+        "y": 446,
+        "width": 1336,
+        "height": 760
+      },
+      "area": 1015360,
+      "center": {
+        "x": 804,
+        "y": 826
+      }
+    },
+    {
+      "id": "section_heading_003",
+      "type": "section_heading",
+      "name": "section heading Section 3",
+      "coordinates": {
+        "x": 136,
+        "y": 1214,
+        "width": 1338,
+        "height": 140
+      },
+      "area": 187320,
+      "center": {
+        "x": 805,
+        "y": 1284
+      }
+    },
+    {
+      "id": "category_carousel_004",
+      "type": "category_carousel",
+      "name": "category carousel Section 4",
+      "coordinates": {
+        "x": 140,
+        "y": 1360,
+        "width": 1330,
+        "height": 206
+      },
+      "area": 273980,
+      "center": {
+        "x": 805,
+        "y": 1463
+      }
+    },
+    {
+      "id": "product_selector_005",
+      "type": "product_selector",
+      "name": "product selector Section 5",
+      "coordinates": {
+        "x": 136,
+        "y": 1576,
+        "width": 1338,
+        "height": 432
+      },
+      "area": 578016,
+      "center": {
+        "x": 805,
+        "y": 1792
+      }
+    },
+    {
+      "id": "static_image_006",
+      "type": "static_image",
+      "name": "static image Section 6",
+      "coordinates": {
+        "x": 134,
+        "y": 2031,
+        "width": 1336,
+        "height": 894
+      },
+      "area": 1194384,
+      "center": {
+        "x": 802,
+        "y": 2478
+      }
+    },
+    {
+      "id": "section_heading_007",
+      "type": "section_heading",
+      "name": "section heading Section 7",
+      "coordinates": {
+        "x": 130,
+        "y": 2934,
+        "width": 1344,
+        "height": 128
+      },
+      "area": 172032,
+      "center": {
+        "x": 802,
+        "y": 2998
+      }
+    },
+    {
+      "id": "reels_008",
+      "type": "reels",
+      "name": "reels Section 8",
+      "coordinates": {
+        "x": 134,
+        "y": 3068,
+        "width": 1342,
+        "height": 498
+      },
+      "area": 668316,
+      "center": {
+        "x": 805,
+        "y": 3317
+      }
+    },
+    {
+      "id": "section_heading_009",
+      "type": "section_heading",
+      "name": "section heading Section 9",
+      "coordinates": {
+        "x": 132,
+        "y": 3576,
+        "width": 1350,
+        "height": 128
+      },
+      "area": 172800,
+      "center": {
+        "x": 807,
+        "y": 3640
+      }
+    },
+    {
+      "id": "asin_waterfall_010",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 10",
+      "coordinates": {
+        "x": 134,
+        "y": 3723,
+        "width": 1324,
+        "height": 1020
+      },
+      "area": 1350480,
+      "center": {
+        "x": 796,
+        "y": 4233
+      }
+    },
+    {
+      "id": "shop_the_look_011",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 11",
+      "coordinates": {
+        "x": 132,
+        "y": 4750,
+        "width": 1336,
+        "height": 968
+      },
+      "area": 1293248,
+      "center": {
+        "x": 800,
+        "y": 5234
+      }
+    },
+    {
+      "id": "section_heading_012",
+      "type": "section_heading",
+      "name": "section heading Section 12",
+      "coordinates": {
+        "x": 128,
+        "y": 5724,
+        "width": 1344,
+        "height": 124
+      },
+      "area": 166656,
+      "center": {
+        "x": 800,
+        "y": 5786
+      }
+    },
+    {
+      "id": "testimonial_013",
+      "type": "testimonial",
+      "name": "testimonial Section 13",
+      "coordinates": {
+        "x": 152,
+        "y": 5971,
+        "width": 286,
+        "height": 292
+      },
+      "area": 83512,
+      "center": {
+        "x": 295,
+        "y": 6117
+      }
+    },
+    {
+      "id": "testimonial_014",
+      "type": "testimonial",
+      "name": "testimonial Section 14",
+      "coordinates": {
+        "x": 442,
+        "y": 5971,
+        "width": 282,
+        "height": 294
+      },
+      "area": 82908,
+      "center": {
+        "x": 583,
+        "y": 6118
+      }
+    },
+    {
+      "id": "testimonial_015",
+      "type": "testimonial",
+      "name": "testimonial Section 15",
+      "coordinates": {
+        "x": 726,
+        "y": 5969,
+        "width": 284,
+        "height": 298
+      },
+      "area": 84632,
+      "center": {
+        "x": 868,
+        "y": 6118
+      }
+    },
+    {
+      "id": "testimonial_016",
+      "type": "testimonial",
+      "name": "testimonial Section 16",
+      "coordinates": {
+        "x": 1014,
+        "y": 5969,
+        "width": 280,
+        "height": 300
+      },
+      "area": 84000,
+      "center": {
+        "x": 1154,
+        "y": 6119
+      }
+    },
+    {
+      "id": "section_heading_017",
+      "type": "section_heading",
+      "name": "section heading Section 17",
+      "coordinates": {
+        "x": 148,
+        "y": 6384,
+        "width": 1316,
+        "height": 130
+      },
+      "area": 171080,
+      "center": {
+        "x": 806,
+        "y": 6449
+      }
+    },
+    {
+      "id": "linkout_image_018",
+      "type": "linkout_image",
+      "name": "linkout image Section 18",
+      "coordinates": {
+        "x": 134,
+        "y": 6534,
+        "width": 334,
+        "height": 336
+      },
+      "area": 112224,
+      "center": {
+        "x": 301,
+        "y": 6702
+      }
+    },
+    {
+      "id": "linkout_image_019",
+      "type": "linkout_image",
+      "name": "linkout image Section 19",
+      "coordinates": {
+        "x": 466,
+        "y": 6534,
+        "width": 334,
+        "height": 338
+      },
+      "area": 112892,
+      "center": {
+        "x": 633,
+        "y": 6703
+      }
+    },
+    {
+      "id": "linkout_image_020",
+      "type": "linkout_image",
+      "name": "linkout image Section 20",
+      "coordinates": {
+        "x": 802,
+        "y": 6538,
+        "width": 330,
+        "height": 332
+      },
+      "area": 109560,
+      "center": {
+        "x": 967,
+        "y": 6704
+      }
+    },
+    {
+      "id": "linkout_image_021",
+      "type": "linkout_image",
+      "name": "linkout image Section 21",
+      "coordinates": {
+        "x": 1130,
+        "y": 6542,
+        "width": 338,
+        "height": 328
+      },
+      "area": 110864,
+      "center": {
+        "x": 1299,
+        "y": 6706
+      }
+    },
+    {
+      "id": "linkout_image_022",
+      "type": "linkout_image",
+      "name": "linkout image Section 22",
+      "coordinates": {
+        "x": 134,
+        "y": 6871,
+        "width": 336,
+        "height": 330
+      },
+      "area": 110880,
+      "center": {
+        "x": 302,
+        "y": 7036
+      }
+    },
+    {
+      "id": "linkout_image_023",
+      "type": "linkout_image",
+      "name": "linkout image Section 23",
+      "coordinates": {
+        "x": 468,
+        "y": 6873,
+        "width": 330,
+        "height": 330
+      },
+      "area": 108900,
+      "center": {
+        "x": 633,
+        "y": 7038
+      }
+    },
+    {
+      "id": "linkout_image_024",
+      "type": "linkout_image",
+      "name": "linkout image Section 24",
+      "coordinates": {
+        "x": 800,
+        "y": 6867,
+        "width": 334,
+        "height": 338
+      },
+      "area": 112892,
+      "center": {
+        "x": 967,
+        "y": 7036
+      }
+    },
+    {
+      "id": "linkout_image_025",
+      "type": "linkout_image",
+      "name": "linkout image Section 25",
+      "coordinates": {
+        "x": 1134,
+        "y": 6865,
+        "width": 336,
+        "height": 342
+      },
+      "area": 114912,
+      "center": {
+        "x": 1302,
+        "y": 7036
+      }
+    },
+    {
+      "id": "section_heading_026",
+      "type": "section_heading",
+      "name": "section heading Section 26",
+      "coordinates": {
+        "x": 134,
+        "y": 7211,
+        "width": 1336,
+        "height": 108
+      },
+      "area": 144288,
+      "center": {
+        "x": 802,
+        "y": 7265
+      }
+    },
+    {
+      "id": "shop_the_look_027",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 27",
+      "coordinates": {
+        "x": 130,
+        "y": 7337,
+        "width": 1340,
+        "height": 682
+      },
+      "area": 913880,
+      "center": {
+        "x": 800,
+        "y": 7678
+      }
+    },
+    {
+      "id": "static_image_028",
+      "type": "static_image",
+      "name": "static image Section 28",
+      "coordinates": {
+        "x": 134,
+        "y": 8020,
+        "width": 604,
+        "height": 502
+      },
+      "area": 303208,
+      "center": {
+        "x": 436,
+        "y": 8271
+      }
+    },
+    {
+      "id": "text_block_029",
+      "type": "text_block",
+      "name": "text block Section 29",
+      "coordinates": {
+        "x": 736,
+        "y": 8018,
+        "width": 730,
+        "height": 504
+      },
+      "area": 367920,
+      "center": {
+        "x": 1101,
+        "y": 8270
+      }
+    },
+    {
+      "id": "text_block_030",
+      "type": "text_block",
+      "name": "text block Section 30",
+      "coordinates": {
+        "x": 140,
+        "y": 8535,
+        "width": 1316,
+        "height": 352
+      },
+      "area": 463232,
+      "center": {
+        "x": 798,
+        "y": 8711
+      }
+    },
+    {
+      "id": "static_image_031",
+      "type": "static_image",
+      "name": "static image Section 31",
+      "coordinates": {
+        "x": 764,
+        "y": 8888,
+        "width": 704,
+        "height": 845
+      },
+      "area": 594880,
+      "center": {
+        "x": 1116,
+        "y": 9311
+      }
+    },
+    {
+      "id": "text_block_032",
+      "type": "text_block",
+      "name": "text block Section 32",
+      "coordinates": {
+        "x": 138,
+        "y": 8889,
+        "width": 626,
+        "height": 850
+      },
+      "area": 532100,
+      "center": {
+        "x": 451,
+        "y": 9314
+      }
+    },
+    {
+      "id": "section_heading_033",
+      "type": "section_heading",
+      "name": "section heading Section 33",
+      "coordinates": {
+        "x": 136,
+        "y": 9738,
+        "width": 1332,
+        "height": 144
+      },
+      "area": 191808,
+      "center": {
+        "x": 802,
+        "y": 9810
+      }
+    },
+    {
+      "id": "testimonial_034",
+      "type": "testimonial",
+      "name": "testimonial Section 34",
+      "coordinates": {
+        "x": 134,
+        "y": 9891,
+        "width": 334,
+        "height": 334
+      },
+      "area": 111556,
+      "center": {
+        "x": 301,
+        "y": 10058
+      }
+    },
+    {
+      "id": "testimonial_035",
+      "type": "testimonial",
+      "name": "testimonial Section 35",
+      "coordinates": {
+        "x": 468,
+        "y": 9887,
+        "width": 332,
+        "height": 340
+      },
+      "area": 112880,
+      "center": {
+        "x": 634,
+        "y": 10057
+      }
+    },
+    {
+      "id": "testimonial_036",
+      "type": "testimonial",
+      "name": "testimonial Section 36",
+      "coordinates": {
+        "x": 798,
+        "y": 9887,
+        "width": 332,
+        "height": 338
+      },
+      "area": 112216,
+      "center": {
+        "x": 964,
+        "y": 10056
+      }
+    },
+    {
+      "id": "testimonial_037",
+      "type": "testimonial",
+      "name": "testimonial Section 37",
+      "coordinates": {
+        "x": 1130,
+        "y": 9885,
+        "width": 340,
+        "height": 340
+      },
+      "area": 115600,
+      "center": {
+        "x": 1300,
+        "y": 10055
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T10:19:24.175Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-31-34 Amazon.in MAXPRO.png"
+  }
+}

@@ -87,5 +87,5 @@ export interface LayoutTemplate {
   use_cases: string[];
 }
 
-export type ViewMode = 'mobile' | 'desktop';
+export type ViewMode = 'mobile' | 'tablet' | 'desktop';
 export type ExportFormat = 'html' | 'react' | 'json';

@@ -43,22 +43,39 @@ const DraggableLayoutSection: React.FC<DraggableLayoutSectionProps> = ({
   };
 
   const getImageStyle = () => {
-    const baseStyle = "w-full object-cover rounded";
-
-    // Adjust height based on view mode and aspect ratio
     const aspectRatio = width / height;
+    const isLandscape = aspectRatio > 1.5;
+    const isPortrait = aspectRatio < 0.8;
+    const isSquare = aspectRatio >= 0.8 && aspectRatio <= 1.5;
 
     if (viewMode === 'mobile') {
-      if (aspectRatio > 2) return `${baseStyle} h-24`; // Wide sections shorter on mobile
-      if (aspectRatio < 0.8) return `${baseStyle} h-64`; // Tall sections
-      return `${baseStyle} h-32`; // Standard sections
+      // Mobile: prioritize fitting content, prevent stretching
+      if (isLandscape) {
+        return "w-full h-auto max-h-32 object-contain rounded bg-gray-50";
+      } else if (isPortrait) {
+        return "w-full h-auto max-h-48 object-contain rounded bg-gray-50";
+      } else {
+        return "w-full h-auto max-h-40 object-contain rounded bg-gray-50";
+      }
+    } else if (viewMode === 'tablet') {
+      // Tablet: balanced approach
+      if (isLandscape) {
+        return "w-full h-auto max-h-48 object-contain rounded bg-gray-50";
+      } else if (isPortrait) {
+        return "w-full h-auto max-h-64 object-contain rounded bg-gray-50";
+      } else {
+        return "w-full h-auto max-h-56 object-contain rounded bg-gray-50";
+      }
+    } else if (viewMode === 'desktop') {
+      // Desktop: allow larger display but maintain aspect ratio
+      if (isLandscape) {
+        return "w-full h-auto max-h-64 object-contain rounded bg-gray-50";
+      } else if (isPortrait) {
+        return "w-full h-auto max-h-96 object-contain rounded bg-gray-50";
+      } else {
+        return "w-full h-auto max-h-80 object-contain rounded bg-gray-50";
+      }
     }
-
-
-    // Desktop
-    if (aspectRatio > 2) return `${baseStyle} h-40`;
-    if (aspectRatio < 0.8) return `${baseStyle} h-96`;
-    return `${baseStyle} h-64`;
   };
 
   if (isDragging) {

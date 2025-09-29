@@ -1,0 +1,367 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-32-01 Amazon.in HIPPO.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 7994
+  },
+  "total_sections": 22,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 120,
+        "y": 86,
+        "width": 1358,
+        "height": 282
+      },
+      "area": 382956,
+      "center": {
+        "x": 799,
+        "y": 227
+      }
+    },
+    {
+      "id": "video_002",
+      "type": "video",
+      "name": "video Section 2",
+      "coordinates": {
+        "x": 132,
+        "y": 870,
+        "width": 1344,
+        "height": 674
+      },
+      "area": 905856,
+      "center": {
+        "x": 804,
+        "y": 1207
+      }
+    },
+    {
+      "id": "section_heading_003",
+      "type": "section_heading",
+      "name": "section heading Section 3",
+      "coordinates": {
+        "x": 150,
+        "y": 1556,
+        "width": 1320,
+        "height": 86
+      },
+      "area": 113520,
+      "center": {
+        "x": 810,
+        "y": 1599
+      }
+    },
+    {
+      "id": "category_carousel_004",
+      "type": "category_carousel",
+      "name": "category carousel Section 4",
+      "coordinates": {
+        "x": 150,
+        "y": 1644,
+        "width": 1324,
+        "height": 222
+      },
+      "area": 293928,
+      "center": {
+        "x": 812,
+        "y": 1755
+      }
+    },
+    {
+      "id": "product_selector_005",
+      "type": "product_selector",
+      "name": "product selector Section 5",
+      "coordinates": {
+        "x": 146,
+        "y": 1874,
+        "width": 1340,
+        "height": 430
+      },
+      "area": 576200,
+      "center": {
+        "x": 816,
+        "y": 2089
+      }
+    },
+    {
+      "id": "section_heading_006",
+      "type": "section_heading",
+      "name": "section heading Section 6",
+      "coordinates": {
+        "x": 148,
+        "y": 2313,
+        "width": 1334,
+        "height": 110
+      },
+      "area": 146740,
+      "center": {
+        "x": 815,
+        "y": 2368
+      }
+    },
+    {
+      "id": "static_image_007",
+      "type": "static_image",
+      "name": "static image Section 7",
+      "coordinates": {
+        "x": 144,
+        "y": 2425,
+        "width": 246,
+        "height": 240
+      },
+      "area": 59040,
+      "center": {
+        "x": 267,
+        "y": 2545
+      }
+    },
+    {
+      "id": "static_image_008",
+      "type": "static_image",
+      "name": "static image Section 8",
+      "coordinates": {
+        "x": 392,
+        "y": 2421,
+        "width": 242,
+        "height": 246
+      },
+      "area": 59532,
+      "center": {
+        "x": 513,
+        "y": 2544
+      }
+    },
+    {
+      "id": "static_image_009",
+      "type": "static_image",
+      "name": "static image Section 9",
+      "coordinates": {
+        "x": 634,
+        "y": 2425,
+        "width": 332,
+        "height": 246
+      },
+      "area": 81672,
+      "center": {
+        "x": 800,
+        "y": 2548
+      }
+    },
+    {
+      "id": "static_image_010",
+      "type": "static_image",
+      "name": "static image Section 10",
+      "coordinates": {
+        "x": 968,
+        "y": 2427,
+        "width": 234,
+        "height": 248
+      },
+      "area": 58032,
+      "center": {
+        "x": 1085,
+        "y": 2551
+      }
+    },
+    {
+      "id": "static_image_011",
+      "type": "static_image",
+      "name": "static image Section 11",
+      "coordinates": {
+        "x": 1198,
+        "y": 2423,
+        "width": 296,
+        "height": 252
+      },
+      "area": 74592,
+      "center": {
+        "x": 1346,
+        "y": 2549
+      }
+    },
+    {
+      "id": "section_heading_012",
+      "type": "section_heading",
+      "name": "section heading Section 12",
+      "coordinates": {
+        "x": 140,
+        "y": 2667,
+        "width": 1364,
+        "height": 92
+      },
+      "area": 125488,
+      "center": {
+        "x": 822,
+        "y": 2713
+      }
+    },
+    {
+      "id": "reels_013",
+      "type": "reels",
+      "name": "reels Section 13",
+      "coordinates": {
+        "x": 140,
+        "y": 2779,
+        "width": 1328,
+        "height": 568
+      },
+      "area": 754304,
+      "center": {
+        "x": 804,
+        "y": 3063
+      }
+    },
+    {
+      "id": "section_heading_014",
+      "type": "section_heading",
+      "name": "section heading Section 14",
+      "coordinates": {
+        "x": 138,
+        "y": 3373,
+        "width": 1334,
+        "height": 118
+      },
+      "area": 157412,
+      "center": {
+        "x": 805,
+        "y": 3432
+      }
+    },
+    {
+      "id": "asin_waterfall_015",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 15",
+      "coordinates": {
+        "x": 134,
+        "y": 3540,
+        "width": 1340,
+        "height": 2299
+      },
+      "area": 3081196,
+      "center": {
+        "x": 804,
+        "y": 4690
+      }
+    },
+    {
+      "id": "section_heading_016",
+      "type": "section_heading",
+      "name": "section heading Section 16",
+      "coordinates": {
+        "x": 132,
+        "y": 5818,
+        "width": 1358,
+        "height": 64
+      },
+      "area": 86912,
+      "center": {
+        "x": 811,
+        "y": 5850
+      }
+    },
+    {
+      "id": "static_image_017",
+      "type": "static_image",
+      "name": "static image Section 17",
+      "coordinates": {
+        "x": 138,
+        "y": 5906,
+        "width": 664,
+        "height": 686
+      },
+      "area": 455504,
+      "center": {
+        "x": 470,
+        "y": 6249
+      }
+    },
+    {
+      "id": "shop_the_look_018",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 18",
+      "coordinates": {
+        "x": 800,
+        "y": 5911,
+        "width": 332,
+        "height": 332
+      },
+      "area": 110224,
+      "center": {
+        "x": 966,
+        "y": 6077
+      }
+    },
+    {
+      "id": "shop_the_look_019",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 19",
+      "coordinates": {
+        "x": 1136,
+        "y": 5909,
+        "width": 334,
+        "height": 336
+      },
+      "area": 112224,
+      "center": {
+        "x": 1303,
+        "y": 6077
+      }
+    },
+    {
+      "id": "shop_the_look_020",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 20",
+      "coordinates": {
+        "x": 802,
+        "y": 6244,
+        "width": 334,
+        "height": 350
+      },
+      "area": 116900,
+      "center": {
+        "x": 969,
+        "y": 6419
+      }
+    },
+    {
+      "id": "shop_the_look_021",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 21",
+      "coordinates": {
+        "x": 1138,
+        "y": 6244,
+        "width": 330,
+        "height": 352
+      },
+      "area": 116160,
+      "center": {
+        "x": 1303,
+        "y": 6420
+      }
+    },
+    {
+      "id": "static_image_022",
+      "type": "static_image",
+      "name": "static image Section 22",
+      "coordinates": {
+        "x": 136,
+        "y": 6594,
+        "width": 1334,
+        "height": 554
+      },
+      "area": 739036,
+      "center": {
+        "x": 803,
+        "y": 6871
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T10:32:44.920Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-32-01 Amazon.in HIPPO.png"
+  }
+}

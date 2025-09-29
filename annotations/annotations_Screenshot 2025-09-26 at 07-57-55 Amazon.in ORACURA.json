@@ -1,0 +1,607 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-57-55 Amazon.in ORACURA.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 10926
+  },
+  "total_sections": 37,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 128,
+        "y": 85,
+        "width": 1350,
+        "height": 280
+      },
+      "area": 378000,
+      "center": {
+        "x": 803,
+        "y": 225
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 126,
+        "y": 363,
+        "width": 1358,
+        "height": 88
+      },
+      "area": 119504,
+      "center": {
+        "x": 805,
+        "y": 407
+      }
+    },
+    {
+      "id": "video_003",
+      "type": "video",
+      "name": "video Section 3",
+      "coordinates": {
+        "x": 132,
+        "y": 454,
+        "width": 1342,
+        "height": 760
+      },
+      "area": 1019920,
+      "center": {
+        "x": 803,
+        "y": 834
+      }
+    },
+    {
+      "id": "static_image_004",
+      "type": "static_image",
+      "name": "static image Section 4",
+      "coordinates": {
+        "x": 132,
+        "y": 1213,
+        "width": 1334,
+        "height": 746
+      },
+      "area": 995164,
+      "center": {
+        "x": 799,
+        "y": 1586
+      }
+    },
+    {
+      "id": "linkout_image_005",
+      "type": "linkout_image",
+      "name": "linkout image Section 5",
+      "coordinates": {
+        "x": 126,
+        "y": 1970,
+        "width": 1344,
+        "height": 752
+      },
+      "area": 1010688,
+      "center": {
+        "x": 798,
+        "y": 2346
+      }
+    },
+    {
+      "id": "section_heading_006",
+      "type": "section_heading",
+      "name": "section heading Section 6",
+      "coordinates": {
+        "x": 126,
+        "y": 2724,
+        "width": 1354,
+        "height": 97
+      },
+      "area": 131338,
+      "center": {
+        "x": 803,
+        "y": 2772
+      }
+    },
+    {
+      "id": "category_carousel_007",
+      "type": "category_carousel",
+      "name": "category carousel Section 7",
+      "coordinates": {
+        "x": 130,
+        "y": 2827,
+        "width": 1350,
+        "height": 344
+      },
+      "area": 464400,
+      "center": {
+        "x": 805,
+        "y": 2999
+      }
+    },
+    {
+      "id": "static_image_008",
+      "type": "static_image",
+      "name": "static image Section 8",
+      "coordinates": {
+        "x": 130,
+        "y": 3179,
+        "width": 1340,
+        "height": 762
+      },
+      "area": 1021080,
+      "center": {
+        "x": 800,
+        "y": 3560
+      }
+    },
+    {
+      "id": "linkout_image_009",
+      "type": "linkout_image",
+      "name": "linkout image Section 9",
+      "coordinates": {
+        "x": 130,
+        "y": 3938,
+        "width": 1346,
+        "height": 762
+      },
+      "area": 1025652,
+      "center": {
+        "x": 803,
+        "y": 4319
+      }
+    },
+    {
+      "id": "section_heading_010",
+      "type": "section_heading",
+      "name": "section heading Section 10",
+      "coordinates": {
+        "x": 132,
+        "y": 4700,
+        "width": 1342,
+        "height": 104
+      },
+      "area": 139568,
+      "center": {
+        "x": 803,
+        "y": 4752
+      }
+    },
+    {
+      "id": "asin_waterfall_011",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 11",
+      "coordinates": {
+        "x": 130,
+        "y": 4810,
+        "width": 1344,
+        "height": 308
+      },
+      "area": 413952,
+      "center": {
+        "x": 802,
+        "y": 4964
+      }
+    },
+    {
+      "id": "product_selector_012",
+      "type": "product_selector",
+      "name": "product selector Section 12",
+      "coordinates": {
+        "x": 130,
+        "y": 5126,
+        "width": 1342,
+        "height": 544
+      },
+      "area": 730048,
+      "center": {
+        "x": 801,
+        "y": 5398
+      }
+    },
+    {
+      "id": "static_image_013",
+      "type": "static_image",
+      "name": "static image Section 13",
+      "coordinates": {
+        "x": 142,
+        "y": 5672,
+        "width": 264,
+        "height": 286
+      },
+      "area": 75504,
+      "center": {
+        "x": 274,
+        "y": 5815
+      }
+    },
+    {
+      "id": "static_image_014",
+      "type": "static_image",
+      "name": "static image Section 14",
+      "coordinates": {
+        "x": 418,
+        "y": 5676,
+        "width": 250,
+        "height": 286
+      },
+      "area": 71500,
+      "center": {
+        "x": 543,
+        "y": 5819
+      }
+    },
+    {
+      "id": "static_image_015",
+      "type": "static_image",
+      "name": "static image Section 15",
+      "coordinates": {
+        "x": 686,
+        "y": 5678,
+        "width": 228,
+        "height": 284
+      },
+      "area": 64752,
+      "center": {
+        "x": 800,
+        "y": 5820
+      }
+    },
+    {
+      "id": "static_image_016",
+      "type": "static_image",
+      "name": "static image Section 16",
+      "coordinates": {
+        "x": 918,
+        "y": 5676,
+        "width": 264,
+        "height": 288
+      },
+      "area": 76032,
+      "center": {
+        "x": 1050,
+        "y": 5820
+      }
+    },
+    {
+      "id": "static_image_017",
+      "type": "static_image",
+      "name": "static image Section 17",
+      "coordinates": {
+        "x": 1194,
+        "y": 5674,
+        "width": 278,
+        "height": 286
+      },
+      "area": 79508,
+      "center": {
+        "x": 1333,
+        "y": 5817
+      }
+    },
+    {
+      "id": "text_block_018",
+      "type": "text_block",
+      "name": "text block Section 18",
+      "coordinates": {
+        "x": 140,
+        "y": 5961,
+        "width": 1334,
+        "height": 100
+      },
+      "area": 133400,
+      "center": {
+        "x": 807,
+        "y": 6011
+      }
+    },
+    {
+      "id": "static_image_019",
+      "type": "static_image",
+      "name": "static image Section 19",
+      "coordinates": {
+        "x": 846,
+        "y": 6074,
+        "width": 526,
+        "height": 602
+      },
+      "area": 316652,
+      "center": {
+        "x": 1109,
+        "y": 6375
+      }
+    },
+    {
+      "id": "text_block_020",
+      "type": "text_block",
+      "name": "text block Section 20",
+      "coordinates": {
+        "x": 148,
+        "y": 6148,
+        "width": 694,
+        "height": 214
+      },
+      "area": 148516,
+      "center": {
+        "x": 495,
+        "y": 6255
+      }
+    },
+    {
+      "id": "static_image_021",
+      "type": "static_image",
+      "name": "static image Section 21",
+      "coordinates": {
+        "x": 138,
+        "y": 6364,
+        "width": 704,
+        "height": 302
+      },
+      "area": 212608,
+      "center": {
+        "x": 490,
+        "y": 6515
+      }
+    },
+    {
+      "id": "asin_waterfall_022",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 22",
+      "coordinates": {
+        "x": 144,
+        "y": 6687,
+        "width": 1314,
+        "height": 668
+      },
+      "area": 877752,
+      "center": {
+        "x": 801,
+        "y": 7021
+      }
+    },
+    {
+      "id": "section_heading_023",
+      "type": "section_heading",
+      "name": "section heading Section 23",
+      "coordinates": {
+        "x": 142,
+        "y": 7351,
+        "width": 1328,
+        "height": 100
+      },
+      "area": 132800,
+      "center": {
+        "x": 806,
+        "y": 7401
+      }
+    },
+    {
+      "id": "linkout_image_024",
+      "type": "linkout_image",
+      "name": "linkout image Section 24",
+      "coordinates": {
+        "x": 144,
+        "y": 7457,
+        "width": 324,
+        "height": 326
+      },
+      "area": 105624,
+      "center": {
+        "x": 306,
+        "y": 7620
+      }
+    },
+    {
+      "id": "linkout_image_025",
+      "type": "linkout_image",
+      "name": "linkout image Section 25",
+      "coordinates": {
+        "x": 472,
+        "y": 7449,
+        "width": 326,
+        "height": 336
+      },
+      "area": 109536,
+      "center": {
+        "x": 635,
+        "y": 7617
+      }
+    },
+    {
+      "id": "linkout_image_026",
+      "type": "linkout_image",
+      "name": "linkout image Section 26",
+      "coordinates": {
+        "x": 798,
+        "y": 7449,
+        "width": 334,
+        "height": 340
+      },
+      "area": 113560,
+      "center": {
+        "x": 965,
+        "y": 7619
+      }
+    },
+    {
+      "id": "linkout_image_027",
+      "type": "linkout_image",
+      "name": "linkout image Section 27",
+      "coordinates": {
+        "x": 1126,
+        "y": 7447,
+        "width": 336,
+        "height": 332
+      },
+      "area": 111552,
+      "center": {
+        "x": 1294,
+        "y": 7613
+      }
+    },
+    {
+      "id": "static_image_028",
+      "type": "static_image",
+      "name": "static image Section 28",
+      "coordinates": {
+        "x": 142,
+        "y": 7789,
+        "width": 496,
+        "height": 744
+      },
+      "area": 369024,
+      "center": {
+        "x": 390,
+        "y": 8161
+      }
+    },
+    {
+      "id": "text_block_029",
+      "type": "text_block",
+      "name": "text block Section 29",
+      "coordinates": {
+        "x": 642,
+        "y": 7793,
+        "width": 816,
+        "height": 174
+      },
+      "area": 141984,
+      "center": {
+        "x": 1050,
+        "y": 7880
+      }
+    },
+    {
+      "id": "static_image_030",
+      "type": "static_image",
+      "name": "static image Section 30",
+      "coordinates": {
+        "x": 644,
+        "y": 7965,
+        "width": 806,
+        "height": 564
+      },
+      "area": 454584,
+      "center": {
+        "x": 1047,
+        "y": 8247
+      }
+    },
+    {
+      "id": "section_heading_031",
+      "type": "section_heading",
+      "name": "section heading Section 31",
+      "coordinates": {
+        "x": 144,
+        "y": 8534,
+        "width": 1314,
+        "height": 80
+      },
+      "area": 105120,
+      "center": {
+        "x": 801,
+        "y": 8574
+      }
+    },
+    {
+      "id": "static_image_032",
+      "type": "static_image",
+      "name": "static image Section 32",
+      "coordinates": {
+        "x": 156,
+        "y": 8618,
+        "width": 554,
+        "height": 380
+      },
+      "area": 210520,
+      "center": {
+        "x": 433,
+        "y": 8808
+      }
+    },
+    {
+      "id": "static_image_033",
+      "type": "static_image",
+      "name": "static image Section 33",
+      "coordinates": {
+        "x": 714,
+        "y": 8616,
+        "width": 742,
+        "height": 376
+      },
+      "area": 278992,
+      "center": {
+        "x": 1085,
+        "y": 8804
+      }
+    },
+    {
+      "id": "section_heading_034",
+      "type": "section_heading",
+      "name": "section heading Section 34",
+      "coordinates": {
+        "x": 136,
+        "y": 9000,
+        "width": 1338,
+        "height": 76
+      },
+      "area": 101688,
+      "center": {
+        "x": 805,
+        "y": 9038
+      }
+    },
+    {
+      "id": "reels_035",
+      "type": "reels",
+      "name": "reels Section 35",
+      "coordinates": {
+        "x": 142,
+        "y": 9077,
+        "width": 1322,
+        "height": 536
+      },
+      "area": 708592,
+      "center": {
+        "x": 803,
+        "y": 9345
+      }
+    },
+    {
+      "id": "static_image_036",
+      "type": "static_image",
+      "name": "static image Section 36",
+      "coordinates": {
+        "x": 842,
+        "y": 9644,
+        "width": 658,
+        "height": 556
+      },
+      "area": 365848,
+      "center": {
+        "x": 1171,
+        "y": 9922
+      }
+    },
+    {
+      "id": "text_block_037",
+      "type": "text_block",
+      "name": "text block Section 37",
+      "coordinates": {
+        "x": 140,
+        "y": 9786,
+        "width": 696,
+        "height": 282
+      },
+      "area": 196272,
+      "center": {
+        "x": 488,
+        "y": 9927
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T07:10:44.600Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-57-55 Amazon.in ORACURA.png"
+  }
+}

@@ -1,0 +1,5 @@
+store_id,brand_name,screenshot_filename,collection_start_date,collection_end_date,avg_dwell_time_seconds,median_dwell_time_seconds,bounce_rate_percentage,sales_per_visit_inr,units_per_visit,conversion_rate_percentage,avg_scroll_depth_percentage,click_through_rate_percentage,total_visitors,unique_visitors,traffic_source_organic_percentage,traffic_source_paid_percentage,traffic_source_direct_percentage
+store_001,India Circus by Krsnaa Mehta,Screenshot 2025-09-26 at 07-45-23 Amazon.in India Circus by Krsnaa Mehta.png,2024-01-01,2024-01-31,145.6,120.3,32.4,45.80,1.8,8.5,68.4,12.3,45000,32000,45,35,20
+store_002,Two Brothers Organic Farms,Screenshot 2025-09-26 at 08-15-42 Amazon.in Two Brothers Organic Farms.png,2024-01-01,2024-01-31,168.2,142.7,28.9,62.30,2.1,11.2,72.8,15.7,38000,28500,52,31,17
+store_003,Example Brand 3,[Screenshot filename],2024-01-01,2024-01-31,0,0,0,0,0,0,0,0,0,0,0,0,0
+store_004,Example Brand 4,[Screenshot filename],2024-01-01,2024-01-31,0,0,0,0,0,0,0,0,0,0,0,0,0

@@ -81,7 +81,8 @@ function App() {
 
   const createIntelligentLayout = (): ModuleSection[] => {
     const layoutSections: ModuleSection[] = [];
-    const sectionCount = Math.floor(Math.random() * 16) + 5; // 5-20 sections
+    // Ensure minimum 10 non-heading sections (plus headings), max 25 total
+    const contentSectionCount = Math.floor(Math.random() * 16) + 10; // 10-25 content sections
 
     // Define section type priorities - reorganized for better structure
     const sectionRules = {
@@ -104,17 +105,16 @@ function App() {
     // Always start with header sections
     const headerTypes = sectionRules.header;
     for (const type of headerTypes) {
-      const headerSection = getRandomSectionByType(type);
+      const headerSection = getRandomSectionByType(type, 'hero'); // Use highest quality for headers
       if (headerSection) layoutSections.push(headerSection);
     }
 
     // Add a hero section
-    const heroSection = getRandomSectionByType(sectionRules.hero[Math.floor(Math.random() * sectionRules.hero.length)]);
+    const heroSection = getRandomSectionByType(sectionRules.hero[Math.floor(Math.random() * sectionRules.hero.length)], 'hero');
     if (heroSection) layoutSections.push(heroSection);
 
     // Create content groups with MANDATORY headings as introducers
-    const remainingSections = sectionCount - layoutSections.length;
-    let sectionsAdded = 0;
+    let contentSectionsAdded = 0;
     let lastSectionType = '';
     let lastSection: ModuleSection | null = null;
 
@@ -122,20 +122,20 @@ function App() {
     const usedSections = new Set<string>();
     const singleColumnTypes = ['static_image', 'linkout_image', 'text_block', 'video', 'hero'];
 
-    while (sectionsAdded < remainingSections) {
+    while (contentSectionsAdded < contentSectionCount) {
       // ENFORCE: Every content section must have a heading introducer
-      if (sectionsAdded < remainingSections - 1) {
+      if (contentSectionsAdded < contentSectionCount - 1) {
         // Add section heading as MANDATORY content introducer
-        const heading = getRandomSectionByType('section_heading');
+        const heading = getRandomSectionByType('section_heading', 'prominent');
         if (heading) {
           layoutSections.push(heading);
-          sectionsAdded++;
+          // Note: headings don't count toward content section count
           lastSectionType = 'section_heading';
           lastSection = heading;
         }
       }
 
-      if (sectionsAdded >= remainingSections) break;
+      if (contentSectionsAdded >= contentSectionCount) break;
 
       // Choose content type with strict anti-duplication rules
       let contentType: string;
@@ -204,7 +204,7 @@ function App() {
 
       if (section) {
         layoutSections.push(section);
-        sectionsAdded++;
+        contentSectionsAdded++; // Count content sections separately from headings
         lastSectionType = contentType;
         lastSection = section;
         usedSections.add(contentType);
@@ -215,7 +215,7 @@ function App() {
           const fallbackSection = getRandomSectionByType(fallbackTypes[Math.floor(Math.random() * fallbackTypes.length)]);
           if (fallbackSection) {
             layoutSections.push(fallbackSection);
-            sectionsAdded++;
+            contentSectionsAdded++; // Count content sections separately from headings
             lastSectionType = fallbackSection.type;
             lastSection = fallbackSection;
             usedSections.add(fallbackSection.type);
@@ -232,9 +232,39 @@ function App() {
     return layoutSections;
   };
 
-  const getRandomSectionByType = (type: string): ModuleSection | null => {
-    const sectionsOfType = modules.filter(module => module.type === type);
+  const getRandomSectionByType = (type: string, context: 'hero' | 'prominent' | 'secondary' | 'filler' = 'secondary'): ModuleSection | null => {
+    // Use quality-aware selection - simplified for sync operation
+    let sectionsOfType = modules.filter(module => module.type === type);
+
     if (sectionsOfType.length === 0) return null;
+
+    // Apply basic quality filtering based on context
+    if (context === 'hero' || context === 'prominent') {
+      // For hero/prominent sections, prefer larger modules
+      const highQualityModules = sectionsOfType.filter(module => {
+        const area = (module.coordinates?.width || 0) * (module.coordinates?.height || 0);
+        return area > 200000; // High resolution threshold
+      });
+
+      if (highQualityModules.length > 0) {
+        sectionsOfType = highQualityModules;
+      }
+    }
+
+    // Special handling for navigation
+    if (type === 'navigation') {
+      const goodNavModules = sectionsOfType.filter(module => {
+        const width = module.coordinates?.width || 0;
+        const height = module.coordinates?.height || 0;
+        const aspectRatio = height > 0 ? width / height : 0;
+        return aspectRatio > 3 && width > 800; // Wide navigation bars
+      });
+
+      if (goodNavModules.length > 0) {
+        sectionsOfType = goodNavModules;
+      }
+    }
+
     return sectionsOfType[Math.floor(Math.random() * sectionsOfType.length)];
   };
 

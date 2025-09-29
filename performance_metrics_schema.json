@@ -1,0 +1,92 @@
+{
+  "performance_metrics_schema": {
+    "store_level_metrics": {
+      "store_id": "amazon_brand_store_unique_id",
+      "brand_name": "India Circus by Krsnaa Mehta",
+      "collection_period": {
+        "start_date": "2024-01-01",
+        "end_date": "2024-01-31",
+        "duration_days": 31
+      },
+      "page_metrics": {
+        "dwell_time": {
+          "average_seconds": 145.6,
+          "median_seconds": 120.3,
+          "p95_seconds": 280.5
+        },
+        "bounce_rate": {
+          "percentage": 32.4,
+          "total_sessions": 50000,
+          "bounced_sessions": 16200
+        },
+        "conversion_metrics": {
+          "sales_per_visit": {
+            "average_revenue": 45.80,
+            "median_revenue": 28.50,
+            "currency": "INR"
+          },
+          "units_per_visit": {
+            "average_units": 1.8,
+            "median_units": 1.0,
+            "max_units": 12
+          },
+          "conversion_rate": 8.5
+        },
+        "engagement_metrics": {
+          "scroll_depth": {
+            "average_percentage": 68.4,
+            "reached_50_percent": 0.85,
+            "reached_75_percent": 0.62,
+            "reached_100_percent": 0.41
+          },
+          "click_through_rate": 12.3,
+          "add_to_cart_rate": 6.7
+        }
+      },
+      "traffic_data": {
+        "total_visitors": 45000,
+        "unique_visitors": 32000,
+        "returning_visitors": 13000,
+        "traffic_sources": {
+          "organic": 0.45,
+          "paid": 0.35,
+          "direct": 0.20
+        }
+      }
+    },
+    "section_level_heatmap": {
+      "sections": [
+        {
+          "section_id": "hero_001",
+          "coordinates": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 500
+          },
+          "performance_indicators": {
+            "view_time_seconds": 8.5,
+            "click_rate": 0.15,
+            "scroll_past_rate": 0.92,
+            "engagement_score": 0.78
+          }
+        }
+      ]
+    }
+  },
+  "collection_methods": {
+    "preferred_sources": [
+      "Amazon Brand Analytics",
+      "Amazon Attribution",
+      "Google Analytics 4",
+      "Adobe Analytics",
+      "Custom tracking scripts"
+    ],
+    "fallback_methods": [
+      "Industry benchmarks",
+      "A/B test data",
+      "Competitor analysis",
+      "Expert estimates"
+    ]
+  }
+}

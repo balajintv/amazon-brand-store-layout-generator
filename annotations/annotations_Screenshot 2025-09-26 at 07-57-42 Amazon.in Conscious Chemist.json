@@ -1,0 +1,559 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-57-42 Amazon.in Conscious Chemist.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 15955
+  },
+  "total_sections": 34,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 130,
+        "y": 89,
+        "width": 1346,
+        "height": 270
+      },
+      "area": 363420,
+      "center": {
+        "x": 803,
+        "y": 224
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 128,
+        "y": 357,
+        "width": 1352,
+        "height": 96
+      },
+      "area": 129792,
+      "center": {
+        "x": 804,
+        "y": 405
+      }
+    },
+    {
+      "id": "shop_the_look_003",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 3",
+      "coordinates": {
+        "x": 126,
+        "y": 452,
+        "width": 1348,
+        "height": 668
+      },
+      "area": 900464,
+      "center": {
+        "x": 800,
+        "y": 786
+      }
+    },
+    {
+      "id": "video_004",
+      "type": "video",
+      "name": "video Section 4",
+      "coordinates": {
+        "x": 126,
+        "y": 1121,
+        "width": 1350,
+        "height": 764
+      },
+      "area": 1031400,
+      "center": {
+        "x": 801,
+        "y": 1503
+      }
+    },
+    {
+      "id": "section_heading_005",
+      "type": "section_heading",
+      "name": "section heading Section 5",
+      "coordinates": {
+        "x": 126,
+        "y": 1883,
+        "width": 1354,
+        "height": 50
+      },
+      "area": 67700,
+      "center": {
+        "x": 803,
+        "y": 1908
+      }
+    },
+    {
+      "id": "asin_waterfall_006",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 6",
+      "coordinates": {
+        "x": 120,
+        "y": 1933,
+        "width": 1364,
+        "height": 234
+      },
+      "area": 319176,
+      "center": {
+        "x": 802,
+        "y": 2050
+      }
+    },
+    {
+      "id": "section_heading_007",
+      "type": "section_heading",
+      "name": "section heading Section 7",
+      "coordinates": {
+        "x": 120,
+        "y": 2167,
+        "width": 1374,
+        "height": 142
+      },
+      "area": 195108,
+      "center": {
+        "x": 807,
+        "y": 2238
+      }
+    },
+    {
+      "id": "product_selector_008",
+      "type": "product_selector",
+      "name": "product selector Section 8",
+      "coordinates": {
+        "x": 124,
+        "y": 2315,
+        "width": 1356,
+        "height": 540
+      },
+      "area": 732240,
+      "center": {
+        "x": 802,
+        "y": 2585
+      }
+    },
+    {
+      "id": "section_heading_009",
+      "type": "section_heading",
+      "name": "section heading Section 9",
+      "coordinates": {
+        "x": 126,
+        "y": 2870,
+        "width": 1360,
+        "height": 154
+      },
+      "area": 209440,
+      "center": {
+        "x": 806,
+        "y": 2947
+      }
+    },
+    {
+      "id": "linkout_image_010",
+      "type": "linkout_image",
+      "name": "linkout image Section 10",
+      "coordinates": {
+        "x": 120,
+        "y": 3026,
+        "width": 1354,
+        "height": 674
+      },
+      "area": 912596,
+      "center": {
+        "x": 797,
+        "y": 3363
+      }
+    },
+    {
+      "id": "section_heading_011",
+      "type": "section_heading",
+      "name": "section heading Section 11",
+      "coordinates": {
+        "x": 124,
+        "y": 3712,
+        "width": 1354,
+        "height": 134
+      },
+      "area": 181436,
+      "center": {
+        "x": 801,
+        "y": 3779
+      }
+    },
+    {
+      "id": "linkout_image_012",
+      "type": "linkout_image",
+      "name": "linkout image Section 12",
+      "coordinates": {
+        "x": 126,
+        "y": 3855,
+        "width": 678,
+        "height": 334
+      },
+      "area": 226452,
+      "center": {
+        "x": 465,
+        "y": 4022
+      }
+    },
+    {
+      "id": "linkout_image_013",
+      "type": "linkout_image",
+      "name": "linkout image Section 13",
+      "coordinates": {
+        "x": 802,
+        "y": 3851,
+        "width": 666,
+        "height": 340
+      },
+      "area": 226440,
+      "center": {
+        "x": 1135,
+        "y": 4021
+      }
+    },
+    {
+      "id": "linkout_image_014",
+      "type": "linkout_image",
+      "name": "linkout image Section 14",
+      "coordinates": {
+        "x": 124,
+        "y": 4197,
+        "width": 678,
+        "height": 328
+      },
+      "area": 222384,
+      "center": {
+        "x": 463,
+        "y": 4361
+      }
+    },
+    {
+      "id": "linkout_image_015",
+      "type": "linkout_image",
+      "name": "linkout image Section 15",
+      "coordinates": {
+        "x": 802,
+        "y": 4193,
+        "width": 666,
+        "height": 332
+      },
+      "area": 221112,
+      "center": {
+        "x": 1135,
+        "y": 4359
+      }
+    },
+    {
+      "id": "section_heading_016",
+      "type": "section_heading",
+      "name": "section heading Section 16",
+      "coordinates": {
+        "x": 124,
+        "y": 4531,
+        "width": 1354,
+        "height": 148
+      },
+      "area": 200392,
+      "center": {
+        "x": 801,
+        "y": 4605
+      }
+    },
+    {
+      "id": "static_image_017",
+      "type": "static_image",
+      "name": "static image Section 17",
+      "coordinates": {
+        "x": 168,
+        "y": 4708,
+        "width": 338,
+        "height": 210
+      },
+      "area": 70980,
+      "center": {
+        "x": 337,
+        "y": 4813
+      }
+    },
+    {
+      "id": "text_block_018",
+      "type": "text_block",
+      "name": "text block Section 18",
+      "coordinates": {
+        "x": 152,
+        "y": 4924,
+        "width": 370,
+        "height": 144
+      },
+      "area": 53280,
+      "center": {
+        "x": 337,
+        "y": 4996
+      }
+    },
+    {
+      "id": "static_image_019",
+      "type": "static_image",
+      "name": "static image Section 19",
+      "coordinates": {
+        "x": 526,
+        "y": 4706,
+        "width": 278,
+        "height": 212
+      },
+      "area": 58936,
+      "center": {
+        "x": 665,
+        "y": 4812
+      }
+    },
+    {
+      "id": "static_image_020",
+      "type": "static_image",
+      "name": "static image Section 20",
+      "coordinates": {
+        "x": 854,
+        "y": 4708,
+        "width": 248,
+        "height": 210
+      },
+      "area": 52080,
+      "center": {
+        "x": 978,
+        "y": 4813
+      }
+    },
+    {
+      "id": "static_image_021",
+      "type": "static_image",
+      "name": "static image Section 21",
+      "coordinates": {
+        "x": 1150,
+        "y": 4704,
+        "width": 260,
+        "height": 212
+      },
+      "area": 55120,
+      "center": {
+        "x": 1280,
+        "y": 4810
+      }
+    },
+    {
+      "id": "text_block_022",
+      "type": "text_block",
+      "name": "text block Section 22",
+      "coordinates": {
+        "x": 524,
+        "y": 4922,
+        "width": 304,
+        "height": 148
+      },
+      "area": 44992,
+      "center": {
+        "x": 676,
+        "y": 4996
+      }
+    },
+    {
+      "id": "text_block_023",
+      "type": "text_block",
+      "name": "text block Section 23",
+      "coordinates": {
+        "x": 842,
+        "y": 4914,
+        "width": 268,
+        "height": 162
+      },
+      "area": 43416,
+      "center": {
+        "x": 976,
+        "y": 4995
+      }
+    },
+    {
+      "id": "text_block_024",
+      "type": "text_block",
+      "name": "text block Section 24",
+      "coordinates": {
+        "x": 1132,
+        "y": 4918,
+        "width": 300,
+        "height": 166
+      },
+      "area": 49800,
+      "center": {
+        "x": 1282,
+        "y": 5001
+      }
+    },
+    {
+      "id": "section_heading_025",
+      "type": "section_heading",
+      "name": "section heading Section 25",
+      "coordinates": {
+        "x": 126,
+        "y": 5202,
+        "width": 1340,
+        "height": 160
+      },
+      "area": 214400,
+      "center": {
+        "x": 796,
+        "y": 5282
+      }
+    },
+    {
+      "id": "reels_026",
+      "type": "reels",
+      "name": "reels Section 26",
+      "coordinates": {
+        "x": 134,
+        "y": 5380,
+        "width": 1336,
+        "height": 510
+      },
+      "area": 681360,
+      "center": {
+        "x": 802,
+        "y": 5635
+      }
+    },
+    {
+      "id": "static_image_027",
+      "type": "static_image",
+      "name": "static image Section 27",
+      "coordinates": {
+        "x": 128,
+        "y": 5937,
+        "width": 1342,
+        "height": 192
+      },
+      "area": 257664,
+      "center": {
+        "x": 799,
+        "y": 6033
+      }
+    },
+    {
+      "id": "section_heading_028",
+      "type": "section_heading",
+      "name": "section heading Section 28",
+      "coordinates": {
+        "x": 130,
+        "y": 6143,
+        "width": 1334,
+        "height": 140
+      },
+      "area": 186760,
+      "center": {
+        "x": 797,
+        "y": 6213
+      }
+    },
+    {
+      "id": "linkout_image_029",
+      "type": "linkout_image",
+      "name": "linkout image Section 29",
+      "coordinates": {
+        "x": 132,
+        "y": 6296,
+        "width": 336,
+        "height": 340
+      },
+      "area": 114240,
+      "center": {
+        "x": 300,
+        "y": 6466
+      }
+    },
+    {
+      "id": "linkout_image_030",
+      "type": "linkout_image",
+      "name": "linkout image Section 30",
+      "coordinates": {
+        "x": 470,
+        "y": 6294,
+        "width": 330,
+        "height": 346
+      },
+      "area": 114180,
+      "center": {
+        "x": 635,
+        "y": 6467
+      }
+    },
+    {
+      "id": "linkout_image_031",
+      "type": "linkout_image",
+      "name": "linkout image Section 31",
+      "coordinates": {
+        "x": 804,
+        "y": 6296,
+        "width": 328,
+        "height": 346
+      },
+      "area": 113488,
+      "center": {
+        "x": 968,
+        "y": 6469
+      }
+    },
+    {
+      "id": "linkout_image_032",
+      "type": "linkout_image",
+      "name": "linkout image Section 32",
+      "coordinates": {
+        "x": 1134,
+        "y": 6292,
+        "width": 336,
+        "height": 348
+      },
+      "area": 116928,
+      "center": {
+        "x": 1302,
+        "y": 6466
+      }
+    },
+    {
+      "id": "section_heading_033",
+      "type": "section_heading",
+      "name": "section heading Section 33",
+      "coordinates": {
+        "x": 128,
+        "y": 6643,
+        "width": 1354,
+        "height": 132
+      },
+      "area": 178728,
+      "center": {
+        "x": 805,
+        "y": 6709
+      }
+    },
+    {
+      "id": "asin_waterfall_034",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 34",
+      "coordinates": {
+        "x": 126,
+        "y": 6777,
+        "width": 1350,
+        "height": 8444
+      },
+      "area": 11399580,
+      "center": {
+        "x": 801,
+        "y": 10999
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T07:05:57.537Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-57-42 Amazon.in Conscious Chemist.png"
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-38-09 Amazon.in SPACES Drape Story.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 12502
+  },
+  "total_sections": 27,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 124,
+        "y": 87,
+        "width": 1354,
+        "height": 274
+      },
+      "area": 370996,
+      "center": {
+        "x": 801,
+        "y": 224
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 124,
+        "y": 357,
+        "width": 1350,
+        "height": 90
+      },
+      "area": 121500,
+      "center": {
+        "x": 799,
+        "y": 402
+      }
+    },
+    {
+      "id": "static_image_003",
+      "type": "static_image",
+      "name": "static image Section 3",
+      "coordinates": {
+        "x": 126,
+        "y": 450,
+        "width": 1340,
+        "height": 752
+      },
+      "area": 1007680,
+      "center": {
+        "x": 796,
+        "y": 826
+      }
+    },
+    {
+      "id": "static_image_004",
+      "type": "static_image",
+      "name": "static image Section 4",
+      "coordinates": {
+        "x": 132,
+        "y": 1219,
+        "width": 1342,
+        "height": 88
+      },
+      "area": 118096,
+      "center": {
+        "x": 803,
+        "y": 1263
+      }
+    },
+    {
+      "id": "section_heading_005",
+      "type": "section_heading",
+      "name": "section heading Section 5",
+      "coordinates": {
+        "x": 136,
+        "y": 1313,
+        "width": 1350,
+        "height": 84
+      },
+      "area": 113400,
+      "center": {
+        "x": 811,
+        "y": 1355
+      }
+    },
+    {
+      "id": "category_carousel_006",
+      "type": "category_carousel",
+      "name": "category carousel Section 6",
+      "coordinates": {
+        "x": 144,
+        "y": 1399,
+        "width": 1346,
+        "height": 334
+      },
+      "area": 449564,
+      "center": {
+        "x": 817,
+        "y": 1566
+      }
+    },
+    {
+      "id": "section_heading_007",
+      "type": "section_heading",
+      "name": "section heading Section 7",
+      "coordinates": {
+        "x": 140,
+        "y": 1734,
+        "width": 1354,
+        "height": 82
+      },
+      "area": 111028,
+      "center": {
+        "x": 817,
+        "y": 1775
+      }
+    },
+    {
+      "id": "shop_the_look_008",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 8",
+      "coordinates": {
+        "x": 124,
+        "y": 1865,
+        "width": 478,
+        "height": 414
+      },
+      "area": 197892,
+      "center": {
+        "x": 363,
+        "y": 2072
+      }
+    },
+    {
+      "id": "shop_the_look_009",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 9",
+      "coordinates": {
+        "x": 606,
+        "y": 1869,
+        "width": 408,
+        "height": 414
+      },
+      "area": 168912,
+      "center": {
+        "x": 810,
+        "y": 2076
+      }
+    },
+    {
+      "id": "shop_the_look_010",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 10",
+      "coordinates": {
+        "x": 1026,
+        "y": 1865,
+        "width": 450,
+        "height": 422
+      },
+      "area": 189900,
+      "center": {
+        "x": 1251,
+        "y": 2076
+      }
+    },
+    {
+      "id": "section_heading_011",
+      "type": "section_heading",
+      "name": "section heading Section 11",
+      "coordinates": {
+        "x": 132,
+        "y": 2360,
+        "width": 1344,
+        "height": 84
+      },
+      "area": 112896,
+      "center": {
+        "x": 804,
+        "y": 2402
+      }
+    },
+    {
+      "id": "section_heading_012",
+      "type": "section_heading",
+      "name": "section heading Section 12",
+      "coordinates": {
+        "x": 140,
+        "y": 2454,
+        "width": 1340,
+        "height": 90
+      },
+      "area": 120600,
+      "center": {
+        "x": 810,
+        "y": 2499
+      }
+    },
+    {
+      "id": "category_carousel_013",
+      "type": "category_carousel",
+      "name": "category carousel Section 13",
+      "coordinates": {
+        "x": 142,
+        "y": 2586,
+        "width": 1330,
+        "height": 380
+      },
+      "area": 505400,
+      "center": {
+        "x": 807,
+        "y": 2776
+      }
+    },
+    {
+      "id": "before_after_014",
+      "type": "before_after",
+      "name": "before after Section 14",
+      "coordinates": {
+        "x": 134,
+        "y": 2982,
+        "width": 1346,
+        "height": 502
+      },
+      "area": 675692,
+      "center": {
+        "x": 807,
+        "y": 3233
+      }
+    },
+    {
+      "id": "linkout_image_015",
+      "type": "linkout_image",
+      "name": "linkout image Section 15",
+      "coordinates": {
+        "x": 130,
+        "y": 3486,
+        "width": 1346,
+        "height": 720
+      },
+      "area": 969120,
+      "center": {
+        "x": 803,
+        "y": 3846
+      }
+    },
+    {
+      "id": "section_heading_016",
+      "type": "section_heading",
+      "name": "section heading Section 16",
+      "coordinates": {
+        "x": 148,
+        "y": 4246,
+        "width": 1338,
+        "height": 130
+      },
+      "area": 173940,
+      "center": {
+        "x": 817,
+        "y": 4311
+      }
+    },
+    {
+      "id": "product_selector_017",
+      "type": "product_selector",
+      "name": "product selector Section 17",
+      "coordinates": {
+        "x": 138,
+        "y": 4395,
+        "width": 1338,
+        "height": 570
+      },
+      "area": 762660,
+      "center": {
+        "x": 807,
+        "y": 4680
+      }
+    },
+    {
+      "id": "static_image_018",
+      "type": "static_image",
+      "name": "static image Section 18",
+      "coordinates": {
+        "x": 136,
+        "y": 4960,
+        "width": 1332,
+        "height": 744
+      },
+      "area": 991008,
+      "center": {
+        "x": 802,
+        "y": 5332
+      }
+    },
+    {
+      "id": "section_heading_019",
+      "type": "section_heading",
+      "name": "section heading Section 19",
+      "coordinates": {
+        "x": 142,
+        "y": 5710,
+        "width": 1328,
+        "height": 112
+      },
+      "area": 148736,
+      "center": {
+        "x": 806,
+        "y": 5766
+      }
+    },
+    {
+      "id": "testimonial_020",
+      "type": "testimonial",
+      "name": "testimonial Section 20",
+      "coordinates": {
+        "x": 136,
+        "y": 5854,
+        "width": 320,
+        "height": 260
+      },
+      "area": 83200,
+      "center": {
+        "x": 296,
+        "y": 5984
+      }
+    },
+    {
+      "id": "testimonial_021",
+      "type": "testimonial",
+      "name": "testimonial Section 21",
+      "coordinates": {
+        "x": 478,
+        "y": 5858,
+        "width": 308,
+        "height": 256
+      },
+      "area": 78848,
+      "center": {
+        "x": 632,
+        "y": 5986
+      }
+    },
+    {
+      "id": "testimonial_022",
+      "type": "testimonial",
+      "name": "testimonial Section 22",
+      "coordinates": {
+        "x": 812,
+        "y": 5860,
+        "width": 308,
+        "height": 254
+      },
+      "area": 78232,
+      "center": {
+        "x": 966,
+        "y": 5987
+      }
+    },
+    {
+      "id": "testimonial_023",
+      "type": "testimonial",
+      "name": "testimonial Section 23",
+      "coordinates": {
+        "x": 1142,
+        "y": 5858,
+        "width": 322,
+        "height": 256
+      },
+      "area": 82432,
+      "center": {
+        "x": 1303,
+        "y": 5986
+      }
+    },
+    {
+      "id": "section_heading_024",
+      "type": "section_heading",
+      "name": "section heading Section 24",
+      "coordinates": {
+        "x": 146,
+        "y": 6141,
+        "width": 1320,
+        "height": 92
+      },
+      "area": 121440,
+      "center": {
+        "x": 806,
+        "y": 6187
+      }
+    },
+    {
+      "id": "shop_the_look_025",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 25",
+      "coordinates": {
+        "x": 136,
+        "y": 6836,
+        "width": 1344,
+        "height": 752
+      },
+      "area": 1010688,
+      "center": {
+        "x": 808,
+        "y": 7212
+      }
+    },
+    {
+      "id": "section_heading_026",
+      "type": "section_heading",
+      "name": "section heading Section 26",
+      "coordinates": {
+        "x": 148,
+        "y": 7594,
+        "width": 1328,
+        "height": 102
+      },
+      "area": 135456,
+      "center": {
+        "x": 812,
+        "y": 7645
+      }
+    },
+    {
+      "id": "asin_waterfall_027",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 27",
+      "coordinates": {
+        "x": 136,
+        "y": 7744,
+        "width": 1346,
+        "height": 4011
+      },
+      "area": 5398807,
+      "center": {
+        "x": 809,
+        "y": 9750
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T07:45:39.708Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-38-09 Amazon.in SPACES Drape Story.png"
+  }
+}

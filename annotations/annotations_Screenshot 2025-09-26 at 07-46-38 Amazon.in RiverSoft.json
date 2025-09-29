@@ -1,0 +1,575 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-46-38 Amazon.in RiverSoft.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 10911
+  },
+  "total_sections": 35,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 124,
+        "y": 90,
+        "width": 1356,
+        "height": 274
+      },
+      "area": 371544,
+      "center": {
+        "x": 802,
+        "y": 227
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 124,
+        "y": 368,
+        "width": 1360,
+        "height": 76
+      },
+      "area": 103360,
+      "center": {
+        "x": 804,
+        "y": 406
+      }
+    },
+    {
+      "id": "video_003",
+      "type": "video",
+      "name": "video Section 3",
+      "coordinates": {
+        "x": 126,
+        "y": 450,
+        "width": 1340,
+        "height": 664
+      },
+      "area": 889760,
+      "center": {
+        "x": 796,
+        "y": 782
+      }
+    },
+    {
+      "id": "shop_the_look_004",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 4",
+      "coordinates": {
+        "x": 130,
+        "y": 1117,
+        "width": 1344,
+        "height": 660
+      },
+      "area": 887040,
+      "center": {
+        "x": 802,
+        "y": 1447
+      }
+    },
+    {
+      "id": "static_image_005",
+      "type": "static_image",
+      "name": "static image Section 5",
+      "coordinates": {
+        "x": 132,
+        "y": 1781,
+        "width": 1340,
+        "height": 672
+      },
+      "area": 900480,
+      "center": {
+        "x": 802,
+        "y": 2117
+      }
+    },
+    {
+      "id": "product_selector_006",
+      "type": "product_selector",
+      "name": "product selector Section 6",
+      "coordinates": {
+        "x": 132,
+        "y": 2459,
+        "width": 1344,
+        "height": 480
+      },
+      "area": 645120,
+      "center": {
+        "x": 804,
+        "y": 2699
+      }
+    },
+    {
+      "id": "static_image_007",
+      "type": "static_image",
+      "name": "static image Section 7",
+      "coordinates": {
+        "x": 132,
+        "y": 2951,
+        "width": 1334,
+        "height": 664
+      },
+      "area": 885776,
+      "center": {
+        "x": 799,
+        "y": 3283
+      }
+    },
+    {
+      "id": "static_image_008",
+      "type": "static_image",
+      "name": "static image Section 8",
+      "coordinates": {
+        "x": 130,
+        "y": 3621,
+        "width": 1346,
+        "height": 676
+      },
+      "area": 909896,
+      "center": {
+        "x": 803,
+        "y": 3959
+      }
+    },
+    {
+      "id": "section_heading_009",
+      "type": "section_heading",
+      "name": "section heading Section 9",
+      "coordinates": {
+        "x": 138,
+        "y": 4301,
+        "width": 1350,
+        "height": 108
+      },
+      "area": 145800,
+      "center": {
+        "x": 813,
+        "y": 4355
+      }
+    },
+    {
+      "id": "reels_010",
+      "type": "reels",
+      "name": "reels Section 10",
+      "coordinates": {
+        "x": 132,
+        "y": 4426,
+        "width": 1366,
+        "height": 524
+      },
+      "area": 715784,
+      "center": {
+        "x": 815,
+        "y": 4688
+      }
+    },
+    {
+      "id": "section_heading_011",
+      "type": "section_heading",
+      "name": "section heading Section 11",
+      "coordinates": {
+        "x": 134,
+        "y": 4960,
+        "width": 1370,
+        "height": 130
+      },
+      "area": 178100,
+      "center": {
+        "x": 819,
+        "y": 5025
+      }
+    },
+    {
+      "id": "linkout_image_012",
+      "type": "linkout_image",
+      "name": "linkout image Section 12",
+      "coordinates": {
+        "x": 132,
+        "y": 5114,
+        "width": 338,
+        "height": 334
+      },
+      "area": 112892,
+      "center": {
+        "x": 301,
+        "y": 5281
+      }
+    },
+    {
+      "id": "linkout_image_013",
+      "type": "linkout_image",
+      "name": "linkout image Section 13",
+      "coordinates": {
+        "x": 472,
+        "y": 5118,
+        "width": 326,
+        "height": 330
+      },
+      "area": 107580,
+      "center": {
+        "x": 635,
+        "y": 5283
+      }
+    },
+    {
+      "id": "linkout_image_014",
+      "type": "linkout_image",
+      "name": "linkout image Section 14",
+      "coordinates": {
+        "x": 132,
+        "y": 5450,
+        "width": 332,
+        "height": 324
+      },
+      "area": 107568,
+      "center": {
+        "x": 298,
+        "y": 5612
+      }
+    },
+    {
+      "id": "linkout_image_015",
+      "type": "linkout_image",
+      "name": "linkout image Section 15",
+      "coordinates": {
+        "x": 466,
+        "y": 5450,
+        "width": 334,
+        "height": 326
+      },
+      "area": 108884,
+      "center": {
+        "x": 633,
+        "y": 5613
+      }
+    },
+    {
+      "id": "linkout_image_016",
+      "type": "linkout_image",
+      "name": "linkout image Section 16",
+      "coordinates": {
+        "x": 796,
+        "y": 5114,
+        "width": 676,
+        "height": 664
+      },
+      "area": 448864,
+      "center": {
+        "x": 1134,
+        "y": 5446
+      }
+    },
+    {
+      "id": "video_017",
+      "type": "video",
+      "name": "video Section 17",
+      "coordinates": {
+        "x": 136,
+        "y": 5779,
+        "width": 1330,
+        "height": 662
+      },
+      "area": 880460,
+      "center": {
+        "x": 801,
+        "y": 6110
+      }
+    },
+    {
+      "id": "section_heading_018",
+      "type": "section_heading",
+      "name": "section heading Section 18",
+      "coordinates": {
+        "x": 140,
+        "y": 6450,
+        "width": 1324,
+        "height": 98
+      },
+      "area": 129752,
+      "center": {
+        "x": 802,
+        "y": 6499
+      }
+    },
+    {
+      "id": "static_image_019",
+      "type": "static_image",
+      "name": "static image Section 19",
+      "coordinates": {
+        "x": 138,
+        "y": 6550,
+        "width": 560,
+        "height": 556
+      },
+      "area": 311360,
+      "center": {
+        "x": 418,
+        "y": 6828
+      }
+    },
+    {
+      "id": "text_block_020",
+      "type": "text_block",
+      "name": "text block Section 20",
+      "coordinates": {
+        "x": 702,
+        "y": 6552,
+        "width": 756,
+        "height": 554
+      },
+      "area": 418824,
+      "center": {
+        "x": 1080,
+        "y": 6829
+      }
+    },
+    {
+      "id": "section_heading_021",
+      "type": "section_heading",
+      "name": "section heading Section 21",
+      "coordinates": {
+        "x": 136,
+        "y": 7112,
+        "width": 1322,
+        "height": 108
+      },
+      "area": 142776,
+      "center": {
+        "x": 797,
+        "y": 7166
+      }
+    },
+    {
+      "id": "testimonial_022",
+      "type": "testimonial",
+      "name": "testimonial Section 22",
+      "coordinates": {
+        "x": 198,
+        "y": 7300,
+        "width": 368,
+        "height": 360
+      },
+      "area": 132480,
+      "center": {
+        "x": 382,
+        "y": 7480
+      }
+    },
+    {
+      "id": "testimonial_023",
+      "type": "testimonial",
+      "name": "testimonial Section 23",
+      "coordinates": {
+        "x": 606,
+        "y": 7304,
+        "width": 394,
+        "height": 362
+      },
+      "area": 142628,
+      "center": {
+        "x": 803,
+        "y": 7485
+      }
+    },
+    {
+      "id": "testimonial_024",
+      "type": "testimonial",
+      "name": "testimonial Section 24",
+      "coordinates": {
+        "x": 1030,
+        "y": 7304,
+        "width": 386,
+        "height": 358
+      },
+      "area": 138188,
+      "center": {
+        "x": 1223,
+        "y": 7483
+      }
+    },
+    {
+      "id": "testimonial_025",
+      "type": "testimonial",
+      "name": "testimonial Section 25",
+      "coordinates": {
+        "x": 404,
+        "y": 7748,
+        "width": 372,
+        "height": 354
+      },
+      "area": 131688,
+      "center": {
+        "x": 590,
+        "y": 7925
+      }
+    },
+    {
+      "id": "testimonial_026",
+      "type": "testimonial",
+      "name": "testimonial Section 26",
+      "coordinates": {
+        "x": 820,
+        "y": 7736,
+        "width": 378,
+        "height": 364
+      },
+      "area": 137592,
+      "center": {
+        "x": 1009,
+        "y": 7918
+      }
+    },
+    {
+      "id": "section_heading_027",
+      "type": "section_heading",
+      "name": "section heading Section 27",
+      "coordinates": {
+        "x": 144,
+        "y": 8168,
+        "width": 1306,
+        "height": 116
+      },
+      "area": 151496,
+      "center": {
+        "x": 797,
+        "y": 8226
+      }
+    },
+    {
+      "id": "static_image_028",
+      "type": "static_image",
+      "name": "static image Section 28",
+      "coordinates": {
+        "x": 836,
+        "y": 8288,
+        "width": 622,
+        "height": 532
+      },
+      "area": 330904,
+      "center": {
+        "x": 1147,
+        "y": 8554
+      }
+    },
+    {
+      "id": "text_block_029",
+      "type": "text_block",
+      "name": "text block Section 29",
+      "coordinates": {
+        "x": 140,
+        "y": 8284,
+        "width": 692,
+        "height": 534
+      },
+      "area": 369528,
+      "center": {
+        "x": 486,
+        "y": 8551
+      }
+    },
+    {
+      "id": "section_heading_030",
+      "type": "section_heading",
+      "name": "section heading Section 30",
+      "coordinates": {
+        "x": 140,
+        "y": 8828,
+        "width": 1318,
+        "height": 116
+      },
+      "area": 152888,
+      "center": {
+        "x": 799,
+        "y": 8886
+      }
+    },
+    {
+      "id": "static_image_031",
+      "type": "static_image",
+      "name": "static image Section 31",
+      "coordinates": {
+        "x": 318,
+        "y": 9022,
+        "width": 270,
+        "height": 346
+      },
+      "area": 93420,
+      "center": {
+        "x": 453,
+        "y": 9195
+      }
+    },
+    {
+      "id": "static_image_032",
+      "type": "static_image",
+      "name": "static image Section 32",
+      "coordinates": {
+        "x": 688,
+        "y": 9010,
+        "width": 278,
+        "height": 348
+      },
+      "area": 96744,
+      "center": {
+        "x": 827,
+        "y": 9184
+      }
+    },
+    {
+      "id": "static_image_033",
+      "type": "static_image",
+      "name": "static image Section 33",
+      "coordinates": {
+        "x": 1060,
+        "y": 9004,
+        "width": 302,
+        "height": 358
+      },
+      "area": 108116,
+      "center": {
+        "x": 1211,
+        "y": 9183
+      }
+    },
+    {
+      "id": "section_heading_034",
+      "type": "section_heading",
+      "name": "section heading Section 34",
+      "coordinates": {
+        "x": 146,
+        "y": 9498,
+        "width": 1314,
+        "height": 106
+      },
+      "area": 139284,
+      "center": {
+        "x": 803,
+        "y": 9551
+      }
+    },
+    {
+      "id": "linkout_image_035",
+      "type": "linkout_image",
+      "name": "linkout image Section 35",
+      "coordinates": {
+        "x": 142,
+        "y": 9606,
+        "width": 1322,
+        "height": 560
+      },
+      "area": 740320,
+      "center": {
+        "x": 803,
+        "y": 9886
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T06:31:01.753Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-46-38 Amazon.in RiverSoft.png"
+  }
+}

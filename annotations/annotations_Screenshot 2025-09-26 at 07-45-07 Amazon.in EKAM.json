@@ -1,0 +1,623 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-45-07 Amazon.in EKAM.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 12057
+  },
+  "total_sections": 38,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 128,
+        "y": 86,
+        "width": 1352,
+        "height": 278
+      },
+      "area": 375856,
+      "center": {
+        "x": 804,
+        "y": 225
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 128,
+        "y": 362,
+        "width": 1354,
+        "height": 84
+      },
+      "area": 113736,
+      "center": {
+        "x": 805,
+        "y": 404
+      }
+    },
+    {
+      "id": "video_003",
+      "type": "video",
+      "name": "video Section 3",
+      "coordinates": {
+        "x": 132,
+        "y": 452,
+        "width": 1342,
+        "height": 758
+      },
+      "area": 1017236,
+      "center": {
+        "x": 803,
+        "y": 831
+      }
+    },
+    {
+      "id": "section_heading_004",
+      "type": "section_heading",
+      "name": "section heading Section 4",
+      "coordinates": {
+        "x": 142,
+        "y": 1220,
+        "width": 1334,
+        "height": 100
+      },
+      "area": 133400,
+      "center": {
+        "x": 809,
+        "y": 1270
+      }
+    },
+    {
+      "id": "category_carousel_005",
+      "type": "category_carousel",
+      "name": "category carousel Section 5",
+      "coordinates": {
+        "x": 152,
+        "y": 1341,
+        "width": 1326,
+        "height": 160
+      },
+      "area": 212160,
+      "center": {
+        "x": 815,
+        "y": 1421
+      }
+    },
+    {
+      "id": "product_selector_006",
+      "type": "product_selector",
+      "name": "product selector Section 6",
+      "coordinates": {
+        "x": 138,
+        "y": 1519,
+        "width": 1346,
+        "height": 538
+      },
+      "area": 724148,
+      "center": {
+        "x": 811,
+        "y": 1788
+      }
+    },
+    {
+      "id": "section_heading_007",
+      "type": "section_heading",
+      "name": "section heading Section 7",
+      "coordinates": {
+        "x": 144,
+        "y": 2088,
+        "width": 1342,
+        "height": 116
+      },
+      "area": 155672,
+      "center": {
+        "x": 815,
+        "y": 2146
+      }
+    },
+    {
+      "id": "shop_the_look_008",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 8",
+      "coordinates": {
+        "x": 140,
+        "y": 2225,
+        "width": 1324,
+        "height": 666
+      },
+      "area": 881784,
+      "center": {
+        "x": 802,
+        "y": 2558
+      }
+    },
+    {
+      "id": "static_image_009",
+      "type": "static_image",
+      "name": "static image Section 9",
+      "coordinates": {
+        "x": 140,
+        "y": 2894,
+        "width": 660,
+        "height": 660
+      },
+      "area": 435600,
+      "center": {
+        "x": 470,
+        "y": 3224
+      }
+    },
+    {
+      "id": "static_image_010",
+      "type": "static_image",
+      "name": "static image Section 10",
+      "coordinates": {
+        "x": 800,
+        "y": 2892,
+        "width": 334,
+        "height": 330
+      },
+      "area": 110220,
+      "center": {
+        "x": 967,
+        "y": 3057
+      }
+    },
+    {
+      "id": "static_image_011",
+      "type": "static_image",
+      "name": "static image Section 11",
+      "coordinates": {
+        "x": 1136,
+        "y": 2892,
+        "width": 332,
+        "height": 332
+      },
+      "area": 110224,
+      "center": {
+        "x": 1302,
+        "y": 3058
+      }
+    },
+    {
+      "id": "static_image_012",
+      "type": "static_image",
+      "name": "static image Section 12",
+      "coordinates": {
+        "x": 800,
+        "y": 3222,
+        "width": 332,
+        "height": 336
+      },
+      "area": 111552,
+      "center": {
+        "x": 966,
+        "y": 3390
+      }
+    },
+    {
+      "id": "static_image_013",
+      "type": "static_image",
+      "name": "static image Section 13",
+      "coordinates": {
+        "x": 1130,
+        "y": 3226,
+        "width": 342,
+        "height": 332
+      },
+      "area": 113544,
+      "center": {
+        "x": 1301,
+        "y": 3392
+      }
+    },
+    {
+      "id": "section_heading_014",
+      "type": "section_heading",
+      "name": "section heading Section 14",
+      "coordinates": {
+        "x": 134,
+        "y": 3566,
+        "width": 1342,
+        "height": 124
+      },
+      "area": 166408,
+      "center": {
+        "x": 805,
+        "y": 3628
+      }
+    },
+    {
+      "id": "category_carousel_015",
+      "type": "category_carousel",
+      "name": "category carousel Section 15",
+      "coordinates": {
+        "x": 146,
+        "y": 3700,
+        "width": 1336,
+        "height": 340
+      },
+      "area": 454240,
+      "center": {
+        "x": 814,
+        "y": 3870
+      }
+    },
+    {
+      "id": "section_heading_016",
+      "type": "section_heading",
+      "name": "section heading Section 16",
+      "coordinates": {
+        "x": 142,
+        "y": 4052,
+        "width": 1340,
+        "height": 110
+      },
+      "area": 147400,
+      "center": {
+        "x": 812,
+        "y": 4107
+      }
+    },
+    {
+      "id": "shop_the_look_017",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 17",
+      "coordinates": {
+        "x": 138,
+        "y": 4175,
+        "width": 668,
+        "height": 664
+      },
+      "area": 443552,
+      "center": {
+        "x": 472,
+        "y": 4507
+      }
+    },
+    {
+      "id": "static_image_018",
+      "type": "static_image",
+      "name": "static image Section 18",
+      "coordinates": {
+        "x": 814,
+        "y": 4167,
+        "width": 318,
+        "height": 332
+      },
+      "area": 105576,
+      "center": {
+        "x": 973,
+        "y": 4333
+      }
+    },
+    {
+      "id": "static_image_019",
+      "type": "static_image",
+      "name": "static image Section 19",
+      "coordinates": {
+        "x": 1138,
+        "y": 4167,
+        "width": 330,
+        "height": 336
+      },
+      "area": 110880,
+      "center": {
+        "x": 1303,
+        "y": 4335
+      }
+    },
+    {
+      "id": "static_image_020",
+      "type": "static_image",
+      "name": "static image Section 20",
+      "coordinates": {
+        "x": 810,
+        "y": 4507,
+        "width": 344,
+        "height": 332
+      },
+      "area": 114208,
+      "center": {
+        "x": 982,
+        "y": 4673
+      }
+    },
+    {
+      "id": "static_image_021",
+      "type": "static_image",
+      "name": "static image Section 21",
+      "coordinates": {
+        "x": 1158,
+        "y": 4507,
+        "width": 312,
+        "height": 334
+      },
+      "area": 104208,
+      "center": {
+        "x": 1314,
+        "y": 4674
+      }
+    },
+    {
+      "id": "section_heading_022",
+      "type": "section_heading",
+      "name": "section heading Section 22",
+      "coordinates": {
+        "x": 138,
+        "y": 4845,
+        "width": 1338,
+        "height": 134
+      },
+      "area": 179292,
+      "center": {
+        "x": 807,
+        "y": 4912
+      }
+    },
+    {
+      "id": "static_image_023",
+      "type": "static_image",
+      "name": "static image Section 23",
+      "coordinates": {
+        "x": 140,
+        "y": 4984,
+        "width": 1336,
+        "height": 452
+      },
+      "area": 603872,
+      "center": {
+        "x": 808,
+        "y": 5210
+      }
+    },
+    {
+      "id": "asin_waterfall_024",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 24",
+      "coordinates": {
+        "x": 138,
+        "y": 5444,
+        "width": 1394,
+        "height": 2041
+      },
+      "area": 2845154,
+      "center": {
+        "x": 835,
+        "y": 6465
+      }
+    },
+    {
+      "id": "section_heading_025",
+      "type": "section_heading",
+      "name": "section heading Section 25",
+      "coordinates": {
+        "x": 134,
+        "y": 7514,
+        "width": 1408,
+        "height": 92
+      },
+      "area": 129536,
+      "center": {
+        "x": 838,
+        "y": 7560
+      }
+    },
+    {
+      "id": "static_image_026",
+      "type": "static_image",
+      "name": "static image Section 26",
+      "coordinates": {
+        "x": 136,
+        "y": 7610,
+        "width": 246,
+        "height": 266
+      },
+      "area": 65436,
+      "center": {
+        "x": 259,
+        "y": 7743
+      }
+    },
+    {
+      "id": "static_image_027",
+      "type": "static_image",
+      "name": "static image Section 27",
+      "coordinates": {
+        "x": 386,
+        "y": 7606,
+        "width": 228,
+        "height": 270
+      },
+      "area": 61560,
+      "center": {
+        "x": 500,
+        "y": 7741
+      }
+    },
+    {
+      "id": "static_image_028",
+      "type": "static_image",
+      "name": "static image Section 28",
+      "coordinates": {
+        "x": 616,
+        "y": 7604,
+        "width": 394,
+        "height": 268
+      },
+      "area": 105592,
+      "center": {
+        "x": 813,
+        "y": 7738
+      }
+    },
+    {
+      "id": "static_image_029",
+      "type": "static_image",
+      "name": "static image Section 29",
+      "coordinates": {
+        "x": 1014,
+        "y": 7606,
+        "width": 246,
+        "height": 272
+      },
+      "area": 66912,
+      "center": {
+        "x": 1137,
+        "y": 7742
+      }
+    },
+    {
+      "id": "static_image_030",
+      "type": "static_image",
+      "name": "static image Section 30",
+      "coordinates": {
+        "x": 1258,
+        "y": 7608,
+        "width": 268,
+        "height": 270
+      },
+      "area": 72360,
+      "center": {
+        "x": 1392,
+        "y": 7743
+      }
+    },
+    {
+      "id": "section_heading_031",
+      "type": "section_heading",
+      "name": "section heading Section 31",
+      "coordinates": {
+        "x": 132,
+        "y": 7876,
+        "width": 1396,
+        "height": 92
+      },
+      "area": 128432,
+      "center": {
+        "x": 830,
+        "y": 7922
+      }
+    },
+    {
+      "id": "static_image_032",
+      "type": "static_image",
+      "name": "static image Section 32",
+      "coordinates": {
+        "x": 132,
+        "y": 7968,
+        "width": 1394,
+        "height": 456
+      },
+      "area": 635664,
+      "center": {
+        "x": 829,
+        "y": 8196
+      }
+    },
+    {
+      "id": "asin_waterfall_033",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 33",
+      "coordinates": {
+        "x": 142,
+        "y": 8438,
+        "width": 1348,
+        "height": 2084
+      },
+      "area": 2809231,
+      "center": {
+        "x": 816,
+        "y": 9480
+      }
+    },
+    {
+      "id": "section_heading_034",
+      "type": "section_heading",
+      "name": "section heading Section 34",
+      "coordinates": {
+        "x": 144,
+        "y": 10528,
+        "width": 1350,
+        "height": 104
+      },
+      "area": 140400,
+      "center": {
+        "x": 819,
+        "y": 10580
+      }
+    },
+    {
+      "id": "testimonial_035",
+      "type": "testimonial",
+      "name": "testimonial Section 35",
+      "coordinates": {
+        "x": 150,
+        "y": 10738,
+        "width": 302,
+        "height": 332
+      },
+      "area": 100264,
+      "center": {
+        "x": 301,
+        "y": 10904
+      }
+    },
+    {
+      "id": "testimonial_036",
+      "type": "testimonial",
+      "name": "testimonial Section 36",
+      "coordinates": {
+        "x": 462,
+        "y": 10730,
+        "width": 326,
+        "height": 340
+      },
+      "area": 110840,
+      "center": {
+        "x": 625,
+        "y": 10900
+      }
+    },
+    {
+      "id": "testimonial_037",
+      "type": "testimonial",
+      "name": "testimonial Section 37",
+      "coordinates": {
+        "x": 806,
+        "y": 10728,
+        "width": 316,
+        "height": 338
+      },
+      "area": 106808,
+      "center": {
+        "x": 964,
+        "y": 10897
+      }
+    },
+    {
+      "id": "testimonial_038",
+      "type": "testimonial",
+      "name": "testimonial Section 38",
+      "coordinates": {
+        "x": 1132,
+        "y": 10724,
+        "width": 324,
+        "height": 342
+      },
+      "area": 110808,
+      "center": {
+        "x": 1294,
+        "y": 10895
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T09:44:16.379Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-45-07 Amazon.in EKAM.png"
+  }
+}

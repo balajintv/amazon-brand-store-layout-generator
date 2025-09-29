@@ -1,0 +1,399 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-37-36 Amazon.in Derma Co.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 6617
+  },
+  "total_sections": 24,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 134,
+        "y": 89,
+        "width": 1340,
+        "height": 278
+      },
+      "area": 372520,
+      "center": {
+        "x": 804,
+        "y": 228
+      }
+    },
+    {
+      "id": "navigation_002",
+      "type": "navigation",
+      "name": "navigation Section 2",
+      "coordinates": {
+        "x": 132,
+        "y": 367,
+        "width": 1356,
+        "height": 78
+      },
+      "area": 105768,
+      "center": {
+        "x": 810,
+        "y": 406
+      }
+    },
+    {
+      "id": "video_003",
+      "type": "video",
+      "name": "video Section 3",
+      "coordinates": {
+        "x": 138,
+        "y": 450,
+        "width": 1336,
+        "height": 702
+      },
+      "area": 937872,
+      "center": {
+        "x": 806,
+        "y": 801
+      }
+    },
+    {
+      "id": "section_heading_004",
+      "type": "section_heading",
+      "name": "section heading Section 4",
+      "coordinates": {
+        "x": 148,
+        "y": 1165,
+        "width": 1324,
+        "height": 108
+      },
+      "area": 142992,
+      "center": {
+        "x": 810,
+        "y": 1219
+      }
+    },
+    {
+      "id": "category_carousel_005",
+      "type": "category_carousel",
+      "name": "category carousel Section 5",
+      "coordinates": {
+        "x": 150,
+        "y": 1273,
+        "width": 1328,
+        "height": 132
+      },
+      "area": 175296,
+      "center": {
+        "x": 814,
+        "y": 1339
+      }
+    },
+    {
+      "id": "section_heading_006",
+      "type": "section_heading",
+      "name": "section heading Section 6",
+      "coordinates": {
+        "x": 144,
+        "y": 1427,
+        "width": 1334,
+        "height": 116
+      },
+      "area": 154744,
+      "center": {
+        "x": 811,
+        "y": 1485
+      }
+    },
+    {
+      "id": "product_selector_007",
+      "type": "product_selector",
+      "name": "product selector Section 7",
+      "coordinates": {
+        "x": 130,
+        "y": 1570,
+        "width": 1348,
+        "height": 400
+      },
+      "area": 539200,
+      "center": {
+        "x": 804,
+        "y": 1770
+      }
+    },
+    {
+      "id": "section_heading_008",
+      "type": "section_heading",
+      "name": "section heading Section 8",
+      "coordinates": {
+        "x": 130,
+        "y": 1976,
+        "width": 1346,
+        "height": 124
+      },
+      "area": 166904,
+      "center": {
+        "x": 803,
+        "y": 2038
+      }
+    },
+    {
+      "id": "section_heading_009",
+      "type": "section_heading",
+      "name": "section heading Section 9",
+      "coordinates": {
+        "x": 128,
+        "y": 2102,
+        "width": 1352,
+        "height": 104
+      },
+      "area": 140608,
+      "center": {
+        "x": 804,
+        "y": 2154
+      }
+    },
+    {
+      "id": "asin_waterfall_010",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 10",
+      "coordinates": {
+        "x": 138,
+        "y": 2216,
+        "width": 1338,
+        "height": 346
+      },
+      "area": 462948,
+      "center": {
+        "x": 807,
+        "y": 2389
+      }
+    },
+    {
+      "id": "section_heading_011",
+      "type": "section_heading",
+      "name": "section heading Section 11",
+      "coordinates": {
+        "x": 154,
+        "y": 2580,
+        "width": 1326,
+        "height": 80
+      },
+      "area": 106080,
+      "center": {
+        "x": 817,
+        "y": 2620
+      }
+    },
+    {
+      "id": "reels_012",
+      "type": "reels",
+      "name": "reels Section 12",
+      "coordinates": {
+        "x": 142,
+        "y": 2662,
+        "width": 1336,
+        "height": 504
+      },
+      "area": 673344,
+      "center": {
+        "x": 810,
+        "y": 2914
+      }
+    },
+    {
+      "id": "section_heading_013",
+      "type": "section_heading",
+      "name": "section heading Section 13",
+      "coordinates": {
+        "x": 146,
+        "y": 3234,
+        "width": 1324,
+        "height": 124
+      },
+      "area": 164176,
+      "center": {
+        "x": 808,
+        "y": 3296
+      }
+    },
+    {
+      "id": "linkout_image_014",
+      "type": "linkout_image",
+      "name": "linkout image Section 14",
+      "coordinates": {
+        "x": 140,
+        "y": 3427,
+        "width": 660,
+        "height": 326
+      },
+      "area": 215160,
+      "center": {
+        "x": 470,
+        "y": 3590
+      }
+    },
+    {
+      "id": "linkout_image_015",
+      "type": "linkout_image",
+      "name": "linkout image Section 15",
+      "coordinates": {
+        "x": 802,
+        "y": 3427,
+        "width": 656,
+        "height": 330
+      },
+      "area": 216480,
+      "center": {
+        "x": 1130,
+        "y": 3592
+      }
+    },
+    {
+      "id": "linkout_image_016",
+      "type": "linkout_image",
+      "name": "linkout image Section 16",
+      "coordinates": {
+        "x": 138,
+        "y": 3760,
+        "width": 662,
+        "height": 328
+      },
+      "area": 217136,
+      "center": {
+        "x": 469,
+        "y": 3924
+      }
+    },
+    {
+      "id": "linkout_image_017",
+      "type": "linkout_image",
+      "name": "linkout image Section 17",
+      "coordinates": {
+        "x": 804,
+        "y": 3760,
+        "width": 660,
+        "height": 332
+      },
+      "area": 219120,
+      "center": {
+        "x": 1134,
+        "y": 3926
+      }
+    },
+    {
+      "id": "section_heading_018",
+      "type": "section_heading",
+      "name": "section heading Section 18",
+      "coordinates": {
+        "x": 142,
+        "y": 4137,
+        "width": 1316,
+        "height": 100
+      },
+      "area": 131600,
+      "center": {
+        "x": 800,
+        "y": 4187
+      }
+    },
+    {
+      "id": "testimonial_019",
+      "type": "testimonial",
+      "name": "testimonial Section 19",
+      "coordinates": {
+        "x": 134,
+        "y": 4290,
+        "width": 332,
+        "height": 334
+      },
+      "area": 110888,
+      "center": {
+        "x": 300,
+        "y": 4457
+      }
+    },
+    {
+      "id": "testimonial_020",
+      "type": "testimonial",
+      "name": "testimonial Section 20",
+      "coordinates": {
+        "x": 466,
+        "y": 4290,
+        "width": 332,
+        "height": 338
+      },
+      "area": 112216,
+      "center": {
+        "x": 632,
+        "y": 4459
+      }
+    },
+    {
+      "id": "testimonial_021",
+      "type": "testimonial",
+      "name": "testimonial Section 21",
+      "coordinates": {
+        "x": 798,
+        "y": 4288,
+        "width": 334,
+        "height": 342
+      },
+      "area": 114228,
+      "center": {
+        "x": 965,
+        "y": 4459
+      }
+    },
+    {
+      "id": "testimonial_022",
+      "type": "testimonial",
+      "name": "testimonial Section 22",
+      "coordinates": {
+        "x": 1138,
+        "y": 4286,
+        "width": 328,
+        "height": 346
+      },
+      "area": 113488,
+      "center": {
+        "x": 1302,
+        "y": 4459
+      }
+    },
+    {
+      "id": "section_heading_023",
+      "type": "section_heading",
+      "name": "section heading Section 23",
+      "coordinates": {
+        "x": 148,
+        "y": 4672,
+        "width": 1314,
+        "height": 86
+      },
+      "area": 113004,
+      "center": {
+        "x": 805,
+        "y": 4715
+      }
+    },
+    {
+      "id": "asin_waterfall_024",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 24",
+      "coordinates": {
+        "x": 140,
+        "y": 4827,
+        "width": 1326,
+        "height": 1049
+      },
+      "area": 1390974,
+      "center": {
+        "x": 803,
+        "y": 5351
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T07:26:33.343Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-37-36 Amazon.in Derma Co.png"
+  }
+}

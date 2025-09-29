@@ -1,0 +1,447 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-32-13 Amazon.in London Hills.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 9280
+  },
+  "total_sections": 27,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 126,
+        "y": 86,
+        "width": 1358,
+        "height": 282
+      },
+      "area": 382956,
+      "center": {
+        "x": 805,
+        "y": 227
+      }
+    },
+    {
+      "id": "video_002",
+      "type": "video",
+      "name": "video Section 2",
+      "coordinates": {
+        "x": 136,
+        "y": 440,
+        "width": 1334,
+        "height": 676
+      },
+      "area": 901784,
+      "center": {
+        "x": 803,
+        "y": 778
+      }
+    },
+    {
+      "id": "section_heading_003",
+      "type": "section_heading",
+      "name": "section heading Section 3",
+      "coordinates": {
+        "x": 134,
+        "y": 1114,
+        "width": 1340,
+        "height": 114
+      },
+      "area": 152760,
+      "center": {
+        "x": 804,
+        "y": 1171
+      }
+    },
+    {
+      "id": "category_carousel_004",
+      "type": "category_carousel",
+      "name": "category carousel Section 4",
+      "coordinates": {
+        "x": 136,
+        "y": 1230,
+        "width": 1340,
+        "height": 252
+      },
+      "area": 337680,
+      "center": {
+        "x": 806,
+        "y": 1356
+      }
+    },
+    {
+      "id": "section_heading_005",
+      "type": "section_heading",
+      "name": "section heading Section 5",
+      "coordinates": {
+        "x": 136,
+        "y": 1482,
+        "width": 1344,
+        "height": 114
+      },
+      "area": 153216,
+      "center": {
+        "x": 808,
+        "y": 1539
+      }
+    },
+    {
+      "id": "reels_006",
+      "type": "reels",
+      "name": "reels Section 6",
+      "coordinates": {
+        "x": 134,
+        "y": 1596,
+        "width": 1344,
+        "height": 566
+      },
+      "area": 760704,
+      "center": {
+        "x": 806,
+        "y": 1879
+      }
+    },
+    {
+      "id": "linkout_image_007",
+      "type": "linkout_image",
+      "name": "linkout image Section 7",
+      "coordinates": {
+        "x": 134,
+        "y": 2211,
+        "width": 1336,
+        "height": 714
+      },
+      "area": 953904,
+      "center": {
+        "x": 802,
+        "y": 2568
+      }
+    },
+    {
+      "id": "section_heading_008",
+      "type": "section_heading",
+      "name": "section heading Section 8",
+      "coordinates": {
+        "x": 132,
+        "y": 2925,
+        "width": 1342,
+        "height": 130
+      },
+      "area": 174460,
+      "center": {
+        "x": 803,
+        "y": 2990
+      }
+    },
+    {
+      "id": "shop_the_look_009",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 9",
+      "coordinates": {
+        "x": 200,
+        "y": 3094,
+        "width": 402,
+        "height": 408
+      },
+      "area": 164016,
+      "center": {
+        "x": 401,
+        "y": 3298
+      }
+    },
+    {
+      "id": "shop_the_look_010",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 10",
+      "coordinates": {
+        "x": 604,
+        "y": 3098,
+        "width": 396,
+        "height": 408
+      },
+      "area": 161568,
+      "center": {
+        "x": 802,
+        "y": 3302
+      }
+    },
+    {
+      "id": "section_heading_011",
+      "type": "section_heading",
+      "name": "section heading Section 11",
+      "coordinates": {
+        "x": 194,
+        "y": 3561,
+        "width": 1358,
+        "height": 130
+      },
+      "area": 176540,
+      "center": {
+        "x": 873,
+        "y": 3626
+      }
+    },
+    {
+      "id": "product_selector_012",
+      "type": "product_selector",
+      "name": "product selector Section 12",
+      "coordinates": {
+        "x": 136,
+        "y": 3705,
+        "width": 1372,
+        "height": 538
+      },
+      "area": 738136,
+      "center": {
+        "x": 822,
+        "y": 3974
+      }
+    },
+    {
+      "id": "linkout_image_013",
+      "type": "linkout_image",
+      "name": "linkout image Section 13",
+      "coordinates": {
+        "x": 134,
+        "y": 4243,
+        "width": 1338,
+        "height": 714
+      },
+      "area": 955332,
+      "center": {
+        "x": 803,
+        "y": 4600
+      }
+    },
+    {
+      "id": "text_block_014",
+      "type": "text_block",
+      "name": "text block Section 14",
+      "coordinates": {
+        "x": 134,
+        "y": 4963,
+        "width": 1336,
+        "height": 502
+      },
+      "area": 670672,
+      "center": {
+        "x": 802,
+        "y": 5214
+      }
+    },
+    {
+      "id": "section_heading_015",
+      "type": "section_heading",
+      "name": "section heading Section 15",
+      "coordinates": {
+        "x": 134,
+        "y": 5469,
+        "width": 1332,
+        "height": 120
+      },
+      "area": 159840,
+      "center": {
+        "x": 800,
+        "y": 5529
+      }
+    },
+    {
+      "id": "shop_the_look_016",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 16",
+      "coordinates": {
+        "x": 136,
+        "y": 5609,
+        "width": 668,
+        "height": 334
+      },
+      "area": 223112,
+      "center": {
+        "x": 470,
+        "y": 5776
+      }
+    },
+    {
+      "id": "shop_the_look_017",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 17",
+      "coordinates": {
+        "x": 132,
+        "y": 5943,
+        "width": 340,
+        "height": 326
+      },
+      "area": 110840,
+      "center": {
+        "x": 302,
+        "y": 6106
+      }
+    },
+    {
+      "id": "shop_the_look_018",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 18",
+      "coordinates": {
+        "x": 474,
+        "y": 5943,
+        "width": 332,
+        "height": 328
+      },
+      "area": 108896,
+      "center": {
+        "x": 640,
+        "y": 6107
+      }
+    },
+    {
+      "id": "shop_the_look_019",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 19",
+      "coordinates": {
+        "x": 804,
+        "y": 5607,
+        "width": 664,
+        "height": 662
+      },
+      "area": 439568,
+      "center": {
+        "x": 1136,
+        "y": 5938
+      }
+    },
+    {
+      "id": "section_heading_020",
+      "type": "section_heading",
+      "name": "section heading Section 20",
+      "coordinates": {
+        "x": 134,
+        "y": 6273,
+        "width": 1334,
+        "height": 108
+      },
+      "area": 144072,
+      "center": {
+        "x": 801,
+        "y": 6327
+      }
+    },
+    {
+      "id": "testimonial_021",
+      "type": "testimonial",
+      "name": "testimonial Section 21",
+      "coordinates": {
+        "x": 136,
+        "y": 6409,
+        "width": 326,
+        "height": 318
+      },
+      "area": 103668,
+      "center": {
+        "x": 299,
+        "y": 6568
+      }
+    },
+    {
+      "id": "testimonial_022",
+      "type": "testimonial",
+      "name": "testimonial Section 22",
+      "coordinates": {
+        "x": 464,
+        "y": 6409,
+        "width": 336,
+        "height": 320
+      },
+      "area": 107520,
+      "center": {
+        "x": 632,
+        "y": 6569
+      }
+    },
+    {
+      "id": "testimonial_023",
+      "type": "testimonial",
+      "name": "testimonial Section 23",
+      "coordinates": {
+        "x": 800,
+        "y": 6409,
+        "width": 338,
+        "height": 320
+      },
+      "area": 108160,
+      "center": {
+        "x": 969,
+        "y": 6569
+      }
+    },
+    {
+      "id": "testimonial_024",
+      "type": "testimonial",
+      "name": "testimonial Section 24",
+      "coordinates": {
+        "x": 1136,
+        "y": 6401,
+        "width": 326,
+        "height": 328
+      },
+      "area": 106928,
+      "center": {
+        "x": 1299,
+        "y": 6565
+      }
+    },
+    {
+      "id": "linkout_image_025",
+      "type": "linkout_image",
+      "name": "linkout image Section 25",
+      "coordinates": {
+        "x": 138,
+        "y": 6733,
+        "width": 1326,
+        "height": 718
+      },
+      "area": 952068,
+      "center": {
+        "x": 801,
+        "y": 7092
+      }
+    },
+    {
+      "id": "static_image_026",
+      "type": "static_image",
+      "name": "static image Section 26",
+      "coordinates": {
+        "x": 142,
+        "y": 7457,
+        "width": 1318,
+        "height": 532
+      },
+      "area": 701176,
+      "center": {
+        "x": 801,
+        "y": 7723
+      }
+    },
+    {
+      "id": "asin_waterfall_027",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 27",
+      "coordinates": {
+        "x": 134,
+        "y": 7994,
+        "width": 1340,
+        "height": 562
+      },
+      "area": 753080,
+      "center": {
+        "x": 804,
+        "y": 8275
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T10:37:12.394Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-32-13 Amazon.in London Hills.png"
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-31-48 Amazon.in NATIVE by Urban Company Native Lock Pro.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 12809
+  },
+  "total_sections": 29,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 126,
+        "y": 86,
+        "width": 1354,
+        "height": 276
+      },
+      "area": 373704,
+      "center": {
+        "x": 803,
+        "y": 224
+      }
+    },
+    {
+      "id": "video_002",
+      "type": "video",
+      "name": "video Section 2",
+      "coordinates": {
+        "x": 140,
+        "y": 454,
+        "width": 1326,
+        "height": 748
+      },
+      "area": 991848,
+      "center": {
+        "x": 803,
+        "y": 828
+      }
+    },
+    {
+      "id": "text_block_003",
+      "type": "text_block",
+      "name": "text block Section 3",
+      "coordinates": {
+        "x": 132,
+        "y": 1212,
+        "width": 1338,
+        "height": 542
+      },
+      "area": 725196,
+      "center": {
+        "x": 801,
+        "y": 1483
+      }
+    },
+    {
+      "id": "static_image_004",
+      "type": "static_image",
+      "name": "static image Section 4",
+      "coordinates": {
+        "x": 138,
+        "y": 1762,
+        "width": 1332,
+        "height": 1310
+      },
+      "area": 1744920,
+      "center": {
+        "x": 804,
+        "y": 2417
+      }
+    },
+    {
+      "id": "section_heading_005",
+      "type": "section_heading",
+      "name": "section heading Section 5",
+      "coordinates": {
+        "x": 150,
+        "y": 3108,
+        "width": 1326,
+        "height": 98
+      },
+      "area": 129948,
+      "center": {
+        "x": 813,
+        "y": 3157
+      }
+    },
+    {
+      "id": "shop_the_look_006",
+      "type": "shop_the_look",
+      "name": "shop the_look Section 6",
+      "coordinates": {
+        "x": 140,
+        "y": 3261,
+        "width": 1330,
+        "height": 668
+      },
+      "area": 888440,
+      "center": {
+        "x": 805,
+        "y": 3595
+      }
+    },
+    {
+      "id": "section_heading_007",
+      "type": "section_heading",
+      "name": "section heading Section 7",
+      "coordinates": {
+        "x": 146,
+        "y": 4001,
+        "width": 1324,
+        "height": 80
+      },
+      "area": 105920,
+      "center": {
+        "x": 808,
+        "y": 4041
+      }
+    },
+    {
+      "id": "reels_008",
+      "type": "reels",
+      "name": "reels Section 8",
+      "coordinates": {
+        "x": 150,
+        "y": 4159,
+        "width": 1310,
+        "height": 508
+      },
+      "area": 665480,
+      "center": {
+        "x": 805,
+        "y": 4413
+      }
+    },
+    {
+      "id": "section_heading_009",
+      "type": "section_heading",
+      "name": "section heading Section 9",
+      "coordinates": {
+        "x": 148,
+        "y": 4771,
+        "width": 1310,
+        "height": 112
+      },
+      "area": 146720,
+      "center": {
+        "x": 803,
+        "y": 4827
+      }
+    },
+    {
+      "id": "static_image_010",
+      "type": "static_image",
+      "name": "static image Section 10",
+      "coordinates": {
+        "x": 136,
+        "y": 4962,
+        "width": 280,
+        "height": 282
+      },
+      "area": 78960,
+      "center": {
+        "x": 276,
+        "y": 5103
+      }
+    },
+    {
+      "id": "static_image_011",
+      "type": "static_image",
+      "name": "static image Section 11",
+      "coordinates": {
+        "x": 416,
+        "y": 4958,
+        "width": 282,
+        "height": 288
+      },
+      "area": 81216,
+      "center": {
+        "x": 557,
+        "y": 5102
+      }
+    },
+    {
+      "id": "static_image_012",
+      "type": "static_image",
+      "name": "static image Section 12",
+      "coordinates": {
+        "x": 700,
+        "y": 4954,
+        "width": 284,
+        "height": 294
+      },
+      "area": 83496,
+      "center": {
+        "x": 842,
+        "y": 5101
+      }
+    },
+    {
+      "id": "static_image_013",
+      "type": "static_image",
+      "name": "static image Section 13",
+      "coordinates": {
+        "x": 986,
+        "y": 4952,
+        "width": 288,
+        "height": 298
+      },
+      "area": 85824,
+      "center": {
+        "x": 1130,
+        "y": 5101
+      }
+    },
+    {
+      "id": "static_image_014",
+      "type": "static_image",
+      "name": "static image Section 14",
+      "coordinates": {
+        "x": 1276,
+        "y": 4946,
+        "width": 194,
+        "height": 306
+      },
+      "area": 59364,
+      "center": {
+        "x": 1373,
+        "y": 5099
+      }
+    },
+    {
+      "id": "static_image_015",
+      "type": "static_image",
+      "name": "static image Section 15",
+      "coordinates": {
+        "x": 136,
+        "y": 5254,
+        "width": 1336,
+        "height": 676
+      },
+      "area": 903136,
+      "center": {
+        "x": 804,
+        "y": 5592
+      }
+    },
+    {
+      "id": "section_heading_016",
+      "type": "section_heading",
+      "name": "section heading Section 16",
+      "coordinates": {
+        "x": 146,
+        "y": 5996,
+        "width": 1328,
+        "height": 112
+      },
+      "area": 148736,
+      "center": {
+        "x": 810,
+        "y": 6052
+      }
+    },
+    {
+      "id": "text_block_017",
+      "type": "text_block",
+      "name": "text block Section 17",
+      "coordinates": {
+        "x": 150,
+        "y": 6173,
+        "width": 1304,
+        "height": 1174
+      },
+      "area": 1530896,
+      "center": {
+        "x": 802,
+        "y": 6760
+      }
+    },
+    {
+      "id": "section_heading_018",
+      "type": "section_heading",
+      "name": "section heading Section 18",
+      "coordinates": {
+        "x": 154,
+        "y": 7409,
+        "width": 1304,
+        "height": 86
+      },
+      "area": 112144,
+      "center": {
+        "x": 806,
+        "y": 7452
+      }
+    },
+    {
+      "id": "reels_019",
+      "type": "reels",
+      "name": "reels Section 19",
+      "coordinates": {
+        "x": 164,
+        "y": 7596,
+        "width": 1300,
+        "height": 504
+      },
+      "area": 655200,
+      "center": {
+        "x": 814,
+        "y": 7848
+      }
+    },
+    {
+      "id": "section_heading_020",
+      "type": "section_heading",
+      "name": "section heading Section 20",
+      "coordinates": {
+        "x": 152,
+        "y": 8191,
+        "width": 1316,
+        "height": 60
+      },
+      "area": 78960,
+      "center": {
+        "x": 810,
+        "y": 8221
+      }
+    },
+    {
+      "id": "static_image_021",
+      "type": "static_image",
+      "name": "static image Section 21",
+      "coordinates": {
+        "x": 126,
+        "y": 8300,
+        "width": 1354,
+        "height": 1353
+      },
+      "area": 1831961,
+      "center": {
+        "x": 803,
+        "y": 8977
+      }
+    },
+    {
+      "id": "static_image_022",
+      "type": "static_image",
+      "name": "static image Section 22",
+      "coordinates": {
+        "x": 126,
+        "y": 9655,
+        "width": 674,
+        "height": 610
+      },
+      "area": 411140,
+      "center": {
+        "x": 463,
+        "y": 9960
+      }
+    },
+    {
+      "id": "static_image_023",
+      "type": "static_image",
+      "name": "static image Section 23",
+      "coordinates": {
+        "x": 802,
+        "y": 9651,
+        "width": 674,
+        "height": 620
+      },
+      "area": 417880,
+      "center": {
+        "x": 1139,
+        "y": 9961
+      }
+    },
+    {
+      "id": "static_image_024",
+      "type": "static_image",
+      "name": "static image Section 24",
+      "coordinates": {
+        "x": 126,
+        "y": 1205,
+        "width": 1346,
+        "height": 1869
+      },
+      "area": 2515674,
+      "center": {
+        "x": 799,
+        "y": 2140
+      }
+    },
+    {
+      "id": "section_heading_025",
+      "type": "section_heading",
+      "name": "section heading Section 25",
+      "coordinates": {
+        "x": 138,
+        "y": 10329,
+        "width": 1340,
+        "height": 134
+      },
+      "area": 179560,
+      "center": {
+        "x": 808,
+        "y": 10396
+      }
+    },
+    {
+      "id": "static_image_026",
+      "type": "static_image",
+      "name": "static image Section 26",
+      "coordinates": {
+        "x": 122,
+        "y": 10553,
+        "width": 666,
+        "height": 766
+      },
+      "area": 510156,
+      "center": {
+        "x": 455,
+        "y": 10936
+      }
+    },
+    {
+      "id": "static_image_027",
+      "type": "static_image",
+      "name": "static image Section 27",
+      "coordinates": {
+        "x": 794,
+        "y": 10549,
+        "width": 682,
+        "height": 774
+      },
+      "area": 527868,
+      "center": {
+        "x": 1135,
+        "y": 10936
+      }
+    },
+    {
+      "id": "section_heading_028",
+      "type": "section_heading",
+      "name": "section heading Section 28",
+      "coordinates": {
+        "x": 126,
+        "y": 11330,
+        "width": 1354,
+        "height": 72
+      },
+      "area": 97488,
+      "center": {
+        "x": 803,
+        "y": 11366
+      }
+    },
+    {
+      "id": "asin_waterfall_029",
+      "type": "asin_waterfall",
+      "name": "asin waterfall Section 29",
+      "coordinates": {
+        "x": 134,
+        "y": 11412,
+        "width": 1342,
+        "height": 634
+      },
+      "area": 850828,
+      "center": {
+        "x": 805,
+        "y": 11729
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T10:24:55.158Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-31-48 Amazon.in NATIVE by Urban Company Native Lock Pro.png"
+  }
+}

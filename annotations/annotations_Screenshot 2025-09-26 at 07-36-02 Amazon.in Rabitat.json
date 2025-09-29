@@ -1,0 +1,287 @@
+{
+  "source_image": "Screenshot 2025-09-26 at 07-36-02 Amazon.in Rabitat.png",
+  "image_dimensions": {
+    "width": 1600,
+    "height": 4853
+  },
+  "total_sections": 17,
+  "sections": [
+    {
+      "id": "mast_001",
+      "type": "mast",
+      "name": "mast Section 1",
+      "coordinates": {
+        "x": 128,
+        "y": 88,
+        "width": 1350,
+        "height": 278
+      },
+      "area": 375300,
+      "center": {
+        "x": 803,
+        "y": 227
+      }
+    },
+    {
+      "id": "video_002",
+      "type": "video",
+      "name": "video Section 2",
+      "coordinates": {
+        "x": 136,
+        "y": 444,
+        "width": 1338,
+        "height": 662
+      },
+      "area": 885756,
+      "center": {
+        "x": 805,
+        "y": 775
+      }
+    },
+    {
+      "id": "section_heading_003",
+      "type": "section_heading",
+      "name": "section heading Section 3",
+      "coordinates": {
+        "x": 136,
+        "y": 1106,
+        "width": 1348,
+        "height": 100
+      },
+      "area": 134800,
+      "center": {
+        "x": 810,
+        "y": 1156
+      }
+    },
+    {
+      "id": "linkout_image_004",
+      "type": "linkout_image",
+      "name": "linkout image Section 4",
+      "coordinates": {
+        "x": 136,
+        "y": 1208,
+        "width": 666,
+        "height": 334
+      },
+      "area": 222444,
+      "center": {
+        "x": 469,
+        "y": 1375
+      }
+    },
+    {
+      "id": "linkout_image_005",
+      "type": "linkout_image",
+      "name": "linkout image Section 5",
+      "coordinates": {
+        "x": 802,
+        "y": 1208,
+        "width": 666,
+        "height": 336
+      },
+      "area": 223776,
+      "center": {
+        "x": 1135,
+        "y": 1376
+      }
+    },
+    {
+      "id": "linkout_image_006",
+      "type": "linkout_image",
+      "name": "linkout image Section 6",
+      "coordinates": {
+        "x": 134,
+        "y": 1542,
+        "width": 666,
+        "height": 326
+      },
+      "area": 217116,
+      "center": {
+        "x": 467,
+        "y": 1705
+      }
+    },
+    {
+      "id": "linkout_image_007",
+      "type": "linkout_image",
+      "name": "linkout image Section 7",
+      "coordinates": {
+        "x": 802,
+        "y": 1538,
+        "width": 664,
+        "height": 332
+      },
+      "area": 220448,
+      "center": {
+        "x": 1134,
+        "y": 1704
+      }
+    },
+    {
+      "id": "linkout_image_008",
+      "type": "linkout_image",
+      "name": "linkout image Section 8",
+      "coordinates": {
+        "x": 132,
+        "y": 1872,
+        "width": 672,
+        "height": 302
+      },
+      "area": 202944,
+      "center": {
+        "x": 468,
+        "y": 2023
+      }
+    },
+    {
+      "id": "linkout_image_009",
+      "type": "linkout_image",
+      "name": "linkout image Section 9",
+      "coordinates": {
+        "x": 808,
+        "y": 1870,
+        "width": 660,
+        "height": 290
+      },
+      "area": 191400,
+      "center": {
+        "x": 1138,
+        "y": 2015
+      }
+    },
+    {
+      "id": "static_image_010",
+      "type": "static_image",
+      "name": "static image Section 10",
+      "coordinates": {
+        "x": 140,
+        "y": 2246,
+        "width": 630,
+        "height": 352
+      },
+      "area": 221760,
+      "center": {
+        "x": 455,
+        "y": 2422
+      }
+    },
+    {
+      "id": "text_block_011",
+      "type": "text_block",
+      "name": "text block Section 11",
+      "coordinates": {
+        "x": 782,
+        "y": 2248,
+        "width": 684,
+        "height": 354
+      },
+      "area": 242136,
+      "center": {
+        "x": 1124,
+        "y": 2425
+      }
+    },
+    {
+      "id": "static_image_012",
+      "type": "static_image",
+      "name": "static image Section 12",
+      "coordinates": {
+        "x": 894,
+        "y": 2603,
+        "width": 570,
+        "height": 394
+      },
+      "area": 224580,
+      "center": {
+        "x": 1179,
+        "y": 2800
+      }
+    },
+    {
+      "id": "text_block_013",
+      "type": "text_block",
+      "name": "text block Section 13",
+      "coordinates": {
+        "x": 140,
+        "y": 2605,
+        "width": 748,
+        "height": 392
+      },
+      "area": 293216,
+      "center": {
+        "x": 514,
+        "y": 2801
+      }
+    },
+    {
+      "id": "static_image_014",
+      "type": "static_image",
+      "name": "static image Section 14",
+      "coordinates": {
+        "x": 140,
+        "y": 2997,
+        "width": 906,
+        "height": 312
+      },
+      "area": 282672,
+      "center": {
+        "x": 593,
+        "y": 3153
+      }
+    },
+    {
+      "id": "text_block_015",
+      "type": "text_block",
+      "name": "text block Section 15",
+      "coordinates": {
+        "x": 1044,
+        "y": 2993,
+        "width": 420,
+        "height": 322
+      },
+      "area": 135240,
+      "center": {
+        "x": 1254,
+        "y": 3154
+      }
+    },
+    {
+      "id": "static_image_016",
+      "type": "static_image",
+      "name": "static image Section 16",
+      "coordinates": {
+        "x": 134,
+        "y": 3318,
+        "width": 1338,
+        "height": 316
+      },
+      "area": 422808,
+      "center": {
+        "x": 803,
+        "y": 3476
+      }
+    },
+    {
+      "id": "testimonial_017",
+      "type": "testimonial",
+      "name": "testimonial Section 17",
+      "coordinates": {
+        "x": 142,
+        "y": 3640,
+        "width": 1328,
+        "height": 288
+      },
+      "area": 382464,
+      "center": {
+        "x": 806,
+        "y": 3784
+      }
+    }
+  ],
+  "annotation_metadata": {
+    "created": "2025-09-29T07:13:03.222Z",
+    "annotated_by": "manual",
+    "image_file": "Screenshot 2025-09-26 at 07-36-02 Amazon.in Rabitat.png"
+  }
+}
