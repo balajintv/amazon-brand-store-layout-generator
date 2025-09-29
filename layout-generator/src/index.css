@@ -247,7 +247,21 @@ code {
 
 .canvas.desktop { width: 100%; }
 .canvas.tablet { width: 100%; max-width: 768px; }
-.canvas.mobile { width: 375px; }
+.canvas.mobile { width: 100%; max-width: 375px; }
+
+/* Mobile specific adjustments */
+@media (max-width: 767px) {
+  .canvas-container {
+    padding: 0.75rem;
+  }
+  .canvas.mobile {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+}
 
 /* Drop Zones */
 .drop-zone {

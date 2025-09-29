@@ -670,15 +670,7 @@ function App() {
 
       {/* Main Content */}
       <div className="flex-1 flex min-h-0 relative">
-        {/* Sidebar Toggle Arrow (when collapsed) */}
-        {!sidebarOpen && (
-          <button
-            onClick={() => setSidebarOpen(true)}
-            className="fixed left-0 top-1/2 transform -translate-y-1/2 z-30 bg-amazon-orange text-white p-2 rounded-r-lg shadow-lg hover:bg-opacity-80 transition-all"
-          >
-            <ChevronRight size={16} />
-          </button>
-        )}
+        {/* No sidebar toggle arrow on mobile - use hamburger menu only */}
 
         {/* Sidebar Overlay (Mobile) */}
         {isMobile && sidebarOpen && (
