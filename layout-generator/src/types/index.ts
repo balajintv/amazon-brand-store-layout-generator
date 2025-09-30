@@ -89,3 +89,17 @@ export interface LayoutTemplate {
 
 export type ViewMode = 'mobile' | 'tablet' | 'desktop';
 export type ExportFormat = 'html' | 'react' | 'json';
+
+export interface DestinationContext {
+  width: number;
+  height: number;
+  viewMode: ViewMode;
+  usage: 'hero' | 'prominent' | 'secondary' | 'filler';
+  position: 'header' | 'content' | 'footer';
+}
+
+export interface ModuleWithQuality extends ModuleSection {
+  qualityScore: number;
+  destinationFitScore?: number;
+  recommendedImageSize?: 'full' | 'medium' | 'thumbnail';
+}

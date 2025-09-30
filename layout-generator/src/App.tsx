@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ModuleSection, ViewMode } from './types';
+import { ModuleSection, ViewMode, DestinationContext, ModuleWithQuality } from './types';
 import { moduleService } from './services/moduleService';
 import { Zap, Save, Download, Shuffle, Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import html2canvas from 'html2canvas';
@@ -7,13 +7,42 @@ import html2canvas from 'html2canvas';
 interface GeneratedLayout {
   id: string;
   name: string;
-  sections: ModuleSection[];
+  sections: ModuleWithQuality[];
   created: string;
   totalHeight: number;
 }
 
 function App() {
-  const [modules, setModules] = useState<ModuleSection[]>([]);
+  // Default navigation module using the static image
+  const defaultNavigationModule: ModuleWithQuality = {
+    id: 'default-navigation',
+    type: 'navigation',
+    name: 'Default Navigation',
+    coordinates: {
+      x: 0,
+      y: 0,
+      width: 1200,
+      height: 80
+    },
+    area: 96000,
+    center: { x: 600, y: 40 },
+    unique_id: 'default_navigation_001',
+    source_file: 'Screenshot from 2025-09-30 10-08-04.png',
+    cropped_files: {
+      full: 'images/Screenshot from 2025-09-30 10-08-04.png',
+      medium: 'images/Screenshot from 2025-09-30 10-08-04.png',
+      thumbnail: 'images/Screenshot from 2025-09-30 10-08-04.png',
+      dimensions: {
+        original: { width: 1200, height: 80 },
+        medium: { width: 1200, height: 80 },
+        thumbnail: { width: 1200, height: 80 }
+      }
+    },
+    processing_date: new Date().toISOString(),
+    qualityScore: 5 // High quality for default navigation
+  };
+
+  const [modules, setModules] = useState<ModuleWithQuality[]>([]);
   const [currentLayout, setCurrentLayout] = useState<GeneratedLayout | null>(null);
   const [savedLayouts, setSavedLayouts] = useState<GeneratedLayout[]>([]);
   const [viewMode, setViewMode] = useState<ViewMode>('mobile');
@@ -43,10 +72,55 @@ function App() {
     loadModules();
   }, []);
 
+  // Helper function for simple quality scoring (sync version)
+  const calculateSimpleQualityScore = (module: ModuleSection): number => {
+    const width = module.coordinates?.width || 0;
+    const height = module.coordinates?.height || 0;
+    const area = width * height;
+
+    if (area > 500000) return 5;
+    if (area > 200000) return 4;
+    if (area > 100000) return 3;
+    if (area > 50000) return 2;
+    return 1;
+  };
+
+  // Helper function for simple destination fit scoring (sync version)
+  const calculateSimpleDestinationFit = (module: ModuleSection, destination: DestinationContext): number => {
+    const sourceWidth = module.coordinates?.width || 0;
+    const sourceHeight = module.coordinates?.height || 0;
+    const sourceArea = sourceWidth * sourceHeight;
+    const sourceAspectRatio = sourceHeight > 0 ? sourceWidth / sourceHeight : 0;
+
+    const destArea = destination.width * destination.height;
+    const destAspectRatio = destination.height > 0 ? destination.width / destination.height : 0;
+
+    const scalingFactor = destArea / sourceArea;
+    const aspectRatioDiff = Math.abs(sourceAspectRatio - destAspectRatio);
+
+    let fitScore = 5;
+
+    // Penalize upscaling
+    if (scalingFactor > 4) fitScore -= 3;
+    else if (scalingFactor > 2) fitScore -= 2;
+    else if (scalingFactor > 1.5) fitScore -= 1;
+
+    // Penalize aspect ratio mismatch
+    if (aspectRatioDiff > 1.0) fitScore -= 2;
+    else if (aspectRatioDiff > 0.5) fitScore -= 1;
+
+    return Math.max(0, Math.min(5, fitScore));
+  };
+
   const loadModules = async () => {
     try {
       const catalog = await moduleService.loadCatalog();
-      setModules(catalog.modules);
+      // Add quality scores to loaded modules
+      const modulesWithQuality = catalog.modules.map(module => ({
+        ...module,
+        qualityScore: calculateSimpleQualityScore(module)
+      } as ModuleWithQuality));
+      setModules(modulesWithQuality);
     } catch (error) {
       console.error('Failed to load modules:', error);
     }
@@ -79,8 +153,8 @@ function App() {
     }
   };
 
-  const createIntelligentLayout = (): ModuleSection[] => {
-    const layoutSections: ModuleSection[] = [];
+  const createIntelligentLayout = (): ModuleWithQuality[] => {
+    const layoutSections: ModuleWithQuality[] = [];
     // Ensure minimum 10 non-heading sections (plus headings), max 25 total
     const contentSectionCount = Math.floor(Math.random() * 16) + 10; // 10-25 content sections
 
@@ -105,8 +179,13 @@ function App() {
     // Always start with header sections
     const headerTypes = sectionRules.header;
     for (const type of headerTypes) {
-      const headerSection = getRandomSectionByType(type, 'hero'); // Use highest quality for headers
-      if (headerSection) layoutSections.push(headerSection);
+      if (type === 'navigation') {
+        // Use default navigation instead of dynamic selection
+        layoutSections.push(defaultNavigationModule);
+      } else {
+        const headerSection = getRandomSectionByType(type, 'hero'); // Use highest quality for headers
+        if (headerSection) layoutSections.push(headerSection);
+      }
     }
 
     // Add a hero section
@@ -116,7 +195,7 @@ function App() {
     // Create content groups with MANDATORY headings as introducers
     let contentSectionsAdded = 0;
     let lastSectionType = '';
-    let lastSection: ModuleSection | null = null;
+    let lastSection: ModuleWithQuality | null = null;
 
     // Track section types to enforce variety
     const usedSections = new Set<string>();
@@ -189,7 +268,7 @@ function App() {
       }
 
       // Get a section of the chosen type, but ensure it's not the exact same section
-      let section: ModuleSection | null = null;
+      let section: ModuleWithQuality | null = null;
       let sectionAttempts = 0;
       const maxSectionAttempts = 5;
 
@@ -232,43 +311,102 @@ function App() {
     return layoutSections;
   };
 
-  const getRandomSectionByType = (type: string, context: 'hero' | 'prominent' | 'secondary' | 'filler' = 'secondary'): ModuleSection | null => {
-    // Use quality-aware selection - simplified for sync operation
-    let sectionsOfType = modules.filter(module => module.type === type);
-
-    if (sectionsOfType.length === 0) return null;
-
-    // Apply basic quality filtering based on context
-    if (context === 'hero' || context === 'prominent') {
-      // For hero/prominent sections, prefer larger modules
-      const highQualityModules = sectionsOfType.filter(module => {
-        const area = (module.coordinates?.width || 0) * (module.coordinates?.height || 0);
-        return area > 200000; // High resolution threshold
-      });
-
-      if (highQualityModules.length > 0) {
-        sectionsOfType = highQualityModules;
-      }
-    }
-
-    // Special handling for navigation
+  const getRandomSectionByType = (type: string, context: 'hero' | 'prominent' | 'secondary' | 'filler' = 'secondary'): ModuleWithQuality | null => {
+    // Return default navigation for navigation requests
     if (type === 'navigation') {
-      const goodNavModules = sectionsOfType.filter(module => {
-        const width = module.coordinates?.width || 0;
-        const height = module.coordinates?.height || 0;
-        const aspectRatio = height > 0 ? width / height : 0;
-        return aspectRatio > 3 && width > 800; // Wide navigation bars
-      });
-
-      if (goodNavModules.length > 0) {
-        sectionsOfType = goodNavModules;
-      }
+      return defaultNavigationModule;
     }
 
-    return sectionsOfType[Math.floor(Math.random() * sectionsOfType.length)];
+    // Calculate destination context for enhanced selection
+    const getDestinationContext = (): DestinationContext => {
+      let width = 375; // Default mobile width
+      let height = 200; // Default height
+
+      // Adjust based on view mode
+      if (viewMode === 'desktop') {
+        width = 1200;
+        height = context === 'hero' ? 400 : 300;
+      } else if (viewMode === 'tablet') {
+        width = 768;
+        height = context === 'hero' ? 300 : 250;
+      } else {
+        width = 375;
+        height = context === 'hero' ? 200 : 150;
+      }
+
+      // Adjust height based on section type
+      if (type === 'navigation' || type === 'mast') {
+        height = Math.min(height * 0.3, 100); // Navigation is typically shorter
+      } else if (type === 'section_heading') {
+        height = Math.min(height * 0.4, 120); // Headings are shorter
+      }
+
+      return {
+        width,
+        height,
+        viewMode,
+        usage: context,
+        position: context === 'hero' ? 'header' : 'content'
+      };
+    };
+
+    const destination = getDestinationContext();
+
+    // Use enhanced destination-aware selection
+    try {
+      let sectionsOfType = modules.filter(module => module.type === type);
+      if (sectionsOfType.length === 0) return null;
+
+      // Apply enhanced quality filtering
+      const enhancedSections = sectionsOfType.map(module => {
+        // Module already has qualityScore from loadModules, just add destinationFitScore
+        const destinationFitScore = calculateSimpleDestinationFit(module, destination);
+
+        return {
+          ...module,
+          destinationFitScore
+        } as ModuleWithQuality;
+      }).filter(module => {
+        // Filter by minimum quality based on context
+        const minQuality = context === 'hero' ? 4 : context === 'prominent' ? 3 : 2;
+        if ((module.qualityScore || 0) < minQuality) return false;
+
+        // Filter by destination fit (avoid heavily stretched images)
+        if ((module.destinationFitScore || 0) < 2) return false;
+
+        return true;
+      });
+
+      if (enhancedSections.length === 0) {
+        // Fallback to original logic if enhanced filtering is too restrictive
+        // sectionsOfType already has qualityScore, just cast to ModuleWithQuality
+        return sectionsOfType[Math.floor(Math.random() * sectionsOfType.length)] || null;
+      }
+
+      // Sort by combined score and pick randomly from top candidates
+      const sortedSections = enhancedSections.sort((a, b) => {
+        const scoreA = (a.qualityScore || 0) + (a.destinationFitScore || 0);
+        const scoreB = (b.qualityScore || 0) + (b.destinationFitScore || 0);
+        return scoreB - scoreA;
+      });
+
+      // Pick randomly from top 3 candidates for variety
+      const topCandidates = sortedSections.slice(0, Math.min(3, sortedSections.length));
+      return topCandidates[Math.floor(Math.random() * topCandidates.length)];
+
+    } catch (error) {
+      console.warn('Enhanced selection failed, falling back to basic selection:', error);
+      // Fallback to original logic
+      const basicSections = modules.filter(module => module.type === type);
+      if (basicSections.length === 0) return null;
+      return {
+        ...basicSections[Math.floor(Math.random() * basicSections.length)],
+        qualityScore: 3
+      } as ModuleWithQuality;
+    }
   };
 
-  const calculateLayoutHeight = (sections: ModuleSection[]): number => {
+  const calculateLayoutHeight = (sections: ModuleWithQuality[]): number => {
     return sections.reduce((total, section) => {
       return total + section.coordinates.height;
     }, 0);
@@ -320,7 +458,7 @@ function App() {
   };
 
   // NEW FEATURE: Mobile brick-wall/stacked layout (rollback ready)
-  const isMobileMultiColumnCandidate = (section: ModuleSection): boolean => {
+  const isMobileMultiColumnCandidate = (section: ModuleWithQuality): boolean => {
     // Analyze coordinates to determine if section was likely multi-column in original
     const { width, height, x, y } = section.coordinates;
     const aspectRatio = width / height;
@@ -345,8 +483,8 @@ function App() {
   };
 
   // NEW: Create brick-wall layout groups
-  const createBrickWallGroups = (sections: ModuleSection[]): Array<{ type: 'single' | 'brick', sections: ModuleSection[] }> => {
-    const groups: Array<{ type: 'single' | 'brick', sections: ModuleSection[] }> = [];
+  const createBrickWallGroups = (sections: ModuleWithQuality[]): Array<{ type: 'single' | 'brick', sections: ModuleWithQuality[] }> => {
+    const groups: Array<{ type: 'single' | 'brick', sections: ModuleWithQuality[] }> = [];
     let i = 0;
 
     while (i < sections.length) {
@@ -361,7 +499,7 @@ function App() {
 
       // Check if this and next sections can form a brick group
       if (isMobileMultiColumnCandidate(section)) {
-        const brickGroup: ModuleSection[] = [section];
+        const brickGroup: ModuleWithQuality[] = [section];
 
         // Look ahead for 1-3 more sections to create brick pattern
         let j = i + 1;
@@ -400,7 +538,7 @@ function App() {
   };
 
   // NEW: Render brick-wall pattern
-  const renderBrickGroup = (group: ModuleSection[], groupIndex: number) => {
+  const renderBrickGroup = (group: ModuleWithQuality[], groupIndex: number) => {
     if (group.length === 2) {
       // Simple 2-column
       return (
@@ -450,11 +588,11 @@ function App() {
   };
 
   // NEW: Render individual section image
-  const renderSectionImage = (section: ModuleSection, isInBrick: boolean, key: string, extraStyle: React.CSSProperties = {}) => {
+  const renderSectionImage = (section: ModuleWithQuality, isInBrick: boolean, key: string, extraStyle: React.CSSProperties = {}) => {
     return (
       <>
         <img
-          src={moduleService.getImageUrl(section.cropped_files.medium)}
+          src={moduleService.getSmartImageUrl(section, viewMode)}
           alt={section.name}
           className={getSectionImageClass(section, viewMode, isInBrick)}
           style={{
@@ -475,7 +613,7 @@ function App() {
     );
   };
 
-  const getSectionImageClass = (section: ModuleSection, viewMode: ViewMode, isInBrick: boolean = false): string => {
+  const getSectionImageClass = (section: ModuleWithQuality, viewMode: ViewMode, isInBrick: boolean = false): string => {
     const { width, height } = section.coordinates;
     const aspectRatio = width / height;
     const sectionType = section.type;
@@ -510,7 +648,7 @@ function App() {
     }
   };
 
-  const getSectionImageStyle = (section: ModuleSection, viewMode: ViewMode, isInBrick: boolean = false): React.CSSProperties => {
+  const getSectionImageStyle = (section: ModuleWithQuality, viewMode: ViewMode, isInBrick: boolean = false): React.CSSProperties => {
     const { width, height } = section.coordinates;
     const aspectRatio = width / height;
     const sectionType = section.type;
@@ -851,7 +989,7 @@ function App() {
                     currentLayout.sections.map((section, index) => (
                       <div key={`${section.unique_id}_${index}`} className="relative flex-shrink-0" style={{ marginBottom: '-2px' }}>
                         <img
-                          src={moduleService.getImageUrl(section.cropped_files.medium)}
+                          src={moduleService.getSmartImageUrl(section, viewMode)}
                           alt={section.name}
                           className={getSectionImageClass(section, viewMode)}
                           style={{

@@ -1,8 +1,5 @@
-import { ModuleCatalog, PatternAnalysis, LayoutTemplate, ModuleSection } from '../types';
+import { ModuleCatalog, PatternAnalysis, LayoutTemplate, ModuleSection, DestinationContext, ModuleWithQuality } from '../types';
 
-interface ModuleWithQuality extends ModuleSection {
-  qualityScore: number;
-}
 
 class ModuleService {
   private catalog: ModuleCatalog | null = null;
@@ -58,7 +55,7 @@ class ModuleService {
     }
   }
 
-  // Quality scoring for modules
+  // Enhanced quality scoring for modules
   private calculateQualityScore(module: any): number {
     const width = module.coordinates?.width || 0;
     const height = module.coordinates?.height || 0;
@@ -88,6 +85,81 @@ class ModuleService {
     return qualityScore;
   }
 
+  // NEW: Destination-aware quality scoring
+  private calculateDestinationFitScore(module: any, destination: DestinationContext): number {
+    const sourceWidth = module.coordinates?.width || 0;
+    const sourceHeight = module.coordinates?.height || 0;
+    const sourceArea = sourceWidth * sourceHeight;
+    const sourceAspectRatio = sourceHeight > 0 ? sourceWidth / sourceHeight : 0;
+
+    const destArea = destination.width * destination.height;
+    const destAspectRatio = destination.height > 0 ? destination.width / destination.height : 0;
+
+    // Calculate scaling factor (how much upscaling would be needed)
+    const scalingFactor = destArea / sourceArea;
+
+    let fitScore = 5;
+
+    // Penalize heavy upscaling (causes blur/pixelation)
+    if (scalingFactor > 4) fitScore -= 3;        // > 4x upscaling = major penalty
+    else if (scalingFactor > 2) fitScore -= 2;   // > 2x upscaling = moderate penalty
+    else if (scalingFactor > 1.5) fitScore -= 1; // > 1.5x upscaling = minor penalty
+
+    // Penalize aspect ratio mismatch (causes stretching)
+    const aspectRatioDiff = Math.abs(sourceAspectRatio - destAspectRatio);
+    if (aspectRatioDiff > 1.0) fitScore -= 2;     // Major aspect ratio mismatch
+    else if (aspectRatioDiff > 0.5) fitScore -= 1; // Minor aspect ratio mismatch
+
+    // Bonus for good fit
+    if (scalingFactor <= 1 && aspectRatioDiff <= 0.2) fitScore += 1;
+
+    return Math.max(0, Math.min(5, fitScore));
+  }
+
+  // NEW: Get recommended image size based on destination
+  private getRecommendedImageSize(module: any, destination: DestinationContext): 'full' | 'medium' | 'thumbnail' {
+    const destArea = destination.width * destination.height;
+    const moduleArea = (module.coordinates?.width || 0) * (module.coordinates?.height || 0);
+
+    // For large destinations or hero sections, prefer full resolution
+    if (destination.usage === 'hero' || destArea > 300000) {
+      return 'full';
+    }
+
+    // For medium destinations, use medium images
+    if (destArea > 50000) {
+      return 'medium';
+    }
+
+    // For small destinations, thumbnails are sufficient
+    return 'thumbnail';
+  }
+
+  // NEW: Context-aware resolution requirements
+  private getMinResolutionForContext(destination: DestinationContext): number {
+    switch (destination.usage) {
+      case 'hero':
+        return destination.viewMode === 'desktop' ? 800 * 400 :  // Desktop hero needs high-res
+               destination.viewMode === 'tablet' ? 600 * 300 :   // Tablet hero medium-res
+               300 * 200;                                        // Mobile hero lower-res
+      case 'prominent':
+        return destination.viewMode === 'desktop' ? 400 * 300 :
+               200 * 150;
+      case 'secondary':
+        return 200 * 100;
+      case 'filler':
+        return 100 * 50;
+      default:
+        return 100 * 100;
+    }
+  }
+
+  // NEW: Check aspect ratio compatibility
+  private isAspectRatioCompatible(sourceAspectRatio: number, targetAspectRatio: number, tolerance: number = 0.3): boolean {
+    const diff = Math.abs(sourceAspectRatio - targetAspectRatio);
+    return diff <= tolerance;
+  }
+
   async getModulesByType(type: string, minQuality: number = 3): Promise<ModuleWithQuality[]> {
     const catalog = await this.loadCatalog();
     let modules = catalog.modules.filter(module => module.type === type);
@@ -100,6 +172,65 @@ class ModuleService {
 
     // Sort by quality (highest first)
     return modulesWithQuality.sort((a, b) => b.qualityScore - a.qualityScore);
+  }
+
+  // NEW: Get modules with destination-aware filtering
+  async getModulesForDestination(
+    type: string,
+    destination: DestinationContext,
+    minQuality: number = 3
+  ): Promise<ModuleWithQuality[]> {
+    const catalog = await this.loadCatalog();
+    let modules = catalog.modules.filter(module => module.type === type);
+
+    const minResolution = this.getMinResolutionForContext(destination);
+    const targetAspectRatio = destination.height > 0 ? destination.width / destination.height : 1;
+
+    // Enhanced filtering with destination awareness
+    const modulesWithScores = modules.map(module => {
+      const qualityScore = this.calculateQualityScore(module);
+      const destinationFitScore = this.calculateDestinationFitScore(module, destination);
+      const recommendedImageSize = this.getRecommendedImageSize(module, destination);
+
+      const moduleArea = (module.coordinates?.width || 0) * (module.coordinates?.height || 0);
+      const moduleAspectRatio = (module.coordinates?.height || 0) > 0 ?
+        (module.coordinates?.width || 0) / (module.coordinates?.height || 0) : 1;
+
+      return {
+        ...module,
+        qualityScore,
+        destinationFitScore,
+        recommendedImageSize
+      } as ModuleWithQuality;
+    }).filter(module => {
+      // Filter by base quality
+      if (module.qualityScore < minQuality) return false;
+
+      // Filter by minimum resolution requirement
+      const moduleArea = (module.coordinates?.width || 0) * (module.coordinates?.height || 0);
+      if (moduleArea < minResolution) return false;
+
+      // Filter by destination fit score (avoid heavily stretched images)
+      if ((module.destinationFitScore || 0) < 2) return false;
+
+      // Filter by aspect ratio compatibility for critical sections
+      if (destination.usage === 'hero' || destination.usage === 'prominent') {
+        const moduleAspectRatio = (module.coordinates?.height || 0) > 0 ?
+          (module.coordinates?.width || 0) / (module.coordinates?.height || 0) : 1;
+        if (!this.isAspectRatioCompatible(moduleAspectRatio, targetAspectRatio)) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+
+    // Sort by combined score (quality + destination fit)
+    return modulesWithScores.sort((a, b) => {
+      const scoreA = (a.qualityScore || 0) + (a.destinationFitScore || 0);
+      const scoreB = (b.qualityScore || 0) + (b.destinationFitScore || 0);
+      return scoreB - scoreA;
+    });
   }
 
   async getHighQualityModulesByType(type: string): Promise<ModuleWithQuality[]> {
@@ -140,6 +271,29 @@ class ModuleService {
     return `/processed_modules/${imagePath}`;
   }
 
+  // NEW: Smart image URL with quality selection
+  getSmartImageUrl(module: ModuleWithQuality, viewMode: 'mobile' | 'tablet' | 'desktop' = 'desktop'): string {
+    // Choose image size based on view mode and module quality
+    let imageSize: 'full' | 'medium' | 'thumbnail';
+
+    if (viewMode === 'mobile') {
+      // Mobile: use medium or thumbnail for better performance
+      imageSize = (module.qualityScore || 0) >= 4 ? 'medium' : 'thumbnail';
+    } else if (viewMode === 'tablet') {
+      // Tablet: balance between quality and performance
+      imageSize = (module.qualityScore || 0) >= 4 ? 'full' : 'medium';
+    } else {
+      // Desktop: prefer full for high-quality modules
+      imageSize = (module.qualityScore || 0) >= 4 ? 'full' : 'medium';
+    }
+
+    const imagePath = imageSize === 'full' ? module.cropped_files.full :
+                     imageSize === 'thumbnail' ? module.cropped_files.thumbnail :
+                     module.cropped_files.medium;
+
+    return `/processed_modules/${imagePath}`;
+  }
+
   async getMostUsedTypes(): Promise<Array<{ type: string; count: number }>> {
     const patterns = await this.loadPatterns();
     return patterns.frequency_analysis.most_common_types.map(([type, count]) => ({
@@ -148,38 +302,45 @@ class ModuleService {
     }));
   }
 
-  // Special method for high-quality navigation modules
-  async getBestNavigationModules(): Promise<ModuleWithQuality[]> {
-    const navigationModules = await this.getModulesByType('navigation', 2); // Lower threshold for navigation
-
-    // Additional filtering for navigation-specific quality
-    return navigationModules.filter(module => {
-      const width = module.coordinates?.width || 0;
-      const height = module.coordinates?.height || 0;
-
-      // Navigation should be wide and not too tall
-      const aspectRatio = width / height;
-      const isGoodNavigation = aspectRatio > 3 && width > 800; // Wide navigation bars
-
-      return isGoodNavigation;
-    }).slice(0, 10); // Return top 10 best navigation modules
-  }
+  // Note: Navigation modules are now handled by default navigation in App.tsx
 
   // Special method for hero sections (always use highest quality)
   async getBestHeroModules(): Promise<ModuleWithQuality[]> {
     return this.getModulesByType('hero', 4); // Only highest quality for hero
   }
 
-  // Context-aware module selection
-  async getModulesForContext(type: string, context: 'hero' | 'prominent' | 'secondary' | 'filler'): Promise<ModuleWithQuality[]> {
+  // Enhanced context-aware module selection with destination awareness
+  async getModulesForContext(
+    type: string,
+    context: 'hero' | 'prominent' | 'secondary' | 'filler',
+    destination?: DestinationContext
+  ): Promise<ModuleWithQuality[]> {
+    // If destination provided, use enhanced filtering
+    if (destination) {
+      const contextDestination = { ...destination, usage: context };
+
+      switch (context) {
+        case 'hero':
+          return type === 'hero' ? this.getBestHeroModules() :
+                 this.getModulesForDestination(type, contextDestination, 5);
+        case 'prominent':
+          return this.getModulesForDestination(type, contextDestination, 4);
+        case 'secondary':
+          return this.getModulesForDestination(type, contextDestination, 3);
+        case 'filler':
+          return this.getModulesForDestination(type, contextDestination, 2);
+        default:
+          return this.getModulesForDestination(type, contextDestination, 3);
+      }
+    }
+
+    // Fallback to original logic if no destination provided
     switch (context) {
       case 'hero':
-        return type === 'navigation' ? this.getBestNavigationModules() :
-               type === 'hero' ? this.getBestHeroModules() :
+        return type === 'hero' ? this.getBestHeroModules() :
                this.getModulesByType(type, 5); // Highest quality
       case 'prominent':
-        return type === 'navigation' ? this.getBestNavigationModules() :
-               this.getModulesByType(type, 4); // High quality
+        return this.getModulesByType(type, 4); // High quality
       case 'secondary':
         return this.getModulesByType(type, 3); // Medium quality
       case 'filler':
@@ -187,6 +348,23 @@ class ModuleService {
       default:
         return this.getModulesByType(type, 3); // Default medium quality
     }
+  }
+
+  // NEW: Get optimal image path based on destination and module
+  getOptimalImageUrl(module: ModuleWithQuality, destination?: DestinationContext): string {
+    let imageSize: 'full' | 'medium' | 'thumbnail' = 'medium'; // default
+
+    if (destination) {
+      imageSize = this.getRecommendedImageSize(module, destination);
+    } else if (module.recommendedImageSize) {
+      imageSize = module.recommendedImageSize;
+    }
+
+    const imagePath = imageSize === 'full' ? module.cropped_files.full :
+                     imageSize === 'thumbnail' ? module.cropped_files.thumbnail :
+                     module.cropped_files.medium;
+
+    return `/processed_modules/${imagePath}`;
   }
 }
 

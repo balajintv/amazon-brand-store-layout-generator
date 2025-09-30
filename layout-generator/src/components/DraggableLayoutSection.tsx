@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { GripVertical, Trash2, Copy, Settings } from 'lucide-react';
-import { LayoutSection, ViewMode } from '../types';
+import { LayoutSection, ViewMode, ModuleWithQuality } from '../types';
 import { moduleService } from '../services/moduleService';
 
 interface DraggableLayoutSectionProps {
@@ -35,7 +35,8 @@ const DraggableLayoutSection: React.FC<DraggableLayoutSectionProps> = ({
     transition,
   };
 
-  const imageUrl = moduleService.getImageUrl(section.module.cropped_files.medium);
+  // Use smart image URL selection based on view mode and quality
+  const imageUrl = moduleService.getSmartImageUrl(section.module as ModuleWithQuality, viewMode);
   const { width, height } = section.module.cropped_files.dimensions.original;
 
   const formatType = (type: string) => {
@@ -76,6 +77,9 @@ const DraggableLayoutSection: React.FC<DraggableLayoutSectionProps> = ({
         return "w-full h-auto max-h-80 object-contain rounded bg-gray-50";
       }
     }
+
+    // Default fallback
+    return "w-full h-auto max-h-40 object-contain rounded bg-gray-50";
   };
 
   if (isDragging) {
