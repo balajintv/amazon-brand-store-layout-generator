@@ -158,23 +158,63 @@ function App() {
     // Ensure minimum 10 non-heading sections (plus headings), max 25 total
     const contentSectionCount = Math.floor(Math.random() * 16) + 10; // 10-25 content sections
 
+    // HYBRID APPROACH: Zone planning with multi-column support
     // Define section type priorities - reorganized for better structure
     const sectionRules = {
       header: ['mast', 'navigation'],
       hero: ['hero', 'video'],
       // High-priority interactive sections (use more often)
-      highPriority: ['product_selector', 'category_carousel', 'reels', 'shop_the_look', 'bestsellers'],
+      highPriority: ['product_selector', 'category_carousel', 'reels', 'bestsellers'],
+      // Multi-column friendly types (Tier 1 - excellent for multi-column)
+      multiColumnTier1: ['shop_the_look'],
+      // Multi-column friendly types (Tier 2 - conditional multi-column)
+      multiColumnTier2: ['static_image', 'linkout_image', 'text_block'],
       // Before/after gets special treatment
       comparison: ['before_after'],
-      // Visual content types
-      visual: ['static_image', 'linkout_image', 'video'],
+      // Visual content types (single column only)
+      visual: ['video'],
       // Social proof
       social: ['testimonial'],
       // Product sections
-      products: ['asin_waterfall', 'product_grid'],
-      // Text content
-      text: ['text_block']
+      products: ['asin_waterfall', 'product_grid']
     };
+
+    // ZONE PLANNING: Count available multi-column sections
+    const availableMultiColumnTier1 = sectionRules.multiColumnTier1.reduce((count, type) => {
+      return count + modules.filter(m => m.type === type).length;
+    }, 0);
+
+    const availableMultiColumnTier2 = sectionRules.multiColumnTier2.reduce((count, type) => {
+      return count + modules.filter(m => m.type === type).length;
+    }, 0);
+
+    // Plan multi-column zones based on availability (adjusted for realistic dataset)
+    const planMultiColumnZones = (): Array<{position: number, sections: number}> => {
+      const zones: Array<{position: number, sections: number}> = [];
+      const totalAvailable = availableMultiColumnTier1 + availableMultiColumnTier2;
+
+      console.log(`Multi-column planning: Tier1=${availableMultiColumnTier1}, Tier2=${availableMultiColumnTier2}, Total=${totalAvailable}`);
+
+      if (totalAvailable >= 6) {
+        // Plan 2 multi-column zones with mixed content
+        zones.push({position: 3, sections: 3}); // Primary zone: positions 3-5
+        zones.push({position: 7, sections: 3}); // Secondary zone: positions 7-9
+      } else if (totalAvailable >= 4) {
+        // Plan 1 larger multi-column zone
+        zones.push({position: 4, sections: 4}); // Zone: positions 4-7
+      } else if (totalAvailable >= 3) {
+        // Plan 1 medium multi-column zone
+        zones.push({position: 4, sections: 3}); // Zone: positions 4-6
+      } else if (totalAvailable >= 2) {
+        // Plan 1 small multi-column zone
+        zones.push({position: 4, sections: 2}); // Zone: positions 4-5
+      }
+
+      console.log(`Planned ${zones.length} multi-column zones:`, zones);
+      return zones;
+    };
+
+    const multiColumnZones = planMultiColumnZones();
 
     // Always start with header sections
     const headerTypes = sectionRules.header;
@@ -192,117 +232,144 @@ function App() {
     const heroSection = getRandomSectionByType(sectionRules.hero[Math.floor(Math.random() * sectionRules.hero.length)], 'hero');
     if (heroSection) layoutSections.push(heroSection);
 
-    // Create content groups with MANDATORY headings as introducers
+    // ZONE-BASED LAYOUT GENERATION with smart heading reduction
     let contentSectionsAdded = 0;
-    let lastSectionType = '';
-    let lastSection: ModuleWithQuality | null = null;
-
-    // Track section types to enforce variety
+    let currentPosition = 2; // Start after header + hero
     const usedSections = new Set<string>();
-    const singleColumnTypes = ['static_image', 'linkout_image', 'text_block', 'video', 'hero'];
 
+    // Helper function to check if current position is in a multi-column zone
+    const isInMultiColumnZone = (position: number): {inZone: boolean, zone?: {position: number, sections: number}} => {
+      for (const zone of multiColumnZones) {
+        if (position >= zone.position && position < zone.position + zone.sections) {
+          return {inZone: true, zone};
+        }
+      }
+      return {inZone: false};
+    };
+
+    // Helper function to add multi-column sections for a zone
+    const addMultiColumnZone = (zone: {position: number, sections: number}): void => {
+      // Add a section heading to introduce the multi-column zone
+      const heading = getRandomSectionByType('section_heading', 'secondary');
+      if (heading) {
+        layoutSections.push(heading);
+      }
+
+      // Collect tier 1 multi-column sections first
+      const tier1Sections: ModuleWithQuality[] = [];
+      console.log(`Adding multi-column zone - looking for Tier 1 types:`, sectionRules.multiColumnTier1);
+
+      for (const type of sectionRules.multiColumnTier1) {
+        while (tier1Sections.length < zone.sections && tier1Sections.length < 3) {
+          const section = getRandomSectionByType(type);
+          console.log(`Tier 1: Found section of type ${type}:`, section ? section.type : 'null');
+
+          if (section && !tier1Sections.some(s => s.unique_id === section.unique_id)) {
+            tier1Sections.push(section);
+            console.log(`Added Tier 1 section: ${section.type} (${section.unique_id})`);
+          } else {
+            break; // No more unique sections of this type
+          }
+        }
+      }
+      console.log(`Collected ${tier1Sections.length} Tier 1 sections`);
+
+      // Fill remaining slots with tier 2 sections if needed
+      const tier2Sections: ModuleWithQuality[] = [];
+      if (tier1Sections.length < zone.sections) {
+        const remainingSlots = zone.sections - tier1Sections.length;
+        console.log(`Need ${remainingSlots} more sections, looking for Tier 2 types:`, sectionRules.multiColumnTier2);
+
+        for (const type of sectionRules.multiColumnTier2) {
+          while (tier2Sections.length < remainingSlots) {
+            const section = getRandomSectionByType(type);
+            console.log(`Tier 2: Found section of type ${type}:`, section ? section.type : 'null');
+
+            if (section &&
+                !tier2Sections.some(s => s.unique_id === section.unique_id) &&
+                !tier1Sections.some(s => s.unique_id === section.unique_id)) {
+
+              const isCandidate = isMobileMultiColumnCandidate(section);
+              console.log(`Tier 2 section ${section.type} multi-column candidate: ${isCandidate}`);
+
+              if (isCandidate) {
+                tier2Sections.push(section);
+                console.log(`Added Tier 2 section: ${section.type} (${section.unique_id})`);
+              } else {
+                console.log(`Rejected Tier 2 section ${section.type} - failed candidate test`);
+              }
+            } else {
+              break; // No more suitable sections of this type
+            }
+          }
+        }
+        console.log(`Collected ${tier2Sections.length} Tier 2 sections`);
+      }
+
+      // Add the collected sections (NO section headings between them)
+      const zoneContent = [...tier1Sections, ...tier2Sections];
+      console.log(`Final zone content: ${zoneContent.length} sections:`, zoneContent.map(s => s.type));
+
+      for (const section of zoneContent) {
+        layoutSections.push(section);
+        contentSectionsAdded++;
+        usedSections.add(section.type);
+        console.log(`Added zone section to layout: ${section.type}`);
+      }
+
+      console.log(`Zone complete. Total sections in layout: ${layoutSections.length}`);
+      currentPosition += zone.sections;
+    };
+
+    // Generate content using zone-based approach
     while (contentSectionsAdded < contentSectionCount) {
-      // ENFORCE: Every content section must have a heading introducer
+      const zoneCheck = isInMultiColumnZone(currentPosition);
+
+      if (zoneCheck.inZone && zoneCheck.zone) {
+        // We're entering a multi-column zone
+        addMultiColumnZone(zoneCheck.zone);
+        continue;
+      }
+
+      // Regular single-column content with normal section heading logic
       if (contentSectionsAdded < contentSectionCount - 1) {
-        // Add section heading as MANDATORY content introducer
-        const heading = getRandomSectionByType('section_heading', 'prominent');
+        // Add section heading before single-column content
+        const heading = getRandomSectionByType('section_heading', 'secondary');
         if (heading) {
           layoutSections.push(heading);
-          // Note: headings don't count toward content section count
-          lastSectionType = 'section_heading';
-          lastSection = heading;
         }
       }
 
       if (contentSectionsAdded >= contentSectionCount) break;
 
-      // Choose content type with strict anti-duplication rules
+      // Choose content type for single-column sections
       let contentType: string;
-      let attempts = 0;
-      const maxAttempts = 10;
+      const availableTypes = [
+        ...sectionRules.highPriority,
+        ...sectionRules.comparison,
+        ...sectionRules.visual,
+        ...sectionRules.social,
+        ...sectionRules.products
+      ].filter(type => !usedSections.has(type) || usedSections.size >= 6);
 
-      do {
-        const rand = Math.random();
-
-        if (rand < 0.4) {
-          // 40% chance for high-priority interactive sections
-          contentType = sectionRules.highPriority[Math.floor(Math.random() * sectionRules.highPriority.length)];
-        } else if (rand < 0.5) {
-          // 10% chance for before/after (powerful but shouldn't dominate)
-          contentType = sectionRules.comparison[0];
-        } else if (rand < 0.65) {
-          // 15% chance for visual content
-          contentType = sectionRules.visual[Math.floor(Math.random() * sectionRules.visual.length)];
-        } else if (rand < 0.8) {
-          // 15% chance for products
-          contentType = sectionRules.products[Math.floor(Math.random() * sectionRules.products.length)];
-        } else if (rand < 0.9) {
-          // 10% chance for social proof
-          contentType = sectionRules.social[0];
-        } else {
-          // 10% chance for text
-          contentType = sectionRules.text[0];
-        }
-
-        attempts++;
-      } while (
-        attempts < maxAttempts && (
-          // STRICT RULE: Never allow same section type consecutively
-          contentType === lastSectionType ||
-          // STRICT RULE: Avoid single-column tiles stacking (especially mobile)
-          (singleColumnTypes.includes(contentType) && singleColumnTypes.includes(lastSectionType)) ||
-          // STRICT RULE: Don't repeat exact same section type too often
-          (usedSections.has(contentType) && usedSections.size < 6)
-        )
-      );
-
-      // If we couldn't find a good type, force a multi-column interactive type
-      if (attempts >= maxAttempts || contentType === lastSectionType) {
-        const forceTypes = sectionRules.highPriority.filter(t =>
-          t !== lastSectionType &&
-          !singleColumnTypes.includes(t)
-        );
-        if (forceTypes.length > 0) {
-          contentType = forceTypes[Math.floor(Math.random() * forceTypes.length)];
-        }
+      if (availableTypes.length > 0) {
+        contentType = availableTypes[Math.floor(Math.random() * availableTypes.length)];
+      } else {
+        // Fallback to high priority types
+        contentType = sectionRules.highPriority[Math.floor(Math.random() * sectionRules.highPriority.length)];
       }
 
-      // Get a section of the chosen type, but ensure it's not the exact same section
-      let section: ModuleWithQuality | null = null;
-      let sectionAttempts = 0;
-      const maxSectionAttempts = 5;
-
-      do {
-        const candidateSection = getRandomSectionByType(contentType);
-        if (candidateSection && (!lastSection || candidateSection.unique_id !== lastSection.unique_id)) {
-          section = candidateSection;
-          break;
-        }
-        sectionAttempts++;
-      } while (sectionAttempts < maxSectionAttempts);
-
+      // Get section and add to layout
+      const section = getRandomSectionByType(contentType);
       if (section) {
         layoutSections.push(section);
-        contentSectionsAdded++; // Count content sections separately from headings
-        lastSectionType = contentType;
-        lastSection = section;
+        contentSectionsAdded++;
         usedSections.add(contentType);
-      } else {
-        // Final fallback: use any available high-priority section
-        const fallbackTypes = sectionRules.highPriority.filter(t => t !== lastSectionType);
-        if (fallbackTypes.length > 0) {
-          const fallbackSection = getRandomSectionByType(fallbackTypes[Math.floor(Math.random() * fallbackTypes.length)]);
-          if (fallbackSection) {
-            layoutSections.push(fallbackSection);
-            contentSectionsAdded++; // Count content sections separately from headings
-            lastSectionType = fallbackSection.type;
-            lastSection = fallbackSection;
-            usedSections.add(fallbackSection.type);
-          }
-        }
       }
 
-      // Extra safety: clear used sections tracking if we're running out of variety
+      currentPosition++;
+
+      // Clear used sections tracking periodically for variety
       if (usedSections.size >= 8) {
         usedSections.clear();
       }
@@ -390,8 +457,10 @@ function App() {
         return scoreB - scoreA;
       });
 
-      // Pick randomly from top 3 candidates for variety
-      const topCandidates = sortedSections.slice(0, Math.min(3, sortedSections.length));
+      // Pick randomly from top candidates for variety
+      // Use larger pool for section headings to improve variety
+      const candidatePoolSize = type === 'section_heading' ? 8 : 3;
+      const topCandidates = sortedSections.slice(0, Math.min(candidatePoolSize, sortedSections.length));
       return topCandidates[Math.floor(Math.random() * topCandidates.length)];
 
     } catch (error) {
@@ -463,27 +532,67 @@ function App() {
     const { width, height, x, y } = section.coordinates;
     const aspectRatio = width / height;
 
-    // Expanded criteria for brick-wall layout:
-    // 1. Good aspect ratios for stacking
-    // 2. Column-friendly content types
-    // 3. Size suitable for subdivision
+    // FIXED: More inclusive criteria for multi-column layout
+    // Focus on content suitability rather than original positioning
 
-    const isGoodStackingRatio = aspectRatio >= 0.5 && aspectRatio <= 2.5; // Wider range for stacking
-    const hasColumnPositioning = x > 50; // Not full-width positioned
-    const isStackableFriendlyType = [
-      'product_selector', 'category_carousel', 'shop_the_look',
-      'testimonial', 'before_after', 'asin_waterfall', 'bestsellers',
-      'linkout_image', 'static_image', 'text_block' // Added more types for variety
+    // 1. Good aspect ratios for stacking (not too tall/thin, not too wide/flat)
+    const isGoodStackingRatio = aspectRatio >= 0.4 && aspectRatio <= 3.0; // More inclusive range
+
+    // 2. Multi-column friendly content types (using correct dataset types)
+    const isMultiColumnFriendlyType = [
+      'text_block', 'shop_the_look', 'static_image', 'linkout_image'
     ].includes(section.type);
 
-    // Also consider sections that are large enough to be subdivided
-    const isLargeEnoughToSubdivide = width > 300 && height > 200;
+    // Tier 1: Excellent for multi-column (prioritize these)
+    const isTier1MultiColumn = ['shop_the_look'].includes(section.type);
 
-    return isGoodStackingRatio && (hasColumnPositioning || isStackableFriendlyType || isLargeEnoughToSubdivide);
+    // Tier 2: Conditional multi-column (stricter requirements)
+    const isTier2MultiColumn = ['static_image', 'linkout_image', 'text_block'].includes(section.type);
+
+    // 3. Exclude sections that should always be full-width
+    const shouldAlwaysBeFullWidth = [
+      'mast', 'navigation', 'hero', 'video', 'section_heading'
+    ].includes(section.type);
+
+    // 4. Size suitability - sections that work well when subdivided
+    const hasGoodSizeForColumns = width >= 200 && height >= 100; // Lower size requirements
+
+    // 5. Consider sections with reasonable dimensions for mobile stacking
+    const isMobileStackingFriendly = height >= 150 && height <= 600; // Good height range for mobile
+
+    // Enhanced selection logic with tier-based requirements
+    if (shouldAlwaysBeFullWidth) return false;
+    if (!isMultiColumnFriendlyType) return false;
+    if (!isMobileStackingFriendly) return false;
+
+    // Tier 1 types: More lenient requirements (excellent for multi-column)
+    if (isTier1MultiColumn) {
+      return isGoodStackingRatio && hasGoodSizeForColumns;
+    }
+
+    // Tier 2 types: Relaxed requirements to work with actual dataset
+    if (isTier2MultiColumn) {
+      const isGoodForColumns = aspectRatio >= 0.7 && aspectRatio <= 2.5; // More flexible range
+      const isReasonableSize = width >= 200 && height >= 100; // Lower minimum size
+      const isNotTooWide = aspectRatio <= 3.0; // Prevent very wide images
+
+      console.log(`Tier 2 section ${section.type} dimensions: ${width}x${height}, aspect ratio: ${aspectRatio.toFixed(2)}`);
+      console.log(`  - isGoodForColumns (0.7-2.5): ${isGoodForColumns}`);
+      console.log(`  - isReasonableSize (>=200x100): ${isReasonableSize}`);
+      console.log(`  - isNotTooWide (<=3.0): ${isNotTooWide}`);
+      console.log(`  - final result: ${isGoodForColumns && isReasonableSize && isNotTooWide}`);
+
+      return isGoodForColumns && isReasonableSize && isNotTooWide;
+    }
+
+    return false;
   };
 
   // NEW: Create brick-wall layout groups
   const createBrickWallGroups = (sections: ModuleWithQuality[]): Array<{ type: 'single' | 'brick', sections: ModuleWithQuality[] }> => {
+    console.log(`Creating brick wall groups for ${sections.length} sections`);
+    console.log('Section types:', sections.map(s => s.type));
+
     const groups: Array<{ type: 'single' | 'brick', sections: ModuleWithQuality[] }> = [];
     let i = 0;
 
@@ -493,13 +602,18 @@ function App() {
       // Always keep headers/heroes as single
       if (['mast', 'navigation', 'hero', 'video', 'section_heading'].includes(section.type)) {
         groups.push({ type: 'single', sections: [section] });
+        console.log(`Added single group for ${section.type}`);
         i++;
         continue;
       }
 
       // Check if this and next sections can form a brick group
-      if (isMobileMultiColumnCandidate(section)) {
+      const isCandidate = isMobileMultiColumnCandidate(section);
+      console.log(`Section ${section.type} is multi-column candidate: ${isCandidate}`);
+
+      if (isCandidate) {
         const brickGroup: ModuleWithQuality[] = [section];
+        console.log(`Starting brick group with ${section.type}`);
 
         // Look ahead for 1-3 more sections to create brick pattern
         let j = i + 1;
@@ -523,17 +637,21 @@ function App() {
         // Create brick group if we have 2+ sections, otherwise single
         if (brickGroup.length >= 2) {
           groups.push({ type: 'brick', sections: brickGroup });
+          console.log(`Created BRICK group with ${brickGroup.length} sections:`, brickGroup.map(s => s.type));
           i = j;
         } else {
           groups.push({ type: 'single', sections: [section] });
+          console.log(`Added single group for ${section.type} (couldn't form brick group)`);
           i++;
         }
       } else {
         groups.push({ type: 'single', sections: [section] });
+        console.log(`Added single group for ${section.type} (not candidate)`);
         i++;
       }
     }
 
+    console.log(`Final brick wall groups: ${groups.length} groups, ${groups.filter(g => g.type === 'brick').length} are brick groups`);
     return groups;
   };
 
